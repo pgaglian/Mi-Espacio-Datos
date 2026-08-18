@@ -1,1 +1,20 @@
-[]
+[
+  {
+    "nombre": "Carrefour Quilmes",
+    "logo": true,
+    "instagram": "https://instagram.com/carrefour",
+    "whatsapp": "https://wa.me/5491111111111"
+  },
+  {
+    "nombre": "La Esquina",
+    "logo": false,
+    "instagram": "",
+    "whatsapp": "https://wa.me/5492222222222"
+  },
+  {
+    "nombre": "Studio 25",
+    "logo": true,
+    "instagram": "https://instagram.com/studio25",
+    "whatsapp": ""
+  }
+]
