@@ -1,8 +1,8 @@
 [
   {
     "nombre": "Carrefour Quilmes",
-    "logo": true,
-    "instagram": "https://instagram.com/carrefour",
+   "logo": "logos/carrefour.png",
+    "instagram": "https://www.instagram.com/carrefour_hiperquilmes/",
     "whatsapp": "https://wa.me/5491111111111"
   },
   {
