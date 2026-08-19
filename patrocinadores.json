@@ -1,16 +1,19 @@
 [
   {
     "nombre": "Carrefour Quilmes",
-   "logo": "logos/Carrefour.png",
+   "logo": "logos/carrefour.png",
     "instagram": "https://www.instagram.com/carrefour_hiperquilmes/",
     "whatsapp": "https://wa.me/5491111111111"
   },
   {
+
     "nombre": "La Esquina",
-    "logo": false,
-    "instagram": "",
-    "whatsapp": "https://wa.me/5492222222222"
+    "logo": "logos/La Esquina.png",
+    "instagram": "https://www.instagram.com/laesquinaook/",
+    "whatsapp": "https://wa.me/ 5491134693156"
+
   },
+
   {
     "nombre": "Studio 25",
     "logo": true,
