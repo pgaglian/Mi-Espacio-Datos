@@ -1,23 +1,26 @@
 [
   {
     "nombre": "Carrefour Quilmes",
-   "logo": "logos/Carrefour.png",
+    "logo": "logos/Carrefour.png",
     "instagram": "https://www.instagram.com/carrefour_hiperquilmes/",
-    "whatsapp": "https://wa.me/5491111111111"
+    "whatsapp": "https://wa.me/5491111111111",
+    "tipo": "empresa",
+    "activo": true
   },
   {
-
     "nombre": "La Esquina",
     "logo": "logos/La Esquina.png",
     "instagram": "https://www.instagram.com/laesquinaook/",
-    "whatsapp": "https://wa.me/ 5491134693156"
-
+    "whatsapp": "https://wa.me/5491134693156",
+    "tipo": "empresa",
+    "activo": true
   },
-
   {
     "nombre": "Studio 25",
-    "logo": true,
+    "logo": "logos/Studio 25.png",
     "instagram": "https://instagram.com/studio25",
-    "whatsapp": ""
+    "whatsapp": "",
+    "tipo": "empresa",
+    "activo": true
   }
 ]
