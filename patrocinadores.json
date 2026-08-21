@@ -22,5 +22,16 @@
     "whatsapp": "",
     "tipo": "empresa",
     "activo": true
-  }
+  },
+{
+  "nombre": "Pablo",
+  "logo": "logos/Pablo.jpg",
+  "instagram": "",
+  "whatsapp": "",
+  "tipo": "persona",
+  "activo": true
+}
+
+
+
 ]
