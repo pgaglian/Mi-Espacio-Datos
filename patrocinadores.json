@@ -21,7 +21,7 @@
     "instagram": "https://instagram.com/studio25",
     "whatsapp": "",
     "tipo": "empresa",
-    "activo": true
+    "activo": false
   },
 {
   "nombre": "Pablo",
@@ -29,6 +29,7 @@
   "instagram": "",
   "whatsapp": "",
   "tipo": "persona",
+  "emoji": "🐸",
   "activo": true
 }
 
