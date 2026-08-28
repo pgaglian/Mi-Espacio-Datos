@@ -1,0 +1,8 @@
+[
+    {
+        "nombre": "Macro",
+        "web": "https://www.macro.com.ar/",
+        "android": "intent://#Intent;package=com.macro.banco.ar;end",
+        "iphone": "https://apps.apple.com/ar/app/nueva-app-macro/id6651860993"
+    }
+]
