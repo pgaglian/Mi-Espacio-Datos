@@ -1,11 +1,110 @@
 [
     {
+        "nombre": "Banco Nación",
+        "web": "https://www.bna.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.banconacion.bnamas;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.banconacion.bnamas;end",
+        "iphone": "https://apps.apple.com/ar/app/bna/id1523383806"
+    },
+    {
+        "nombre": "Galicia",
+        "web": "https://www.galicia.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.mosync.app_Banco_Galicia;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.mosync.app_Banco_Galicia;end",
+        "iphone": "https://apps.apple.com/ar/app/galicia-el-banco-en-tu-celu/id774860115"
+    },
+    {
+        "nombre": "Santander",
+        "web": "https://www.santander.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.santander.rio.mbanking;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.santander.rio.mbanking;end",
+        "iphone": "https://apps.apple.com/ar/app/santander-argentina/id626971464"
+    },
+    {
+        "nombre": "BBVA",
+        "web": "https://www.bbva.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.bbva.nxt_argentina;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.bbva.nxt_argentina;end",
+        "iphone": "https://apps.apple.com/ar/app/bbva-argentina/id748231035"
+    },
+    {
         "nombre": "Macro",
         "web": "https://www.macro.com.ar/",
-
-       "android": "intent://#Intent;scheme=https;package=com.macro.banco.ar;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.macro.banco.ar;end",
-
-
+        "android": "intent://#Intent;scheme=https;package=com.macro.banco.ar;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.macro.banco.ar;end",
         "iphone": "https://apps.apple.com/ar/app/nueva-app-macro/id6651860993"
+    },
+    {
+        "nombre": "Banco Provincia",
+        "web": "https://www.bancoprovincia.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.bapro;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.bapro;end",
+        "iphone": "https://apps.apple.com/ar/app/bip-m%C3%B3vil/id910702923"
+    },
+    {
+        "nombre": "ICBC",
+        "web": "https://www.icbc.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.icbc.mobile.abroadARG;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.icbc.mobile.abroadARG;end",
+        "iphone": "https://apps.apple.com/ar/app/icbc-mobile-banking-argentina/id994922054"
+    },
+    {
+        "nombre": "Credicoop",
+        "web": "https://www.bancocredicoop.coop/",
+        "android": "intent://#Intent;scheme=https;package=coop.bancocredicoop.credicoop;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcoop.bancocredicoop.credicoop;end",
+        "iphone": "https://apps.apple.com/ar/app/banca-credicoop/id6459479073"
+    },
+    {
+        "nombre": "Patagonia",
+        "web": "https://www.bancopatagonia.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.bcopatagonia.android;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.bcopatagonia.android;end",
+        "iphone": "https://apps.apple.com/ar/app/patagonia-m%C3%B3vil/id1178757002"
+    },
+    {
+        "nombre": "Banco Ciudad",
+        "web": "https://www.bancociudad.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.redlink.custom;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.redlink.custom;end",
+        "iphone": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-ciudad/id1515534818"
+    },
+    {
+        "nombre": "Supervielle",
+        "web": "https://www.supervielle.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.supervielle;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.supervielle;end",
+        "iphone": "https://apps.apple.com/ar/app/supervielle/id1547826699"
+    },
+    {
+        "nombre": "Banco de Córdoba",
+        "web": "https://www.bancor.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.bancor.bancon;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.bancor.bancon;end",
+        "iphone": "https://apps.apple.com/ar/app/banc%C3%B3n/id1438868080"
+    },
+    {
+        "nombre": "Nuevo Banco de Santa Fe",
+        "web": "https://www.bancosantafe.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.bancosantafe.mobile;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.bancosantafe.mobile;end",
+        "iphone": "https://apps.apple.com/ar/app/app-banco-santa-fe/id1516538881"
+    },
+    {
+        "nombre": "Comafi",
+        "web": "https://www.comafi.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.comafi.app.hbi.prod;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.comafi.app.hbi.prod;end",
+        "iphone": "https://apps.apple.com/ar/app/comafi/id6450553669"
+    },
+    {
+        "nombre": "Banco de Industria",
+        "web": "https://www.bind.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=ar.com.bind.bind24;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.com.bind.bind24;end",
+        "iphone": "https://apps.apple.com/ar/app/bind24/id1049776722"
+    },
+    {
+        "nombre": "Hipotecario",
+        "web": "https://www.hipotecario.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.hipotecario.mobile;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.hipotecario.mobile;end",
+        "iphone": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
+    },
+    {
+        "nombre": "Naranja Digital",
+        "web": "https://www.naranjax.com/",
+        "android": "intent://#Intent;scheme=https;package=com.tarjetanaranja.ncuenta;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.tarjetanaranja.ncuenta;end",
+        "iphone": "https://apps.apple.com/ar/app/naranja-x-billetera-virtual/id1452691757"
+    },
+    {
+        "nombre": "Banco de Neuquén",
+        "web": "https://www.bpn.com.ar/",
+        "android": "intent://#Intent;scheme=https;package=com.redlink.android_hb3.bpn;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.redlink.android_hb3.bpn;end",
+        "iphone": "https://apps.apple.com/ar/app/bpn-home-banking-personas/id6471999064"
     }
 ]
