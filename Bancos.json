@@ -32,6 +32,7 @@
         "iphone": "https://apps.apple.com/ar/app/nueva-app-macro/id6651860993"
     },
     {
+
         "nombre": "Banco Provincia",
         "web": "https://www.bancoprovincia.com.ar/",
         "android": "intent://#Intent;scheme=https;package=ar.bapro;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dar.bapro;end",
