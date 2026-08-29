@@ -1,13 +1,101 @@
 [
   {
     "banco": "Macro",
-    "titulo": "PROMOCIÓN DE PRUEBA",
-    "detalle": "Prueba del motor de promociones",
-    "dias": ["sábado"],
-    "desde": "2026-08-29",
-    "hasta": "2026-08-29",
-    "tope": "$10.000",
-    "medioPago": "Tarjetas seleccionadas",
+    "titulo": "McDonald's - hasta 30% de ahorro",
+    "detalle": "Hasta 30% de ahorro en locales adheridos y productos seleccionados, pagando con tarjetas de crédito Visa Macro mediante Google Pay, Apple Pay o MODO NFC.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-12-31",
+    "tope": "Hasta $30.000 mensuales según cartera",
+    "medioPago": "Visa Macro + Google Pay / Apple Pay / MODO NFC",
     "url": "https://www.macro.com.ar/"
+  },
+  {
+    "banco": "Macro",
+    "titulo": "YPF - hasta 30% de ahorro",
+    "detalle": "Beneficio en estaciones YPF con tarjetas Macro. La promoción publicada por Banco Macro indica aplicación los miércoles.",
+    "dias": ["miércoles"],
+    "desde": "2026-08-01",
+    "hasta": "2026-09-30",
+    "tope": "Hasta $25.000 mensuales",
+    "medioPago": "Tarjeta de crédito Visa Macro + MODO",
+    "url": "https://www.macro.com.ar/"
+  },
+  {
+    "banco": "Banco Provincia",
+    "titulo": "Cuenta DNI - 30% de ahorro",
+    "detalle": "30% de ahorro todos los días de agosto en comercios adheridos utilizando Cuenta DNI.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "$15.000 por mes y por persona",
+    "medioPago": "Cuenta DNI",
+    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/especialdetemporada"
+  },
+  {
+    "banco": "Banco Provincia",
+    "titulo": "Cuenta DNI - Comercio de barrio",
+    "detalle": "20% de ahorro de lunes a viernes en comercios de barrio adheridos.",
+    "dias": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "$6.000 por semana",
+    "medioPago": "Cuenta DNI",
+    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/comerciosdebarrio"
+  },
+  {
+    "banco": "Banco Provincia",
+    "titulo": "Cuenta DNI - Gastronomía",
+    "detalle": "25% de ahorro los sábados y domingos en comercios gastronómicos adheridos.",
+    "dias": ["sábado", "domingo"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "$8.000 por semana",
+    "medioPago": "Cuenta DNI",
+    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/especialgastronomia"
+  },
+  {
+    "banco": "Banco Provincia",
+    "titulo": "Garrafa - 40% de ahorro",
+    "detalle": "40% de ahorro en compra o recarga de garrafas en proveedores adheridos.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "$18.000 por mes y por persona",
+    "medioPago": "Cuenta DNI",
+    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/garrafas"
+  },
+  {
+    "banco": "Banco Provincia",
+    "titulo": "12 cuotas sin interés",
+    "detalle": "12 cuotas fijas sin interés en comercios adheridos con tarjetas de crédito Visa y Mastercard Banco Provincia.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-12-31",
+    "tope": "Sin volumen máximo de ventas",
+    "medioPago": "Visa / Mastercard Banco Provincia",
+    "url": "https://www.bancoprovincia.com.ar/mvc/web/marcas_indumentaria"
+  },
+  {
+    "banco": "Galicia",
+    "titulo": "Hasta 12 cuotas sin interés",
+    "detalle": "Hasta 12 cuotas sin interés en productos seleccionados de Tienda Online Galicia.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "Según producto",
+    "medioPago": "Visa / Mastercard / American Express Galicia + App Galicia o MODO",
+    "url": "https://tienda.galicia.ar/3820-hasta-12-cuotas-sin-interes"
+  },
+  {
+    "banco": "Galicia",
+    "titulo": "Hasta 6 cuotas sin interés",
+    "detalle": "Hasta 6 cuotas sin interés en productos seleccionados de Tienda Online Galicia.",
+    "dias": ["todos"],
+    "desde": "2026-08-01",
+    "hasta": "2026-08-31",
+    "tope": "Según producto",
+    "medioPago": "Visa / Mastercard / American Express Galicia",
+    "url": "https://tienda.galicia.ar/3820-hasta-12-cuotas-sin-interes"
   }
 ]
