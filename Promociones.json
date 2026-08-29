@@ -1,0 +1,13 @@
+[
+  {
+    "banco": "Macro",
+    "titulo": "PROMOCIÓN DE PRUEBA",
+    "detalle": "Prueba del motor de promociones",
+    "dias": ["sábado"],
+    "desde": "2026-08-29",
+    "hasta": "2026-08-29",
+    "tope": "$10.000",
+    "medioPago": "Tarjetas seleccionadas",
+    "url": "https://www.macro.com.ar/"
+  }
+]
