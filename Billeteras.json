@@ -1,20 +1,38 @@
 [
   {
-    "nombre": "MODO"
+    "nombre": "MODO",
+    "web": "https://www.modo.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=com.playdigital.modo",
+    "iphone": "https://apps.apple.com/ar/app/modo/id1530606263"
   },
   {
-    "nombre": "Cuenta DNI"
+    "nombre": "Cuenta DNI",
+    "web": "https://www.bancoprovincia.com.ar/cuentadni/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.bancoprovincia.CuentaDNI",
+    "iphone": "https://apps.apple.com/ar/app/cuenta-dni/id1436655618"
   },
   {
-    "nombre": "Mercado Pago"
+    "nombre": "Mercado Pago",
+    "web": "https://www.mercadopago.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=com.mercadopago.wallet",
+    "iphone": "https://apps.apple.com/ar/app/mercado-pago/id925436649"
   },
   {
-    "nombre": "Personal Pay"
+    "nombre": "Personal Pay",
+    "web": "https://www.personalpay.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.personalpay",
+    "iphone": "https://apps.apple.com/ar/app/personal-pay/id1548817439"
   },
   {
-    "nombre": "Naranja X"
+    "nombre": "Naranja X",
+    "web": "https://www.naranjax.com/",
+    "android": "https://play.google.com/store/apps/details?id=com.tarjetanaranja.ncuenta",
+    "iphone": "https://apps.apple.com/ar/app/naranja-x-billetera-virtual/id1452691757"
   },
   {
-    "nombre": "Ualá"
+    "nombre": "Ualá",
+    "web": "https://www.uala.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.bancar.uala",
+    "iphone": "https://apps.apple.com/ar/app/ual%C3%A1/id1279808159"
   }
 ]
