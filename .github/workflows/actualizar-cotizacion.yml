@@ -60,18 +60,20 @@ jobs:
 
           compra_oficial = patron_bna.group(1)
           venta_oficial = patron_bna.group(2)
-
           patron_hora_bna = re.search(
               r"Hora Actualizaci[oó]n:\s*([0-9]{2}:[0-9]{2})",
               html_bna,
               re.I
           )
 
-          hora_oficial = (
-              patron_hora_bna.group(1)
-              if patron_hora_bna
-              else "--"
-          )
+          if patron_hora_bna:
+              hora_bna = patron_hora_bna.group(1)
+              fecha_actual = datetime.now().strftime("%d/%m/%y")
+              hora_24 = datetime.strptime(hora_bna, "%H:%M")
+              hora_12 = hora_24.strftime("%I:%M %p")
+              hora_oficial = f"{fecha_actual} {hora_12}"
+          else:
+              hora_oficial = "--"
 
           # =========================
           # DOLARHOY - BLUE
