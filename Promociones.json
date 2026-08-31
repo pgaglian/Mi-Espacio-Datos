@@ -1,101 +1,122 @@
 [
   {
-    "banco": "Macro",
-    "titulo": "McDonald's - hasta 30% de ahorro",
-    "detalle": "Hasta 30% de ahorro en locales adheridos y productos seleccionados, pagando con tarjetas de crédito Visa Macro mediante Google Pay, Apple Pay o MODO NFC.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-12-31",
-    "tope": "Hasta $30.000 mensuales según cartera",
-    "medioPago": "Visa Macro + Google Pay / Apple Pay / MODO NFC",
-    "url": "https://www.macro.com.ar/"
+    "tipo": "banco",
+    "nombre": "Banco Nación",
+    "url": "https://www.bna.com.ar/Personas/DescuentosYPromociones"
   },
   {
-    "banco": "Macro",
-    "titulo": "YPF - hasta 30% de ahorro",
-    "detalle": "Beneficio en estaciones YPF con tarjetas Macro. La promoción publicada por Banco Macro indica aplicación los miércoles.",
-    "dias": ["miércoles"],
-    "desde": "2026-08-01",
-    "hasta": "2026-09-30",
-    "tope": "Hasta $25.000 mensuales",
-    "medioPago": "Tarjeta de crédito Visa Macro + MODO",
-    "url": "https://www.macro.com.ar/"
+    "tipo": "banco",
+    "nombre": "Galicia",
+    "url": "https://www.galicia.ar/personas/buscador-de-promociones"
   },
   {
-    "banco": "Banco Provincia",
-    "titulo": "Cuenta DNI - 30% de ahorro",
-    "detalle": "30% de ahorro todos los días de agosto en comercios adheridos utilizando Cuenta DNI.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "$15.000 por mes y por persona",
-    "medioPago": "Cuenta DNI",
-    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/especialdetemporada"
+    "tipo": "banco",
+    "nombre": "Santander",
+    "url": "https://www.santander.com.ar/personas/beneficios"
   },
   {
-    "banco": "Banco Provincia",
-    "titulo": "Cuenta DNI - Comercio de barrio",
-    "detalle": "20% de ahorro de lunes a viernes en comercios de barrio adheridos.",
-    "dias": ["lunes", "martes", "miércoles", "jueves", "viernes"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "$6.000 por semana",
-    "medioPago": "Cuenta DNI",
-    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/comerciosdebarrio"
+    "tipo": "banco",
+    "nombre": "BBVA",
+    "url": "https://www.bbva.com.ar/personas/productos/programa-beneficios.html"
   },
   {
-    "banco": "Banco Provincia",
-    "titulo": "Cuenta DNI - Gastronomía",
-    "detalle": "25% de ahorro los sábados y domingos en comercios gastronómicos adheridos.",
-    "dias": ["sábado", "domingo"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "$8.000 por semana",
-    "medioPago": "Cuenta DNI",
-    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/especialgastronomia"
+    "tipo": "banco",
+    "nombre": "Macro",
+    "url": "https://www.macro.com.ar/mas-beneficios"
   },
   {
-    "banco": "Banco Provincia",
-    "titulo": "Garrafa - 40% de ahorro",
-    "detalle": "40% de ahorro en compra o recarga de garrafas en proveedores adheridos.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "$18.000 por mes y por persona",
-    "medioPago": "Cuenta DNI",
-    "url": "https://www.bancoprovincia.com.ar/cuentadni/buscadores/garrafas"
+    "tipo": "banco",
+    "nombre": "Banco Provincia",
+    "url": "https://www.bancoprovincia.com.ar/cdni/"
   },
   {
-    "banco": "Banco Provincia",
-    "titulo": "12 cuotas sin interés",
-    "detalle": "12 cuotas fijas sin interés en comercios adheridos con tarjetas de crédito Visa y Mastercard Banco Provincia.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-12-31",
-    "tope": "Sin volumen máximo de ventas",
-    "medioPago": "Visa / Mastercard Banco Provincia",
-    "url": "https://www.bancoprovincia.com.ar/mvc/web/marcas_indumentaria"
+    "tipo": "banco",
+    "nombre": "ICBC",
+    "url": "https://www.beneficios.icbc.com.ar/"
   },
   {
-    "banco": "Galicia",
-    "titulo": "Hasta 12 cuotas sin interés",
-    "detalle": "Hasta 12 cuotas sin interés en productos seleccionados de Tienda Online Galicia.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "Según producto",
-    "medioPago": "Visa / Mastercard / American Express Galicia + App Galicia o MODO",
-    "url": "https://tienda.galicia.ar/3820-hasta-12-cuotas-sin-interes"
+    "tipo": "banco",
+    "nombre": "Credicoop",
+    "url": "https://www.beneficios.bancocredicoop.coop/"
   },
   {
-    "banco": "Galicia",
-    "titulo": "Hasta 6 cuotas sin interés",
-    "detalle": "Hasta 6 cuotas sin interés en productos seleccionados de Tienda Online Galicia.",
-    "dias": ["todos"],
-    "desde": "2026-08-01",
-    "hasta": "2026-08-31",
-    "tope": "Según producto",
-    "medioPago": "Visa / Mastercard / American Express Galicia",
-    "url": "https://tienda.galicia.ar/3820-hasta-12-cuotas-sin-interes"
+    "tipo": "banco",
+    "nombre": "Patagonia",
+    "url": "https://www.bancopatagonia.com.ar/patagoniaon/beneficios.php"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Banco Ciudad",
+    "url": "https://www.bancociudad.com.ar/"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Supervielle",
+    "url": "https://www.supervielle.com.ar/personas/beneficios/descuentos/buscador"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Banco de Córdoba",
+    "url": "https://www.bancor.com.ar/promociones"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Nuevo Banco de Santa Fe",
+    "url": "https://www.bancosantafe.com.ar/personas/beneficios"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Comafi",
+    "url": "https://www.comafi.com.ar/beneficios-unico.aspx"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Banco de Industria",
+    "url": "https://www.bind.com.ar/"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Hipotecario",
+    "url": "https://www.hipotecario.com.ar/beneficios/"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Naranja Digital",
+    "url": "https://www.naranjax.com/promociones-amba"
+  },
+  {
+    "tipo": "banco",
+    "nombre": "Banco de Neuquén",
+    "url": "https://www.bpn.com.ar/"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "MODO",
+    "url": "https://www.modo.com.ar/promos"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "Cuenta DNI",
+    "url": "https://www.bancoprovincia.com.ar/cdni/"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "Mercado Pago",
+    "url": "https://promociones.mercadopago.com.ar/"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "Personal Pay",
+    "url": "https://www.personal.com.ar/pay/beneficios"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "Naranja X",
+    "url": "https://www.naranjax.com/promociones-amba"
+  },
+  {
+    "tipo": "billetera",
+    "nombre": "Ualá",
+    "url": "https://www.uala.com.ar/promociones"
   }
 ]
