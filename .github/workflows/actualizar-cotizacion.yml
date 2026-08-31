@@ -1,7 +1,10 @@
 name: Actualizar cotizacion
-
 on:
   workflow_dispatch:
+
+  schedule:
+   - cron: "0,30 11-21 * * 1-5"
+   - cron: "0 22 * * 1-5"
 
 permissions:
   contents: write
