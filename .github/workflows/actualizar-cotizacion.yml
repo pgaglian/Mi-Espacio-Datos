@@ -1,0 +1,184 @@
+name: Actualizar cotizacion
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+
+    steps:
+
+      - name: Descargar repositorio
+        uses: actions/checkout@v4
+
+      - name: Obtener cotizaciones
+        run: |
+          python - <<'PY'
+          import requests
+          import re
+          import json
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+
+          headers = {
+              "User-Agent": "Mozilla/5.0"
+          }
+
+          # =========================
+          # BANCO NACION
+          # =========================
+
+          url_bna = "https://www.bna.com.ar/"
+
+          respuesta_bna = requests.get(
+              url_bna,
+              headers=headers,
+              timeout=30
+          )
+
+          respuesta_bna.raise_for_status()
+
+          html_bna = respuesta_bna.text
+
+          patron_bna = re.search(
+              r"Dolar U\.S\.A.*?([0-9\.,]+).*?([0-9\.,]+)",
+              html_bna,
+              re.S | re.I
+          )
+
+          if not patron_bna:
+              raise Exception(
+                  "No se pudo encontrar la cotizacion del Banco Nacion"
+              )
+
+          compra_oficial = patron_bna.group(1)
+          venta_oficial = patron_bna.group(2)
+
+          patron_hora_bna = re.search(
+              r"Hora Actualizaci[oó]n:\s*([0-9]{2}:[0-9]{2})",
+              html_bna,
+              re.I
+          )
+
+          hora_oficial = (
+              patron_hora_bna.group(1)
+              if patron_hora_bna
+              else "--"
+          )
+
+          # =========================
+          # DOLARHOY - BLUE
+          # =========================
+
+          url_blue = "https://dolarhoy.com/"
+
+          respuesta_blue = requests.get(
+              url_blue,
+              headers=headers,
+              timeout=30
+          )
+
+          respuesta_blue.raise_for_status()
+
+          html_blue = respuesta_blue.text
+
+          texto_blue = re.sub(
+              r"<[^>]+>",
+              " ",
+              html_blue
+          )
+
+          texto_blue = re.sub(
+              r"\s+",
+              " ",
+              texto_blue
+          )
+
+          patron_blue = re.search(
+              r"D[oó]lar blue.*?"
+              r"Compra\s*\$?\s*([0-9\.,]+).*?"
+              r"Venta\s*\$?\s*([0-9\.,]+)",
+              texto_blue,
+              re.I
+          )
+
+          if not patron_blue:
+              raise Exception(
+                  "No se pudo encontrar la cotizacion del Dolar Blue"
+              )
+
+          compra_blue = patron_blue.group(1)
+          venta_blue = patron_blue.group(2)
+
+          patron_actualizacion = re.search(
+              r"Actualizado por [úu]ltima vez:\s*"
+              r"([0-9]{2}/[0-9]{2}/[0-9]{2}\s+"
+              r"[0-9]{1,2}:[0-9]{2}\s+[AP]M)",
+              texto_blue,
+              re.I
+          )
+
+          hora_blue = (
+              patron_actualizacion.group(1)
+              if patron_actualizacion
+              else "--"
+          )
+
+          # =========================
+          # JSON
+          # =========================
+
+          cotizacion = {
+              "oficial": {
+                  "compra": compra_oficial,
+                  "venta": venta_oficial,
+                  "actualizado": hora_oficial
+              },
+              "blue": {
+                  "compra": compra_blue,
+                  "venta": venta_blue,
+                  "actualizado": hora_blue
+              }
+          }
+
+          with open(
+              "Cotizacion.json",
+              "w",
+              encoding="utf-8"
+          ) as archivo:
+
+              json.dump(
+                  cotizacion,
+                  archivo,
+                  ensure_ascii=False,
+                  indent=2
+              )
+
+          print("===================================")
+          print("COTIZACION OBTENIDA")
+          print("===================================")
+          print(json.dumps(
+              cotizacion,
+              ensure_ascii=False,
+              indent=2
+          ))
+          print("===================================")
+          PY
+
+      - name: Guardar Cotizacion.json
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add Cotizacion.json
+
+          if git diff --cached --quiet; then
+            echo "No hubo cambios en la cotizacion."
+          else
+            git commit -m "Actualizar cotizacion del dolar"
+            git push
+          fi
