@@ -5,7 +5,7 @@
     "frecuencia": "AM 790",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Radio_Mitre_logo.svg/512px-Radio_Mitre_logo.svg.png",
+    "logo": "https://cdn.cienradios.com/wp-content/uploads/sites/3/2019/05/svg-mitre-principal.svg",
     "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
   }
 ]
