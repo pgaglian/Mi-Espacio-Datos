@@ -42,7 +42,7 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Eldestape.jpg",
-    "urlStream": "https://cdn2.instream.audio/:8000/stream"
+    "urlStream": "https://ipanel.instream.audio/8004/stream"
   },
   {
     "id": "continental_am590",
