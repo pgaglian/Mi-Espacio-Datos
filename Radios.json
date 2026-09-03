@@ -5,7 +5,7 @@
     "frecuencia": "AM 790",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Mitre.jpg",
+    "logo": "Radiosimg/Mitre.jpg",
     "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
   },
   {
@@ -14,7 +14,7 @@
     "frecuencia": "AM 710",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Radio10.jpg",
+    "logo": "Radiosimg/Radio10.jpg",
     "urlStream": ""
   },
   {
@@ -23,7 +23,7 @@
     "frecuencia": "AM 910",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Lared.jpg",
+    "logo": "Radiosimg/Lared.jpg",
     "urlStream": ""
   },
   {
@@ -32,7 +32,7 @@
     "frecuencia": "AM 630",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Rivadavia.jpg",
+    "logo": "Radiosimg/Rivadavia.jpg",
     "urlStream": ""
   },
   {
@@ -41,7 +41,7 @@
     "frecuencia": "AM 1070",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Eldestape.jpg",
+    "logo": "Radiosimg/Eldestape.jpg",
     "urlStream": ""
   },
   {
@@ -50,7 +50,7 @@
     "frecuencia": "AM 750",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/am750.jpg",
+    "logo": "Radiosimg/am750.jpg",
     "urlStream": ""
   },
   {
@@ -59,7 +59,7 @@
     "frecuencia": "AM 590",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/continental.jpg",
+    "logo": "Radiosimg/continental.jpg",
     "urlStream": ""
   },
   {
@@ -68,7 +68,7 @@
     "frecuencia": "AM 870",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacional.jpg",
+    "logo": "Radiosimg/nacional.jpg",
     "urlStream": ""
   },
   {
@@ -77,7 +77,7 @@
     "frecuencia": "AM 990",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/splendid.jpg",
+    "logo": "Radiosimg/splendid.jpg",
     "urlStream": ""
   },
   {
@@ -86,7 +86,7 @@
     "frecuencia": "AM 1190",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/perfil.jpg",
+    "logo": "Radiosimg/perfil.jpg",
     "urlStream": ""
   },
   {
@@ -95,7 +95,7 @@
     "frecuencia": "FM 99.9",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/la100.jpg",
+    "logo": "Radiosimg/la100.jpg",
     "urlStream": ""
   },
   {
@@ -104,7 +104,7 @@
     "frecuencia": "FM 102.3",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/aspen.jpg",
+    "logo": "Radiosimg/aspen.jpg",
     "urlStream": ""
   },
   {
@@ -113,7 +113,7 @@
     "frecuencia": "FM 94.3",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiodisney.jpg",
+    "logo": "Radiosimg/radiodisney.jpg",
     "urlStream": ""
   },
   {
@@ -122,7 +122,7 @@
     "frecuencia": "FM 95.9",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/rockandpop.jpg",
+    "logo": "Radiosimg/rockandpop.jpg",
     "urlStream": ""
   },
   {
@@ -131,7 +131,7 @@
     "frecuencia": "FM 98.3",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/mega983.jpg",
+    "logo": "Radiosimg/mega983.jpg",
     "urlStream": ""
   },
   {
@@ -140,7 +140,7 @@
     "frecuencia": "FM 104.3",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/urbanaplay.jpg",
+    "logo": "Radiosimg/urbanaplay.jpg",
     "urlStream": ""
   },
   {
@@ -149,7 +149,7 @@
     "frecuencia": "FM 101.5",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/pop.jpg",
+    "logo": "Radiosimg/pop.jpg",
     "urlStream": ""
   },
   {
@@ -158,7 +158,7 @@
     "frecuencia": "FM 100.7",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/blue.jpg",
+    "logo": "Radiosimg/blue.jpg",
     "urlStream": ""
   },
   {
@@ -167,7 +167,7 @@
     "frecuencia": "FM 105.5",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
+    "logo": "Radiosimg/los40.jpg",
     "urlStream": ""
   },
   {
@@ -176,7 +176,7 @@
     "frecuencia": "FM 107.9",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/elobservador.jpg",
+    "logo": "Radiosimg/elobservador.jpg",
     "urlStream": ""
   },
   {
@@ -185,7 +185,7 @@
     "frecuencia": "FM 89.9",
     "tipo": "FM",
     "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radioconvos.jpg",
+    "logo": "Radiosimg/radioconvos.jpg",
     "urlStream": ""
   }
 ]
