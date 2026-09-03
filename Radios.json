@@ -5,7 +5,178 @@
     "frecuencia": "AM 790",
     "tipo": "AM",
     "provincia": "CABA",
-    "logo": "https://cdn.cienradios.com/wp-content/uploads/sites/3/2019/05/svg-mitre-principal.svg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Radio_Mitre_logo.svg/512px-Radio_Mitre_logo.svg.png",
+    "urlStream": "https://26443.live.streamtheworld.com/RADIO_MITRE.mp3"
+  },
+  {
+    "id": "lared_am910",
+    "nombre": "Radio La Red",
+    "frecuencia": "AM 910",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b5/Logo_Radio_La_Red.svg/512px-Logo_Radio_La_Red.svg.png",
+    "urlStream": "https://streaming.grupoamerica.com.ar/lared"
+  },
+  {
+    "id": "radio10_am710",
+    "nombre": "Radio 10",
+    "frecuencia": "AM 710",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Radio_10_logo.png/512px-Radio_10_logo.png",
+    "urlStream": "https://stream.indie.com.ar/radio10"
+  },
+  {
+    "id": "continental_am590",
+    "nombre": "Radio Continental",
+    "frecuencia": "AM 590",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Radio_Continental_logo.svg/512px-Radio_Continental_logo.svg.png",
+    "urlStream": "https://satelital.radio-continental.com.ar/continental.mp3"
+  },
+  {
+    "id": "rivadavia_am630",
+    "nombre": "Radio Rivadavia",
+    "frecuencia": "AM 630",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Radio_Rivadavia_logo.svg/512px-Radio_Rivadavia_logo.svg.png",
+    "urlStream": "https://alpha.pro-video.com.ar/rivadavia"
+  },
+  {
+    "id": "nacional_am870",
+    "nombre": "Radio Nacional",
+    "frecuencia": "AM 870",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Radio_Nacional_Argentina_logo.svg/512px-Radio_Nacional_Argentina_logo.svg.png",
+    "urlStream": "https://stream.radionacional.com.ar/am870"
+  },
+  {
+    "id": "am750_am750",
+    "nombre": "AM 750",
+    "frecuencia": "AM 750",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/AM_750_logo.png/512px-AM_750_logo.png",
+    "urlStream": "https://stream.am750.com.ar/stream"
+  },
+  {
+    "id": "delplata_am1030",
+    "nombre": "Radio Del Plata",
+    "frecuencia": "AM 1030",
+    "tipo": "AM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Radio_Del_Plata_logo.png/512px-Radio_Del_Plata_logo.png",
+    "urlStream": "https://stream.radiodelplata.com/delplata"
+  },
+  {
+    "id": "la100_fm999",
+    "nombre": "La 100",
+    "frecuencia": "FM 99.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/La_100_logo.svg/512px-La_100_logo.svg.png",
+    "urlStream": "https://26523.live.streamtheworld.com/LA_100.mp3"
+  },
+  {
+    "id": "aspen_fm1023",
+    "nombre": "Radio Aspen",
+    "frecuencia": "FM 102.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/77/Radio_Aspen_logo.svg/512px-Radio_Aspen_logo.svg.png",
+    "urlStream": "https://streaming.radioaspen.com.ar/aspen"
+  },
+  {
+    "id": "urbanaplay_fm1043",
+    "nombre": "Urbana Play",
+    "frecuencia": "FM 104.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Urbana_Play_104.3_logo.png/512px-Urbana_Play_104.3_logo.png",
+    "urlStream": "https://streaming.urbanaplay1043.com/urbanaplay"
+  },
+  {
+    "id": "pop_fm1015",
+    "nombre": "Pop Radio",
+    "frecuencia": "FM 101.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Pop_101.5_logo.png/512px-Pop_101.5_logo.png",
+    "urlStream": "https://stream.indie.com.ar/pop1015"
+  },
+  {
+    "id": "mega_fm983",
+    "nombre": "Mega 98.3",
+    "frecuencia": "FM 98.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Mega_98.3_logo.png/512px-Mega_98.3_logo.png",
+    "urlStream": "https://stream.indie.com.ar/mega983"
+  },
+  {
+    "id": "rockandpop_fm959",
+    "nombre": "Rock & Pop",
+    "frecuencia": "FM 95.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Rock_%26_Pop_logo.svg/512px-Rock_%26_Pop_logo.svg.png",
+    "urlStream": "https://fmrockandpop.fm/stream"
+  },
+  {
+    "id": "los40_fm1055",
+    "nombre": "Los 40",
+    "frecuencia": "FM 105.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Los_40_Argentina_logo.svg/512px-Los_40_Argentina_logo.svg.png",
+    "urlStream": "https://stream.los40.com.ar/stream"
+  },
+  {
+    "id": "radioconvos_fm899",
+    "nombre": "Radio Con Vos",
+    "frecuencia": "FM 89.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Radio_Con_Vos_logo.png/512px-Radio_Con_Vos_logo.png",
+    "urlStream": "https://stream.radioconvos.com.ar/convos"
+  },
+  {
+    "id": "vale_fm975",
+    "nombre": "Vale 97.5",
+    "frecuencia": "FM 97.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Vale_97.5_logo.png/512px-Vale_97.5_logo.png",
+    "urlStream": "https://stream.indie.com.ar/vale975"
+  },
+  {
+    "id": "vorterix_fm921",
+    "nombre": "Vorterix",
+    "frecuencia": "FM 92.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Vorterix_logo.png/512px-Vorterix_logo.png",
+    "urlStream": "https://stream.vorterix.com/live"
+  },
+  {
+    "id": "disney_fm943",
+    "nombre": "Radio Disney",
+    "frecuencia": "FM 94.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Radio_Disney_logo.svg/512px-Radio_Disney_logo.svg.png",
+    "urlStream": "https://stream.radiodisney.com.ar/stream"
+  },
+  {
+    "id": "cadena3_fm991",
+    "nombre": "Cadena 3",
+    "frecuencia": "FM 99.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Cadena_3_Argentina_logo.svg/512px-Cadena_3_Argentina_logo.svg.png",
+    "urlStream": "https://streaming.cadena3.com/cadena3"
   }
 ]
