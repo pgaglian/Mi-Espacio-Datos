@@ -127,7 +127,9 @@
     "comercio": "YPF",
     "categoria": "Combustible",
     "beneficio": "Hasta 30% de ahorro",
-    "dias": ["miércoles"],
+    "dias": [
+      "miércoles"
+    ],
     "desde": null,
     "hasta": "2026-09-30",
     "tope": "$20.000",
@@ -142,7 +144,9 @@
     "comercio": "McDonald's",
     "categoria": "Gastronomía",
     "beneficio": "Hasta 30% de ahorro",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": null,
     "hasta": null,
     "tope": "$30.000",
@@ -157,7 +161,9 @@
     "comercio": "Havanna",
     "categoria": "Gastronomía",
     "beneficio": "Hasta 30% de ahorro",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -172,7 +178,9 @@
     "comercio": "Supermercados adheridos",
     "categoria": "Supermercados",
     "beneficio": "Beneficios y descuentos",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -187,7 +195,9 @@
     "comercio": "PedidosYa",
     "categoria": "Gastronomía",
     "beneficio": "Hasta 35% de ahorro",
-    "dias": ["martes"],
+    "dias": [
+      "martes"
+    ],
     "desde": null,
     "hasta": "2026-12-31",
     "tope": "$10.000",
@@ -203,7 +213,13 @@
     "comercio": "Comercios de cercanía",
     "categoria": "Comercios",
     "beneficio": "20% de ahorro",
-    "dias": ["lunes", "martes", "miércoles", "jueves", "viernes"],
+    "dias": [
+      "lunes",
+      "martes",
+      "miércoles",
+      "jueves",
+      "viernes"
+    ],
     "desde": null,
     "hasta": null,
     "tope": "$6.000 semanales",
@@ -218,7 +234,10 @@
     "comercio": "YPF Full",
     "categoria": "Combustible",
     "beneficio": "25% de ahorro",
-    "dias": ["sábado", "domingo"],
+    "dias": [
+      "sábado",
+      "domingo"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -233,7 +252,10 @@
     "comercio": "Gastronomía",
     "categoria": "Gastronomía",
     "beneficio": "25% de ahorro",
-    "dias": ["sábado", "domingo"],
+    "dias": [
+      "sábado",
+      "domingo"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -248,7 +270,9 @@
     "comercio": "Garrafas",
     "categoria": "Hogar",
     "beneficio": "40% de ahorro",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": "2026-09-01",
     "hasta": "2026-09-30",
     "tope": "$18.000 mensuales",
@@ -263,7 +287,9 @@
     "comercio": "Universidades",
     "categoria": "Educación",
     "beneficio": "40% de ahorro",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": null,
     "hasta": null,
     "tope": "$6.000 semanales",
@@ -278,7 +304,9 @@
     "comercio": "COTO",
     "categoria": "Supermercados",
     "beneficio": "30% de ahorro",
-    "dias": ["jueves"],
+    "dias": [
+      "jueves"
+    ],
     "desde": "2026-09-01",
     "hasta": "2026-09-30",
     "tope": null,
@@ -293,7 +321,9 @@
     "comercio": "Changomás",
     "categoria": "Supermercados",
     "beneficio": "20% de ahorro",
-    "dias": ["jueves"],
+    "dias": [
+      "jueves"
+    ],
     "desde": "2026-09-01",
     "hasta": "2026-09-30",
     "tope": null,
@@ -308,7 +338,10 @@
     "comercio": "Mostaza",
     "categoria": "Gastronomía",
     "beneficio": "30% de ahorro",
-    "dias": ["jueves", "viernes"],
+    "dias": [
+      "jueves",
+      "viernes"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -323,7 +356,10 @@
     "comercio": "Cooperativa Obrera",
     "categoria": "Supermercados",
     "beneficio": "15% de ahorro",
-    "dias": ["viernes", "sábado"],
+    "dias": [
+      "viernes",
+      "sábado"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -338,7 +374,9 @@
     "comercio": "Ferias y Mercados Bonaerenses",
     "categoria": "Alimentos",
     "beneficio": "40% de ahorro",
-    "dias": ["todos"],
+    "dias": [
+      "todos"
+    ],
     "desde": null,
     "hasta": null,
     "tope": null,
@@ -346,5 +384,468 @@
     "localidades": [],
     "direccion": null,
     "url": "https://www.bancoprovincia.com.ar/cuentadni/contenidos/cdnibeneficios/"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Banco Nación",
+    "comercio": "Shopping",
+    "categoria": "Compras",
+    "beneficio": "20% de descuento y hasta 9 cuotas sin interés",
+    "dias": [
+      "jueves"
+    ],
+    "desde": "2026-09-01",
+    "hasta": "2026-09-30",
+    "tope": "$30.000 por compra",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bna.com.ar/Personas/DescuentosYPromociones"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Galicia",
+    "comercio": "Beneficios Galicia",
+    "categoria": "Beneficios",
+    "beneficio": "Promociones en supermercados, gastronomía, viajes y otras categorías",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.galicia.ar/personas/buscador-de-promociones"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Santander",
+    "comercio": "YPF",
+    "categoria": "Combustible",
+    "beneficio": "Beneficios y ahorro con Santander",
+    "dias": [
+      "jueves"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.santander.com.ar/personas/beneficios"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Santander",
+    "comercio": "Gastronomía",
+    "categoria": "Gastronomía",
+    "beneficio": "Beneficios y reintegros en gastronomía",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.santander.com.ar/personas/beneficios"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "BBVA",
+    "comercio": "La Cabrera",
+    "categoria": "Gastronomía",
+    "beneficio": "20% de cashback",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$50.000 mensuales",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bbva.com.ar/beneficios/"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "BBVA",
+    "comercio": "Día",
+    "categoria": "Supermercados",
+    "beneficio": "20% de cashback",
+    "dias": [
+      "viernes",
+      "sábado"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$20.000 mensuales",
+    "compraMinima": "$35.000",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bbva.com.ar/beneficios/"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "BBVA",
+    "comercio": "Jumbo",
+    "categoria": "Supermercados",
+    "beneficio": "20% de cashback",
+    "dias": [
+      "martes",
+      "jueves"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$25.000 mensuales",
+    "compraMinima": "$100.000",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bbva.com.ar/beneficios/"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "BBVA",
+    "comercio": "Vea",
+    "categoria": "Supermercados",
+    "beneficio": "20% de cashback",
+    "dias": [
+      "viernes"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$25.000 mensuales",
+    "compraMinima": "$100.000",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bbva.com.ar/beneficios/"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "BBVA",
+    "comercio": "Disco",
+    "categoria": "Supermercados",
+    "beneficio": "20% de cashback",
+    "dias": [
+      "viernes",
+      "sábado"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$25.000 mensuales",
+    "compraMinima": "$100.000",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bbva.com.ar/beneficios/"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "ICBC",
+    "comercio": "ICBC Mall",
+    "categoria": "Compras",
+    "beneficio": "Hasta 40% de descuento y hasta 18 cuotas sin interés",
+    "dias": [
+      "todos"
+    ],
+    "desde": "2026-09-01",
+    "hasta": "2026-09-17",
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.beneficios.icbc.com.ar/"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Credicoop",
+    "comercio": "ChangoMás",
+    "categoria": "Supermercados",
+    "beneficio": "30% de ahorro",
+    "dias": [
+      "jueves"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$9.000 por jueves",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.beneficios.bancocredicoop.coop/"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Credicoop",
+    "comercio": "Educando Jugueterías",
+    "categoria": "Compras",
+    "beneficio": "20% de ahorro + 10% adicional con MODO",
+    "dias": [
+      "viernes"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$6.000",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.beneficios.bancocredicoop.coop/"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Patagonia",
+    "comercio": "Supermercados",
+    "categoria": "Supermercados",
+    "beneficio": "Hasta 35% de ahorro",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$50.000",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancopatagonia.com.ar/patagoniaon/beneficios.php"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Patagonia",
+    "comercio": "Combustibles",
+    "categoria": "Combustible",
+    "beneficio": "Hasta 25% de ahorro",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": "$30.000",
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancopatagonia.com.ar/patagoniaon/beneficios.php"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Supervielle",
+    "comercio": "Supermercados en Tienda MELI",
+    "categoria": "Supermercados",
+    "beneficio": "15% de ahorro",
+    "dias": [
+      "miércoles"
+    ],
+    "desde": "2026-08-01",
+    "hasta": "2026-09-30",
+    "tope": "$10.000",
+    "compraMinima": "$1",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.supervielle.com.ar/personas/beneficios/descuentos/buscador"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Supervielle",
+    "comercio": "Farmacias",
+    "categoria": "Salud",
+    "beneficio": "15% de ahorro",
+    "dias": [
+      "martes"
+    ],
+    "desde": null,
+    "hasta": "2026-09-30",
+    "tope": "$10.000",
+    "compraMinima": "$1",
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.supervielle.com.ar/personas/beneficios/descuentos/buscador"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Banco de Córdoba",
+    "comercio": "Rossetti / All Sports / Henzy",
+    "categoria": "Compras",
+    "beneficio": "30% de ahorro + 4 cuotas",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancor.com.ar/promociones"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Banco de Córdoba",
+    "comercio": "Cines Dino",
+    "categoria": "Entretenimiento",
+    "beneficio": "2x1",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancor.com.ar/promociones"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Nuevo Banco de Santa Fe",
+    "comercio": "Chango Más",
+    "categoria": "Supermercados",
+    "beneficio": "20% de ahorro",
+    "dias": [
+      "lunes"
+    ],
+    "desde": null,
+    "hasta": "2026-09-29",
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancosantafe.com.ar/personas/beneficios"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Nuevo Banco de Santa Fe",
+    "comercio": "Día",
+    "categoria": "Supermercados",
+    "beneficio": "20% de ahorro",
+    "dias": [
+      "viernes",
+      "sábado"
+    ],
+    "desde": null,
+    "hasta": "2026-09-29",
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancosantafe.com.ar/personas/beneficios"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Nuevo Banco de Santa Fe",
+    "comercio": "McDonald's",
+    "categoria": "Gastronomía",
+    "beneficio": "40% de ahorro",
+    "dias": [
+      "sábado",
+      "domingo"
+    ],
+    "desde": null,
+    "hasta": "2026-11-01",
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bancosantafe.com.ar/personas/beneficios"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Comafi",
+    "comercio": "Supermercados",
+    "categoria": "Supermercados",
+    "beneficio": "Hasta 25% de ahorro",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.comafi.com.ar/beneficios-unico.aspx"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Comafi",
+    "comercio": "Combustible",
+    "categoria": "Combustible",
+    "beneficio": "20% de ahorro",
+    "dias": [
+      "viernes",
+      "sábado",
+      "domingo",
+      "lunes"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.comafi.com.ar/beneficios-unico.aspx"
+  },
+  {
+    "tipo": "promocion",
+    "banco": "Comafi",
+    "comercio": "Restaurantes",
+    "categoria": "Gastronomía",
+    "beneficio": "30% de ahorro",
+    "dias": [
+      "sábado"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.comafi.com.ar/beneficios-unico.aspx"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Hipotecario",
+    "comercio": "Beneficios Banco Hipotecario",
+    "categoria": "Beneficios",
+    "beneficio": "Promociones y descuentos para clientes",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.hipotecario.com.ar/beneficios/"
+  },
+
+  {
+    "tipo": "promocion",
+    "banco": "Banco de Neuquén",
+    "comercio": "Beneficios BPN",
+    "categoria": "Beneficios",
+    "beneficio": "Promociones y beneficios para clientes",
+    "dias": [
+      "todos"
+    ],
+    "desde": null,
+    "hasta": null,
+    "tope": null,
+    "compraMinima": null,
+    "localidades": [],
+    "direccion": null,
+    "url": "https://www.bpn.com.ar/"
   }
 ]
