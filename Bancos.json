@@ -1,15 +1,19 @@
 [
     {
-        "nombre": "Banco Nación"
+        "nombre": "Banco Nación",
+        "logo": "BNA.jpg"
     },
     {
-        "nombre": "Galicia"
+        "nombre": "Galicia",
+	"logo": "Galicia.jpg"
     },
     {
-        "nombre": "Santander"
+        "nombre": "Santander",
+        "logo": "Santander.jpg"
     },
     {
-        "nombre": "BBVA"
+        "nombre": "BBVA",
+        "logo": "BBVA.jpg"
     },
     {
         "nombre": "Macro",
@@ -20,22 +24,28 @@
         "logo": "Provincia.jpg"
     },
     {
-        "nombre": "ICBC"
+        "nombre": "ICBC",
+	"logo": "ICBC.jpg"
     },
     {
-        "nombre": "Credicoop"
+        "nombre": "Credicoop",
+        "logo": "Crediccop.jpg"
     },
     {
-        "nombre": "Patagonia"
+        "nombre": "Patagonia",
+	"logo": "Patagoinia.jpg"
     },
     {
-        "nombre": "Banco Ciudad"
+        "nombre": "Banco Ciudad",
+	"logo": "Ciudad.jpg"
     },
     {
-        "nombre": "Supervielle"
+        "nombre": "Supervielle",
+	"logo": "Supervielle.jpg"
     },
     {
-        "nombre": "Banco de Córdoba"
+        "nombre": "Banco de Córdoba",
+	"logo": "Córdoba.jpg"
     },
     {
         "nombre": "Nuevo Banco de Santa Fe"
