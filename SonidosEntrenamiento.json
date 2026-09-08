@@ -23,5 +23,10 @@
     "id": "tren",
     "nombre": "🚂 Tren",
     "archivo": "tren.mp3"
+  },
+  {
+    "id": "tabata",
+    "nombre": "⏱️ Tabata clásico",
+    "archivo": "tabata_clasico.mp3"
   }
 ]
