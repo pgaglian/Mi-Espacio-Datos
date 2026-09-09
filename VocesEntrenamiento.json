@@ -1,0 +1,20 @@
+[
+  {
+    "id": "femenina",
+    "nombre": "👩 Voz femenina",
+    "preparacion": "femenina_preparacion.mp3",
+    "trabajo": "femenina_trabajo.mp3",
+    "descanso": "femenina_descanso.mp3",
+    "bloque": "femenina_bloque.mp3",
+    "final": "femenina_final.mp3"
+  },
+  {
+    "id": "masculina",
+    "nombre": "👨 Voz masculina",
+    "preparacion": "masculina_preparacion.mp3",
+    "trabajo": "masculina_trabajo.mp3",
+    "descanso": "masculina_descanso.mp3",
+    "bloque": "masculina_bloque.mp3",
+    "final": "masculina_final.mp3"
+  }
+]
