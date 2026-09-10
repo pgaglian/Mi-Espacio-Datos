@@ -24,6 +24,22 @@
     "nombre": "🚂 Tren",
     "archivo": "tren.mp3"
   },
+
+    {
+    "id": "silbato1",
+    "nombre": "📣 Silbato 1",
+    "archivo": "silbato1.mp3"
+  },
+  {
+    "id": "silbato2",
+    "nombre": "📣 Silbato 2",
+    "archivo": "silbato2.mp3"
+  },
+  {
+    "id": "old_tren",
+    "nombre": "🚂 Tren antiguo",
+    "archivo": "old_tren.mp3"
+  },
   {
     "id": "tabata",
     "nombre": "⏱️ Tabata clásico",
