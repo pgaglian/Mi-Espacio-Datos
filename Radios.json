@@ -250,5 +250,248 @@
       "https://server1.stweb.tv/rcvos/live/playlist.m3u8",
       "https://server1.stweb.tv/rcvos/live/chunks.m3u8"
     ]
+  },
+  {
+    "id": "latina_fm1011",
+    "nombre": "Radio Latina",
+    "frecuencia": "FM 101.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latina.jpg",
+    "urlStream": "http://streaming.latina101.com.ar:8080/RadioLatina",
+    "streams": [
+      "http://streaming.latina101.com.ar:8080/RadioLatina"
+    ]
+  },
+  {
+    "id": "latribu_fm887",
+    "nombre": "La Tribu",
+    "frecuencia": "FM 88.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latribu.jpg",
+    "urlStream": "http://vivo.fmlatribu.com:8000/latribu.mp3",
+    "streams": [
+      "http://vivo.fmlatribu.com:8000/latribu.mp3"
+    ]
+  },
+  {
+    "id": "delta_fm903",
+    "nombre": "Delta",
+    "frecuencia": "FM 90.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/delta.jpg",
+    "urlStream": "https://cdn.instream.audio/:9069/stream",
+    "streams": [
+      "https://cdn.instream.audio/:9069/stream"
+    ]
+  },
+  {
+    "id": "vorterix_fm921",
+    "nombre": "Vorterix",
+    "frecuencia": "FM 92.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vorterix.jpg",
+    "urlStream": "http://147.135.11.82:9904/",
+    "streams": [
+      "http://147.135.11.82:9904/",
+      "http://prepublish.f.qaotic.net/a02/ngrp:Vorterix_radio1_high-20057_all/Playlist.m3u8"
+    ]
+  },
+  {
+    "id": "la2x4_fm927",
+    "nombre": "La 2x4",
+    "frecuencia": "FM 92.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/la2x4.jpg",
+    "urlStream": "http://radios.argentina.fm:9270/stream",
+    "streams": [
+      "http://radios.argentina.fm:9270/stream"
+    ]
+  },
+  {
+    "id": "nacionalrock_fm937",
+    "nombre": "Nacional Rock",
+    "frecuencia": "FM 93.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalrock.jpg",
+    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39",
+    "streams": [
+      "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39"
+    ]
+  },
+  {
+    "id": "mucharadio_fm947",
+    "nombre": "Mucha Radio",
+    "frecuencia": "FM 94.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/mucharadio.jpg",
+    "urlStream": "http://18543.live.streamtheworld.com/MUCHARADIO_SC",
+    "streams": [
+      "http://18543.live.streamtheworld.com/MUCHARADIO_SC"
+    ]
+  },
+  {
+    "id": "metro_fm951",
+    "nombre": "Metro Power Hits",
+    "frecuencia": "FM 95.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/metro.jpg",
+    "urlStream": "http://mp3.metroaudio1.stream.avstreaming.net:7200/metro",
+    "streams": [
+      "http://mp3.metroaudio1.stream.avstreaming.net:7200/metro"
+    ]
+  },
+  {
+    "id": "concepto_fm955",
+    "nombre": "Concepto",
+    "frecuencia": "FM 95.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/concepto.jpg",
+    "urlStream": "http://servidor.ilive.com.ar:9330/",
+    "streams": [
+      "http://servidor.ilive.com.ar:9330/"
+    ]
+  },
+  {
+    "id": "radiojai_fm963",
+    "nombre": "Radio Jai",
+    "frecuencia": "FM 96.3",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiojai.jpg",
+    "urlStream": "https://radiojai.com.ar/stream",
+    "streams": [
+      "https://radiojai.com.ar/stream"
+    ]
+  },
+  {
+    "id": "nacionalclasica_fm967",
+    "nombre": "Nacional Clásica",
+    "frecuencia": "FM 96.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalclasica.jpg",
+    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad37",
+    "streams": [
+      "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad37"
+    ]
+  },
+  {
+    "id": "vale_fm975",
+    "nombre": "Vale",
+    "frecuencia": "FM 97.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vale.jpg",
+    "urlStream": "http://vale.stweb.tv:1935/vale/live/playlist.m3u8",
+    "streams": [
+      "http://vale.stweb.tv:1935/vale/live/playlist.m3u8"
+    ]
+  },
+  {
+    "id": "cultura_fm979",
+    "nombre": "Cultura",
+    "frecuencia": "FM 97.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/cultura.jpg",
+    "urlStream": "https://usa5.fastcast4u.com/proxy/radiocultura",
+    "streams": [
+      "https://usa5.fastcast4u.com/proxy/radiocultura"
+    ]
+  },
+  {
+    "id": "nacionalfolklorica_fm987",
+    "nombre": "Nacional Folklórica",
+    "frecuencia": "FM 98.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
+    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38",
+    "streams": [
+      "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38"
+    ]
+  },
+  {
+    "id": "horizonte_fm1019",
+    "nombre": "Horizonte",
+    "frecuencia": "FM 101.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/horizonte.jpg",
+    "urlStream": "https://redirector.dps.live/hls-audio/4e252a65837b69e349d5d8c1033152b4/hztear/playlist/manifest/gotardisz/audio/now/livestream1.m3u8",
+    "streams": [
+      "https://redirector.dps.live/hls-audio/4e252a65837b69e349d5d8c1033152b4/hztear/playlist/manifest/gotardisz/audio/now/livestream1.m3u8"
+    ]
+  },
+  {
+    "id": "lapatriada_fm1021",
+    "nombre": "La Patriada",
+    "frecuencia": "FM 102.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lapatriada.jpg",
+    "urlStream": "http://server4.stweb.tv:1935/lapatriada/live/playlist.m3u8",
+    "streams": [
+      "http://server4.stweb.tv:1935/lapatriada/live/playlist.m3u8"
+    ]
+  },
+  {
+    "id": "dsports_fm1031",
+    "nombre": "D Sports Radio",
+    "frecuencia": "FM 103.1",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/dsports.jpg",
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/DSPORTS_ARGAAC_SC",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/DSPORTS_ARGAAC_SC"
+    ]
+  },
+  {
+    "id": "radioone_fm1037",
+    "nombre": "Radio One",
+    "frecuencia": "FM 103.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/one.jpg",
+    "urlStream": "http://s11.stweb.tv/one/live/playlist.m3u8",
+    "streams": [
+      "http://s11.stweb.tv/one/live/playlist.m3u8"
+    ]
+  },
+  {
+    "id": "lanacionmusica_fm1049",
+    "nombre": "La Nación + Música",
+    "frecuencia": "FM 104.9",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lanacionmusica.jpg",
+    "urlStream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LN_MUSICA_SC",
+    "streams": [
+      "http://playerservices.streamtheworld.com/api/livestream-redirect/LN_MUSICA_SC"
+    ]
+  },
+  {
+    "id": "milenium_fm1067",
+    "nombre": "Milenium",
+    "frecuencia": "FM 106.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/milenium.jpg",
+    "urlStream": "http://108.59.9.147/proxy/arvlyxui",
+    "streams": [
+      "http://108.59.9.147/proxy/arvlyxui"
+    ]
   }
 ]
+
+
