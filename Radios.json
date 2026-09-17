@@ -132,6 +132,7 @@
     "frecuencia": "FM 102.3",
     "tipo": "FM",
     "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/aspen.jpg",
    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ASPEN.mp3",
 "streams": [
   "https://playerservices.streamtheworld.com/api/livestream-redirect/ASPEN.mp3"
