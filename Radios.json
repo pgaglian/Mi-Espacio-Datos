@@ -33,7 +33,7 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Rivadavia.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/RIVADAVIAAAC_SC"
+    "urlStream": "https://srv1.streamingradio.ar:7137/stream"
   },
   {
     "id": "eldestape_am1070",
@@ -69,7 +69,7 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/splendid.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM990.mp3"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM990AAC.aac"
   },
   {
     "id": "perfil_am1190",
@@ -96,7 +96,7 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/aspen.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ASPENAAC_SC"
+    "urlStream": "https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio"
   },
   {
     "id": "radiodisney_fm943",
@@ -105,7 +105,7 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiodisney.jpg",
-    "urlStream": "https://26563.live.streamtheworld.com/DISNEY_ARG_BA_ADP/HLS/playlist.m3u8"
+    "urlStream": "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC"
   },
   {
     "id": "rockandpop_fm959",
@@ -152,14 +152,14 @@
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/blue.jpg",
     "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC_SC"
   },
-{
-  "id": "los40_fm1055",
-  "nombre": "Los 40",
-  "frecuencia": "FM 105.5",
-  "tipo": "FM",
-  "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
-  "urlStream": "https://frontend.radiohdvivo.com/los40/live"
+  {
+    "id": "los40_fm1055",
+    "nombre": "Los 40",
+    "frecuencia": "FM 105.5",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
+    "urlStream": "https://frontend.radiohdvivo.com/los40/live"
   },
   {
     "id": "elobservador_fm1079",
@@ -168,7 +168,7 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/elobservador.jpg",
-    "urlStream": ""
+    "urlStream": "https://s8.stweb.tv/observador/live/playlist.m3u8"
   },
   {
     "id": "radioconvos_fm899",
