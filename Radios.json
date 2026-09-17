@@ -152,14 +152,14 @@
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/blue.jpg",
     "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC_SC"
   },
-  {
-    "id": "los40_fm1055",
-    "nombre": "Los 40",
-    "frecuencia": "FM 105.5",
-    "tipo": "FM",
-    "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
-    "urlStream": "https://frontend.radiohdvivo.com/los40/live"
+{
+  "id": "los40_fm1055",
+  "nombre": "Los 40",
+  "frecuencia": "FM 105.5",
+  "tipo": "FM",
+  "provincia": "CABA",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
+  "urlStream": "https://frontend.radiohdvivo.com/los40/live"
   },
   {
     "id": "elobservador_fm1079",
