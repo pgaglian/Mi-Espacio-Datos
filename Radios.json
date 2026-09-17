@@ -69,14 +69,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/continental.jpg",
-    "urlStream": "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC",
     "streams": [
-  "http://14103.live.streamtheworld.com:80/CONTINENTALAAC_SC",
-  "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
-  "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC",
-  "https://edge01.radiohdvivo.com/continental",
-  "https://frontend.radiohdvivo.com/continental/live"
-]
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC"
+    ]
   },
   {
     "id": "nacional_am870",
@@ -145,13 +141,11 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiodisney.jpg",
-    "urlStream": "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC",
+    "urlStream": "https://edge-np.cdn.mdstrm.com/5a9ee26311c043ae48e40bcd.mp3",
     "streams": [
-  "https://edge-np.cdn.mdstrm.com/5a9ee26311c043ae48e40bcd.mp3",
-  "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC",
-  "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ARG_BA_SC",
-  "https://26573.live.streamtheworld.com:443/DISNEY_ARG_BA_SC"
-]
+      "https://edge-np.cdn.mdstrm.com/5a9ee26311c043ae48e40bcd.mp3",
+      "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC"
+    ]
   },
   {
     "id": "rockandpop_fm959",
@@ -247,8 +241,558 @@
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radioconvos.jpg",
     "urlStream": "https://server1.stweb.tv/rcvos/live/playlist.m3u8",
     "streams": [
-      "https://server1.stweb.tv/rcvos/live/playlist.m3u8",
-      "https://server1.stweb.tv/rcvos/live/chunks.m3u8"
+      "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
+    ]
+  },
+
+  {
+    "id": "lu6_am760",
+    "nombre": "LU6 Radio Atlántica",
+    "frecuencia": "AM 760",
+    "tipo": "AM",
+    "provincia": "Buenos Aires",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu6.jpg",
+    "urlStream": "https://streaming.escuchanosonline.com:7056/stream",
+    "streams": [
+      "https://streaming.escuchanosonline.com:7056/stream"
+    ]
+  },
+  {
+    "id": "lu9_am670",
+    "nombre": "LU9",
+    "frecuencia": "AM 670",
+    "tipo": "AM",
+    "provincia": "Buenos Aires",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu9.jpg",
+    "urlStream": "https://servidor1.hostradios.com:8110/stream",
+    "streams": [
+      "https://servidor1.hostradios.com:8110/stream"
+    ]
+  },
+  {
+    "id": "lu2_am840",
+    "nombre": "LU2 Radio Bahía Blanca",
+    "frecuencia": "AM 840",
+    "tipo": "AM",
+    "provincia": "Buenos Aires",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu2.jpg",
+    "urlStream": "https://radio.lu2.com.ar:8443/stream",
+    "streams": [
+      "https://radio.lu2.com.ar:8443/stream"
+    ]
+  },
+
+  {
+    "id": "cadena3_am700",
+    "nombre": "Cadena 3",
+    "frecuencia": "AM 700",
+    "tipo": "AM",
+    "provincia": "Córdoba",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/cadena3.jpg",
+    "urlStream": "https://liveradio.mediainbox.net/radio3.mp3",
+    "streams": [
+      "https://liveradio.mediainbox.net/radio3.mp3",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/radio3.mp3"
+    ]
+  },
+  {
+    "id": "radio_universidad_am580",
+    "nombre": "Radio Universidad",
+    "frecuencia": "AM 580",
+    "tipo": "AM",
+    "provincia": "Córdoba",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/universidad.jpg",
+    "urlStream": "https://radios.solumedia.com:10976/stream",
+    "streams": [
+      "https://radios.solumedia.com:10976/stream"
+    ]
+  },
+  {
+    "id": "cadena3_fm1005",
+    "nombre": "Cadena 3",
+    "frecuencia": "FM 100.5",
+    "tipo": "FM",
+    "provincia": "Córdoba",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/cadena3.jpg",
+    "urlStream": "https://liveradio.mediainbox.net/radio3.mp3",
+    "streams": [
+      "https://liveradio.mediainbox.net/radio3.mp3"
+    ]
+  },
+  {
+    "id": "radio_suquia_fm965",
+    "nombre": "Radio Suquía",
+    "frecuencia": "FM 96.5",
+    "tipo": "FM",
+    "provincia": "Córdoba",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/suquia.jpg",
+    "urlStream": "https://streaming01.shockmedia.com.ar:10945/",
+    "streams": [
+      "https://streaming01.shockmedia.com.ar:10945/"
+    ]
+  },
+
+  {
+    "id": "lt14_am1260",
+    "nombre": "LT14 Radio Nacional Gral. Urquiza",
+    "frecuencia": "AM 1260",
+    "tipo": "AM",
+    "provincia": "Entre Ríos",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lt14.jpg",
+    "urlStream": "http://ea.mp3.icecast.magma.edge-access.net:7200/sc_rad44",
+    "streams": [
+      "http://ea.mp3.icecast.magma.edge-access.net:7200/sc_rad44"
+    ]
+  },
+  {
+    "id": "lt15_am1410",
+    "nombre": "LT15 Radio del Litoral",
+    "frecuencia": "AM 1410",
+    "tipo": "AM",
+    "provincia": "Entre Ríos",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lt15.jpg",
+    "urlStream": "https://lt15concordia.radioca.st/stream",
+    "streams": [
+      "https://lt15concordia.radioca.st/stream"
+    ]
+  },
+
+  {
+    "id": "radio_ancasti_fm985",
+    "nombre": "Radio Ancasti",
+    "frecuencia": "FM 98.5",
+    "tipo": "FM",
+    "provincia": "Catamarca",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/ancasti.jpg",
+    "urlStream": "https://vps-d8b84a62.vps.ovh.ca:10957/",
+    "streams": [
+      "https://vps-d8b84a62.vps.ovh.ca:10957/"
+    ]
+  },
+
+  {
+    "id": "la_radio_chaco_fm1047",
+    "nombre": "La Radio",
+    "frecuencia": "FM 104.7",
+    "tipo": "FM",
+    "provincia": "Chaco",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/laradiochaco.jpg",
+    "urlStream": "https://server.laradio.online/proxy/laradio1047",
+    "streams": [
+      "https://server.laradio.online/proxy/laradio1047"
+    ]
+  },
+  {
+    "id": "radio_universidad_resistencia_fm911",
+    "nombre": "Radio Universidad",
+    "frecuencia": "FM 91.1",
+    "tipo": "FM",
+    "provincia": "Chaco",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiouniversidad.jpg",
+    "urlStream": "http://01.solumedia.com.ar:8336/",
+    "streams": [
+      "http://01.solumedia.com.ar:8336/"
+    ]
+  },
+
+  {
+    "id": "lt7_am900",
+    "nombre": "LT7 Radio Provincia",
+    "frecuencia": "AM 900",
+    "tipo": "AM",
+    "provincia": "Corrientes",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lt7.jpg",
+    "urlStream": "http://turadioenvivo.com:11045/stream",
+    "streams": [
+      "http://turadioenvivo.com:11045/stream"
+    ]
+  },
+  {
+    "id": "fm_digital_corrientes_fm1021",
+    "nombre": "Digital FM",
+    "frecuencia": "FM 102.1",
+    "tipo": "FM",
+    "provincia": "Corrientes",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/digital.jpg",
+    "urlStream": "https://turadioenvivo.com/proxy/fmdigital/stream",
+    "streams": [
+      "https://turadioenvivo.com/proxy/fmdigital/stream"
+    ]
+  },
+
+  {
+    "id": "radio_uno_formosa_fm999",
+    "nombre": "Radio Uno",
+    "frecuencia": "FM 99.9",
+    "tipo": "FM",
+    "provincia": "Formosa",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiounoformosa.jpg",
+    "urlStream": "http://streamingraddios.online:10522/stream",
+    "streams": [
+      "http://streamingraddios.online:10522/stream"
+    ]
+  },
+
+  {
+    "id": "radio_fiesta_jujuy_fm971",
+    "nombre": "Radio Fiesta",
+    "frecuencia": "FM 97.1",
+    "tipo": "FM",
+    "provincia": "Jujuy",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiofiesta.jpg",
+    "urlStream": "https://5cd577a3dd8ec.streamlock.net/radiofiesta/live_1/playlist.m3u8",
+    "streams": [
+      "https://5cd577a3dd8ec.streamlock.net/radiofiesta/live_1/playlist.m3u8"
+    ]
+  },
+  {
+    "id": "lw8_radio_jujuy",
+    "nombre": "LW8 Radio Jujuy",
+    "frecuencia": "AM",
+    "tipo": "AM",
+    "provincia": "Jujuy",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lw8.jpg",
+    "urlStream": "https://radio.arcast.cloud:1280/stream",
+    "streams": [
+      "https://radio.arcast.cloud:1280/stream"
+    ]
+  },
+
+  {
+    "id": "lu33_am890",
+    "nombre": "LU33 Emisora Pampeana",
+    "frecuencia": "AM 890",
+    "tipo": "AM",
+    "provincia": "La Pampa",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu33.jpg",
+    "urlStream": "http://01.solumedia.com.ar:8324/stream",
+    "streams": [
+      "http://01.solumedia.com.ar:8324/stream"
+    ]
+  },
+  {
+    "id": "fm_alegria_lapampa",
+    "nombre": "FM Alegría",
+    "frecuencia": "FM 101.7",
+    "tipo": "FM",
+    "provincia": "La Pampa",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/alegria.jpg",
+    "urlStream": "https://streaming.radiosenlinea.com.ar/8856/stream/1/",
+    "streams": [
+      "https://streaming.radiosenlinea.com.ar/8856/stream/1/"
+    ]
+  },
+
+  {
+    "id": "estacion_delsol_mendoza_fm967",
+    "nombre": "Estación del Sol",
+    "frecuencia": "FM 96.7",
+    "tipo": "FM",
+    "provincia": "Mendoza",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/estaciondelsol.jpg",
+    "urlStream": "http://audio.bustream.com:8064/stream",
+    "streams": [
+      "http://audio.bustream.com:8064/stream"
+    ]
+  },
+  {
+    "id": "radio_universidad_uncuyo_fm965",
+    "nombre": "Radio Universidad UNCUYO",
+    "frecuencia": "FM 96.5",
+    "tipo": "FM",
+    "provincia": "Mendoza",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/uncuyo.jpg",
+    "urlStream": "http://fm.uncu.edu.ar:8000/",
+    "streams": [
+      "http://fm.uncu.edu.ar:8000/"
+    ]
+  },
+
+  {
+    "id": "radio_light_misiones_fm889",
+    "nombre": "Radio Light",
+    "frecuencia": "FM 88.9",
+    "tipo": "FM",
+    "provincia": "Misiones",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiolight.jpg",
+    "urlStream": "http://streamall.alsolnet.com/radiolightfm",
+    "streams": [
+      "http://streamall.alsolnet.com/radiolightfm"
+    ]
+  },
+  {
+    "id": "fm_unam_misiones_fm987",
+    "nombre": "FM Universidad",
+    "frecuencia": "FM 98.7",
+    "tipo": "FM",
+    "provincia": "Misiones",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/unam.jpg",
+    "urlStream": "https://fm.unam.edu.ar/fm",
+    "streams": [
+      "https://fm.unam.edu.ar/fm"
+    ]
+  },
+
+  {
+    "id": "lu5_am600",
+    "nombre": "LU5",
+    "frecuencia": "AM 600",
+    "tipo": "AM",
+    "provincia": "Neuquén",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu5.jpg",
+    "urlStream": "http://live.lu5am.com:8000/LU5",
+    "streams": [
+      "http://live.lu5am.com:8000/LU5"
+    ]
+  },
+  {
+    "id": "radio_universidad_calf",
+    "nombre": "Radio Universidad CALF",
+    "frecuencia": "FM 103.7",
+    "tipo": "FM",
+    "provincia": "Neuquén",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/calf.jpg",
+    "urlStream": "http://cdn.instream.audio:9032/stream",
+    "streams": [
+      "http://cdn.instream.audio:9032/stream"
+    ]
+  },
+
+  {
+    "id": "radio3_andina_chubut",
+    "nombre": "Radio 3 Andina",
+    "frecuencia": "AM 1200",
+    "tipo": "AM",
+    "provincia": "Chubut",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radio3.jpg",
+    "urlStream": "https://radio01.ferozo.com/proxy/ra01000982?mp=/stream",
+    "streams": [
+      "https://radio01.ferozo.com/proxy/ra01000982?mp=/stream"
+    ]
+  },
+  {
+    "id": "radiovision_comodoro_fm995",
+    "nombre": "Radiovision Comodoro Rivadavia",
+    "frecuencia": "FM 99.5",
+    "tipo": "FM",
+    "provincia": "Chubut",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiovision.jpg",
+    "urlStream": "https://cdn.instream.audio/:9061/stream",
+    "streams": [
+      "https://cdn.instream.audio/:9061/stream"
+    ]
+  },
+
+  {
+    "id": "lu19_am690",
+    "nombre": "LU19",
+    "frecuencia": "AM 690",
+    "tipo": "AM",
+    "provincia": "Río Negro",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu19.jpg",
+    "urlStream": "http://51.161.119.117:8064/stream",
+    "streams": [
+      "http://51.161.119.117:8064/stream"
+    ]
+  },
+  {
+    "id": "radio_seis_fm1031",
+    "nombre": "Radio Seis",
+    "frecuencia": "FM 103.1",
+    "tipo": "FM",
+    "provincia": "Río Negro",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radioseis.jpg",
+    "urlStream": "http://janus.shoutca.st:9149/stream",
+    "streams": [
+      "http://janus.shoutca.st:9149/stream"
+    ]
+  },
+
+  {
+    "id": "radio_salta",
+    "nombre": "Radio Salta",
+    "frecuencia": "AM",
+    "tipo": "AM",
+    "provincia": "Salta",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiosalta.jpg",
+    "urlStream": "https://streamingraddios.online/proxy/salta2?mp=/stream",
+    "streams": [
+      "https://streamingraddios.online/proxy/salta2?mp=/stream"
+    ]
+  },
+  {
+    "id": "ok_radio_salta",
+    "nombre": "OK Radio",
+    "frecuencia": "FM",
+    "tipo": "FM",
+    "provincia": "Salta",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/okradio.jpg",
+    "urlStream": "https://radios.solumedia.com:6162/stream",
+    "streams": [
+      "https://radios.solumedia.com:6162/stream"
+    ]
+  },
+
+  {
+    "id": "cosmos_san_juan",
+    "nombre": "Cosmos FM",
+    "frecuencia": "FM",
+    "tipo": "FM",
+    "provincia": "San Juan",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/cosmos.jpg",
+    "urlStream": "http://s28.myradiostream.com:28240/listen.m4a",
+    "streams": [
+      "http://s28.myradiostream.com:28240/listen.m4a"
+    ]
+  },
+  {
+    "id": "lider_san_juan_fm1043",
+    "nombre": "Líder",
+    "frecuencia": "FM 104.3",
+    "tipo": "FM",
+    "provincia": "San Juan",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lider.jpg",
+    "urlStream": "https://stream.arcast.tv:8443/lidersanjuan/lidersanjuan.stream/playlist.m3u8",
+    "streams": [
+      "https://stream.arcast.tv:8443/lidersanjuan/lidersanjuan.stream/playlist.m3u8"
+    ]
+  },
+
+  {
+    "id": "estacion_xlw_san_luis",
+    "nombre": "Estación XLW",
+    "frecuencia": "FM",
+    "tipo": "FM",
+    "provincia": "San Luis",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/xlw.jpg",
+    "urlStream": "http://radio.solumedia.com.ar:7009/",
+    "streams": [
+      "http://radio.solumedia.com.ar:7009/"
+    ]
+  },
+
+  {
+    "id": "lu12_am680",
+    "nombre": "LU12 La Radio de la Gente",
+    "frecuencia": "AM 680",
+    "tipo": "AM",
+    "provincia": "Santa Cruz",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu12.jpg",
+    "urlStream": "https://sa.mp3.icecast.magma.edge-access.net/LOA_LaOpinionAustral",
+    "streams": [
+      "https://sa.mp3.icecast.magma.edge-access.net/LOA_LaOpinionAustral"
+    ]
+  },
+  {
+    "id": "lu14_am830",
+    "nombre": "LU14 Radio Provincia",
+    "frecuencia": "AM 830",
+    "tipo": "AM",
+    "provincia": "Santa Cruz",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lu14.jpg",
+    "urlStream": "https://transmision-lu14.santacruz.gob.ar/lu14.mp3",
+    "streams": [
+      "https://transmision-lu14.santacruz.gob.ar/lu14.mp3"
+    ]
+  },
+
+  {
+    "id": "radio2_rosario_am1230",
+    "nombre": "Radio 2",
+    "frecuencia": "AM 1230",
+    "tipo": "AM",
+    "provincia": "Santa Fe",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radio2.jpg",
+    "urlStream": "https://streaming320tb.locucionar.com/proxy/radio2?mp=/stream",
+    "streams": [
+      "https://streaming320tb.locucionar.com/proxy/radio2?mp=/stream"
+    ]
+  },
+  {
+    "id": "lt10_fm973",
+    "nombre": "LT10 Radio Universidad",
+    "frecuencia": "FM 97.3",
+    "tipo": "FM",
+    "provincia": "Santa Fe",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lt10.jpg",
+    "urlStream": "https://pad20.com:8555/vivo",
+    "streams": [
+      "https://pad20.com:8555/vivo"
+    ]
+  },
+  {
+    "id": "aire_santa_fe_fm925",
+    "nombre": "Aire de Santa Fe",
+    "frecuencia": "FM 92.5",
+    "tipo": "FM",
+    "provincia": "Santa Fe",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/aire.jpg",
+    "urlStream": "http://99.198.110.162:7010/",
+    "streams": [
+      "http://99.198.110.162:7010/"
+    ]
+  },
+
+  {
+    "id": "lv11_am620",
+    "nombre": "LV11",
+    "frecuencia": "AM 620",
+    "tipo": "AM",
+    "provincia": "Santiago del Estero",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lv11.jpg",
+    "urlStream": "https://streaming.evolucionstreaming.com/8040/stream",
+    "streams": [
+      "https://streaming.evolucionstreaming.com/8040/stream"
+    ]
+  },
+
+  {
+    "id": "lv12_am590",
+    "nombre": "LV12 Radio Independencia",
+    "frecuencia": "AM 590",
+    "tipo": "AM",
+    "provincia": "Tucumán",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lv12.jpg",
+    "urlStream": "http://s1.radiosnethosting.com:8032/stream/",
+    "streams": [
+      "http://s1.radiosnethosting.com:8032/stream/"
+    ]
+  },
+  {
+    "id": "lv7_tucuman",
+    "nombre": "LV7",
+    "frecuencia": "AM",
+    "tipo": "AM",
+    "provincia": "Tucumán",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lv7.jpg",
+    "urlStream": "http://01.solumedia.com.ar:8758/stream",
+    "streams": [
+      "http://01.solumedia.com.ar:8758/stream"
+    ]
+  },
+
+  {
+    "id": "estacion_del_siglo_fm1053",
+    "nombre": "Estación del Siglo",
+    "frecuencia": "FM 105.3",
+    "tipo": "FM",
+    "provincia": "Tierra del Fuego",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/estaciondelsiglo.jpg",
+    "urlStream": "http://streamall.alsolnet.com/estaciondelsigloaudio",
+    "streams": [
+      "http://streamall.alsolnet.com/estaciondelsigloaudio"
+    ]
+  },
+  {
+    "id": "radio_universidad_tdf_fm935",
+    "nombre": "Radio Universidad - La Tecno",
+    "frecuencia": "FM 93.5",
+    "tipo": "FM",
+    "provincia": "Tierra del Fuego",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latecno.jpg",
+    "urlStream": "http://streamall.alsolnet.com/latecno",
+    "streams": [
+      "http://streamall.alsolnet.com/latecno"
     ]
   }
 ]
