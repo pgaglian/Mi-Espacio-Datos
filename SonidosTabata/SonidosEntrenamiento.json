@@ -1,0 +1,42 @@
+[
+  {
+    "id": "campana",
+    "nombre": "🔔 Campana",
+    "archivo": "campana.mp3"
+  },
+  {
+    "id": "corneta",
+    "nombre": "📯 Corneta",
+    "archivo": "corneta.mp3"
+  },
+  {
+    "id": "mario",
+    "nombre": "🍄 Mario",
+    "archivo": "mario.mp3"
+  },
+  {
+    "id": "silbato",
+    "nombre": "📣 Silbato",
+    "archivo": "silbato.mp3"
+  },
+  {
+    "id": "tren",
+    "nombre": "🚂 Tren",
+    "archivo": "tren.mp3"
+  },
+  {
+    "id": "silbato2",
+    "nombre": "📣 Silbato 2",
+    "archivo": "silbato2.mp3"
+  },
+  {
+    "id": "old_tren",
+    "nombre": "🚂 Tren antiguo",
+    "archivo": "old_tren.mp3"
+  },
+  {
+    "id": "tabata",
+    "nombre": "⏱️ Tabata clásico",
+    "archivo": "tabata_clasico.mp3"
+  }
+]
