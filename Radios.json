@@ -6,7 +6,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Mitre.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/AM790_56AAC.aac"
+    ]
   },
   {
     "id": "radio10_am710",
@@ -15,7 +18,11 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Radio10.jpg",
-    "urlStream": "https://radio10.stweb.tv/radio10/live/playlist.m3u8"
+    "urlStream": "https://radio10.stweb.tv/radio10/live/playlist.m3u8",
+    "streams": [
+      "https://radio10.stweb.tv/radio10/live/playlist.m3u8",
+      "https://radio10.stweb.tv/radio10/live/chunks.m3u8"
+    ]
   },
   {
     "id": "lared_am910",
@@ -24,7 +31,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Lared.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910AAC_SC"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910AAC_SC",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_RED_AM910AAC_SC"
+    ]
   },
   {
     "id": "rivadavia_am630",
@@ -33,7 +43,12 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Rivadavia.jpg",
-    "urlStream": "https://srv1.streamingradio.ar:7137/stream"
+    "urlStream": "https://srv1.streamingradio.ar:7137/stream",
+    "streams": [
+      "https://srv1.streamingradio.ar:7137/stream",
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/RIVADAVIAAAC.aac",
+      "https://streammax.alsolnet.com/radiorivadavia"
+    ]
   },
   {
     "id": "eldestape_am1070",
@@ -42,7 +57,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Eldestape.jpg",
-    "urlStream": "https://ipanel.instream.audio/8004/stream"
+    "urlStream": "https://ipanel.instream.audio/8004/stream",
+    "streams": [
+      "https://ipanel.instream.audio/8004/stream"
+    ]
   },
   {
     "id": "continental_am590",
@@ -51,7 +69,14 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/continental.jpg",
-    "urlStream": "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac"
+    "urlStream": "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
+    "streams": [
+  "http://14103.live.streamtheworld.com:80/CONTINENTALAAC_SC",
+  "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC",
+  "https://edge01.radiohdvivo.com/continental",
+  "https://frontend.radiohdvivo.com/continental/live"
+]
   },
   {
     "id": "nacional_am870",
@@ -60,7 +85,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacional.jpg",
-    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad1"
+    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad1",
+    "streams": [
+      "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad1"
+    ]
   },
   {
     "id": "splendid_am990",
@@ -69,7 +97,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/splendid.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM990AAC.aac"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/AM990AAC.aac",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/AM990AAC.aac"
+    ]
   },
   {
     "id": "perfil_am1190",
@@ -78,7 +109,10 @@
     "tipo": "AM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/perfil.jpg",
-    "urlStream": ""
+    "urlStream": "https://unlimited4-us.dps.live/perfil/gotardis/audio/now/livestream1.m3u8",
+    "streams": [
+      "https://unlimited4-us.dps.live/perfil/gotardis/audio/now/livestream1.m3u8"
+    ]
   },
   {
     "id": "la100_fm999",
@@ -87,7 +121,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/la100.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM999_56AAC_SC"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/FM999_56AAC_SC",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/FM999_56AAC_SC"
+    ]
   },
   {
     "id": "aspen_fm1023",
@@ -96,7 +133,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/aspen.jpg",
-    "urlStream": "https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio"
+    "urlStream": "https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio",
+    "streams": [
+      "https://mdstrm.com/audio/60a2745ff943100826374a70/icecast.audio"
+    ]
   },
   {
     "id": "radiodisney_fm943",
@@ -105,7 +145,13 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiodisney.jpg",
-    "urlStream": "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC"
+    "urlStream": "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC",
+    "streams": [
+  "https://edge-np.cdn.mdstrm.com/5a9ee26311c043ae48e40bcd.mp3",
+  "https://26513.live.streamtheworld.com/DISNEY_ARG_BA_ADP_SC",
+  "https://playerservices.streamtheworld.com/api/livestream-redirect/DISNEY_ARG_BA_SC",
+  "https://26573.live.streamtheworld.com:443/DISNEY_ARG_BA_SC"
+]
   },
   {
     "id": "rockandpop_fm959",
@@ -114,7 +160,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/rockandpop.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOPAAC_SC"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOPAAC_SC",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/ROCKANDPOPAAC_SC"
+    ]
   },
   {
     "id": "mega_fm983",
@@ -123,7 +172,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/mega983.jpg",
-    "urlStream": "https://mega.stweb.tv/mega983/live/playlist.m3u8"
+    "urlStream": "https://mega.stweb.tv/mega983/live/playlist.m3u8",
+    "streams": [
+      "https://mega.stweb.tv/mega983/live/playlist.m3u8"
+    ]
   },
   {
     "id": "urbanaplay_fm1043",
@@ -132,7 +184,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/urbanaplay.jpg",
-    "urlStream": "https://cdn.instream.audio:9660/stream"
+    "urlStream": "https://cdn.instream.audio:9660/stream",
+    "streams": [
+      "https://cdn.instream.audio:9660/stream"
+    ]
   },
   {
     "id": "pop_fm1015",
@@ -141,7 +196,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/pop.jpg",
-    "urlStream": "https://ny2.stweb.tv/popradio/live/playlist.m3u8"
+    "urlStream": "https://ny2.stweb.tv/popradio/live/playlist.m3u8",
+    "streams": [
+      "https://ny2.stweb.tv/popradio/live/playlist.m3u8"
+    ]
   },
   {
     "id": "blue_fm1007",
@@ -150,7 +208,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/blue.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC_SC"
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC_SC",
+    "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/BLUE_FM_100_7AAC_SC"
+    ]
   },
   {
     "id": "los40_fm1055",
@@ -159,7 +220,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/los40.jpg",
-    "urlStream": "https://frontend.radiohdvivo.com/los40/live"
+    "urlStream": "https://frontend.radiohdvivo.com/los40/live",
+    "streams": [
+      "https://frontend.radiohdvivo.com/los40/live"
+    ]
   },
   {
     "id": "elobservador_fm1079",
@@ -168,7 +232,11 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/elobservador.jpg",
-    "urlStream": "https://s8.stweb.tv/observador/live/playlist.m3u8"
+    "urlStream": "https://s8.stweb.tv/observador/live/playlist.m3u8",
+    "streams": [
+      "https://s8.stweb.tv/observador/live/playlist.m3u8",
+      "http://s8.stweb.tv:1935/observador/live/playlist.m3u8"
+    ]
   },
   {
     "id": "radioconvos_fm899",
@@ -177,6 +245,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radioconvos.jpg",
-    "urlStream": "https://server1.stweb.tv/rcvos/live/playlist.m3u8"
+    "urlStream": "https://server1.stweb.tv/rcvos/live/playlist.m3u8",
+    "streams": [
+      "https://server1.stweb.tv/rcvos/live/playlist.m3u8",
+      "https://server1.stweb.tv/rcvos/live/chunks.m3u8"
+    ]
   }
 ]
