@@ -1,26 +1,46 @@
+
 [
   {
     "nombre": "MODO",
-    "logo": "Modo.jpg"
+    "logo": "Modo.jpg",
+    "sitioOficial": "https://www.modo.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=com.playdigital.modo",
+    "ios": "https://apps.apple.com/ar/app/modo/id1530606263"
   },
   {
     "nombre": "Cuenta DNI",
-    "logo": "CuentaDNI.jpg"
+    "logo": "CuentaDNI.jpg",
+    "sitioOficial": "https://www.bancoprovincia.com.ar/cuentadni/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.bancoprovincia.CuentaDNI",
+    "ios": "https://apps.apple.com/ar/app/cuenta-dni/id1436655618"
   },
   {
     "nombre": "Mercado Pago",
-    "logo": "MercadoPago.jpg"
+    "logo": "MercadoPago.jpg",
+    "sitioOficial": "https://www.mercadopago.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=com.mercadopago.wallet",
+    "ios": "https://apps.apple.com/ar/app/mercado-pago-cuenta-digital/id925436649"
   },
   {
     "nombre": "Personal Pay",
-    "logo": "PersonalPay.jpg"
+    "logo": "PersonalPay.jpg",
+    "sitioOficial": "https://www.personalpay.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.personalpay",
+    "ios": "https://apps.apple.com/ar/app/personal-pay-billetera-virtual/id1548817439"
   },
   {
     "nombre": "Naranja X",
-    "logo": "NaranjaX.jpg"
+    "logo": "NaranjaX.jpg",
+    "sitioOficial": "https://www.naranjax.com/",
+    "android": "https://play.google.com/store/apps/details?id=com.tarjetanaranja.ncuenta",
+    "ios": "https://apps.apple.com/ar/app/naranja-x-billetera-virtual/id1452691757"
   },
   {
     "nombre": "Ualá",
-    "logo": "Uala.jpg"
+    "logo": "Uala.jpg",
+    "sitioOficial": "https://www.uala.com.ar/",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.bancar.uala",
+    "ios": "https://apps.apple.com/ar/app/ual%C3%A1/id1279808159"
   }
 ]
+
