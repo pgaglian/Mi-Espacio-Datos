@@ -1,3 +1,4 @@
+```json
 [
   {
     "id": "netflix",
@@ -8,8 +9,8 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.netflix.com/ar/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
+    "ios": "https://apps.apple.com/ar/app/netflix/id363590051",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
@@ -180,3 +181,4 @@
     "ultimaVerificacion": "2026-09-26"
   }
 ]
+```
