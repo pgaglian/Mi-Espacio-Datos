@@ -185,5 +185,6 @@ jobs:
             echo "No hubo cambios en la cotizacion."
           else
             git commit -m "Actualizar cotizacion del dolar"
-            git push
+            git pull origin main --rebase
+            git push origin main
           fi
