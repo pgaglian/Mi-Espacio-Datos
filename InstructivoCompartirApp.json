@@ -1,0 +1,42 @@
+{
+  "titulo": "📲 Compartí tu app con Mi Espacio",
+  "descripcion": "Agregá una aplicación a Mi Espacio compartiéndola desde Google Play.",
+  "pasos": [
+    {
+      "numero": 1,
+      "titulo": "🔎 Buscá la aplicación",
+      "texto": "Buscá en Google Play la aplicación que querés agregar.",
+      "imagen": "compartir_app_01"
+    },
+    {
+      "numero": 2,
+      "titulo": "📱 Entrá en la aplicación",
+      "texto": "Abrí la ficha de la aplicación y verificá que sea la correcta.",
+      "imagen": "compartir_app_02"
+    },
+    {
+      "numero": 3,
+      "titulo": "↗️ Compartí la aplicación",
+      "texto": "En la ficha de la aplicación tocá Compartir.",
+      "imagen": "compartir_app_03"
+    },
+    {
+      "numero": 4,
+      "titulo": "📲 Elegí Mi Espacio",
+      "texto": "En el menú de compartir elegí Mi Espacio.",
+      "imagen": "compartir_app_04"
+    },
+    {
+      "numero": 5,
+      "titulo": "✅ Confirmá",
+      "texto": "Volvé a Mi Espacio, revisá los datos y confirmá para guardar la aplicación.",
+      "imagen": "compartir_app_05"
+    },
+    {
+      "numero": 6,
+      "titulo": "✅ Listo",
+      "texto": "La aplicación ya fue compartida con Mi Espacio y podés continuar con la acción que estabas realizando.",
+      "imagen": "compartir_app_06"
+    }
+  ]
+}
