@@ -1,42 +1,45 @@
 {
   "titulo": "📲 Compartí tu app con Mi Espacio",
-  "descripcion": "Agregá una aplicación a Mi Espacio compartiéndola desde Google Play.",
+
+  "descripcion": "Seguí estos pasos para compartir una aplicación desde Google Play con Mi Espacio.",
+
   "pasos": [
+
     {
       "numero": 1,
-      "titulo": "🔎 Buscá la aplicación",
-      "texto": "Buscá en Google Play la aplicación que querés agregar.",
-      "imagen": "compartir_app_01"
+      "titulo": "📱 Abrí Google Play Store",
+      "texto": "En tu teléfono Android, buscá el icono de Google Play Store y tocá para abrir la tienda."
     },
+
     {
       "numero": 2,
-      "titulo": "📱 Entrá en la aplicación",
-      "texto": "Abrí la ficha de la aplicación y verificá que sea la correcta.",
-      "imagen": "compartir_app_02"
+      "titulo": "🔎 Buscá la aplicación",
+      "texto": "Tocá la barra de búsqueda ubicada en la parte superior. Escribí el nombre de la aplicación que querés encontrar y presioná la lupa o la tecla de búsqueda."
     },
+
     {
       "numero": 3,
-      "titulo": "↗️ Compartí la aplicación",
-      "texto": "En la ficha de la aplicación tocá Compartir.",
-      "imagen": "compartir_app_03"
+      "titulo": "📱 Seleccioná la aplicación",
+      "texto": "En los resultados, verificá que sea la aplicación correcta y tocá su nombre o icono para entrar en la ficha de detalles."
     },
+
     {
       "numero": 4,
-      "titulo": "📲 Elegí Mi Espacio",
-      "texto": "En el menú de compartir elegí Mi Espacio.",
-      "imagen": "compartir_app_04"
+      "titulo": "↗️ Buscá la opción Compartir",
+      "texto": "Dentro de la ficha de la aplicación, buscá la opción Compartir. Según la versión de Google Play, puede estar visible directamente o dentro del menú de tres puntos (⋮)."
     },
+
     {
       "numero": 5,
-      "titulo": "✅ Confirmá",
-      "texto": "Volvé a Mi Espacio, revisá los datos y confirmá para guardar la aplicación.",
-      "imagen": "compartir_app_05"
+      "titulo": "📲 Compartí con Mi Espacio",
+      "texto": "Tocá Compartir. Se abrirá el menú de aplicaciones disponibles para compartir. Buscá y seleccioná Mi Espacio."
     },
+
     {
       "numero": 6,
       "titulo": "✅ Listo",
-      "texto": "La aplicación ya fue compartida con Mi Espacio y podés continuar con la acción que estabas realizando.",
-      "imagen": "compartir_app_06"
+      "texto": "Mi Espacio recibirá el enlace de la aplicación que compartiste y podrás continuar con la acción que estabas realizando."
     }
+
   ]
 }
