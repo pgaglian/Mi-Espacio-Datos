@@ -8,7 +8,7 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.netflix.com/ar/",
     "urlAyuda": "",
-    "android": "https://play.google.com/store/apps/details?id=com.netflix.mediaclient",
+    "android": "intent://open#Intent;scheme=netflix;package=com.netflix.mediaclient;S.browser_fallback_url=https%3A%2F%2Fplay.google.com%2Fstore%2Fapps%2Fdetails%3Fid%3Dcom.netflix.mediaclient;end;",
     "ios": "https://apps.apple.com/ar/app/netflix/id363590051",
     "registroNecesario": true,
     "requiereCuenta": true,
