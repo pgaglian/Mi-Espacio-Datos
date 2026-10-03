@@ -15,7 +15,7 @@
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "disneyplus",
@@ -26,14 +26,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.disneyplus.com/es-ar",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.disney.disneyplus",
+    "ios": "https://apps.apple.com/ar/app/disney/id1446075923",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "max",
@@ -44,14 +44,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.max.com/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.wbd.stream",
+    "ios": "https://apps.apple.com/ar/app/hbo-max-ve-tv-y-pel%C3%ADculas/id1666653815",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "primevideo",
@@ -62,14 +62,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.primevideo.com/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.amazon.avod.thirdpartyclient",
+    "ios": "https://apps.apple.com/ar/app/amazon-prime-video/id545519333",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "paramountplus",
@@ -80,14 +80,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.paramountplus.com/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.cbs.ott",
+    "ios": "https://apps.apple.com/ar/app/paramount/id1340650234",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "appletvplus",
@@ -98,14 +98,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://tv.apple.com/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=com.apple.atve.androidtv.appletv",
+    "ios": "https://apps.apple.com/ar/app/apple-tv/id1174078549",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "plutotv",
@@ -116,14 +116,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://pluto.tv/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=tv.pluto.android",
+    "ios": "https://apps.apple.com/ar/app/pluto-tv-peliculas-y-series/id751712884",
     "registroNecesario": false,
     "requiereCuenta": false,
     "requiereSuscripcion": false,
     "permiteContratacion": false,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "mercadoplay",
@@ -134,14 +134,14 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://play.mercadolibre.com.ar/",
     "urlAyuda": "",
-    "android": "",
+    "android": "https://play.google.com/store/apps/details?id=com.mercadolibre.android.mplay_tv",
     "ios": "",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": false,
     "permiteContratacion": false,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "cinear",
@@ -153,13 +153,13 @@
     "sitioOficial": "https://play.cine.ar/",
     "urlAyuda": "",
     "android": "",
-    "ios": "",
+    "ios": "https://apps.apple.com/ar/app/cine-ar-play/id1236249929",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": false,
     "permiteContratacion": false,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   },
   {
     "id": "flow",
@@ -170,14 +170,13 @@
     "disponibilidad": "Argentina",
     "sitioOficial": "https://www.flow.com.ar/",
     "urlAyuda": "",
-    "android": "",
-    "ios": "",
+    "android": "https://play.google.com/store/apps/details?id=ar.com.cablevision.attv.android.myminerva",
+    "ios": "https://apps.apple.com/ar/app/flow/id1067858594",
     "registroNecesario": true,
     "requiereCuenta": true,
     "requiereSuscripcion": true,
     "permiteContratacion": true,
     "activo": true,
-    "ultimaVerificacion": "2026-09-26"
+    "ultimaVerificacion": "2026-10-02"
   }
 ]
-
