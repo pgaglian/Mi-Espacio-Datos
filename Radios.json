@@ -406,17 +406,17 @@
       "https://usa5.fastcast4u.com/proxy/radiocultura"
     ]
   },
-  {
-    "id": "nacionalfolklorica_fm987",
-    "nombre": "Nacional Folklórica",
-    "frecuencia": "FM 98.7",
-    "tipo": "FM",
-    "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
-    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38",
-    "streams": [
-      "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38"
-    ]
+ {
+  "id": "nacionalfolklorica_fm987",
+  "nombre": "Nacional Folklórica",
+  "frecuencia": "FM 98.7",
+  "tipo": "FM",
+  "provincia": "CABA",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
+  "urlStream": "URL_REAL",
+  "streams": [
+    "URL_REAL"
+  ]
   },
   {
     "id": "horizonte_fm1019",
