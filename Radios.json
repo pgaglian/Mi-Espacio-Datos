@@ -71,7 +71,6 @@
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/continental.jpg",
     "urlStream": "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
     "streams": [
-      "http://14103.live.streamtheworld.com:80/CONTINENTALAAC_SC",
       "https://20833.live.streamtheworld.com/CONTINENTALAAC.aac",
       "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC",
       "https://edge01.radiohdvivo.com/continental",
@@ -234,8 +233,7 @@
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/elobservador.jpg",
     "urlStream": "https://s8.stweb.tv/observador/live/playlist.m3u8",
     "streams": [
-      "https://s8.stweb.tv/observador/live/playlist.m3u8",
-      "http://s8.stweb.tv:1935/observador/live/playlist.m3u8"
+      "https://s8.stweb.tv/observador/live/playlist.m3u8"
     ]
   },
   {
@@ -282,9 +280,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/delta.jpg",
-    "urlStream": "https://cdn.instream.audio/:9069/stream",
+    "urlStream": "https://cdn.instream.audio:9069/stream",
     "streams": [
-      "https://cdn.instream.audio/:9069/stream"
+      "https://cdn.instream.audio:9069/stream"
     ]
   },
   {
@@ -493,70 +491,10 @@
     ]
   },
   {
-    "id": "mitre_am790_buenosaires",
-    "nombre": "Radio Mitre",
-    "frecuencia": "AM 790",
-    "tipo": "AM",
-    "provincia": "Buenos Aires",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Mitre.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMITRE.mp3",
-    "streams": [
-      "https://playerservices.streamtheworld.com/api/livestream-redirect/RADIOMITRE.mp3"
-    ]
-  },
-  {
-    "id": "la100_fm999_buenosaires",
-    "nombre": "La 100",
-    "frecuencia": "FM 99.9",
-    "tipo": "FM",
-    "provincia": "Buenos Aires",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/la100.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_100.mp3",
-    "streams": [
-      "https://playerservices.streamtheworld.com/api/livestream-redirect/LA_100.mp3"
-    ]
-  },
-  {
-    "id": "radio10_am710_buenosaires",
-    "nombre": "Radio 10",
-    "frecuencia": "AM 710",
-    "tipo": "AM",
-    "provincia": "Buenos Aires",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/Radio10.jpg",
-    "urlStream": "http://s6.stweb.tv/radio10/live/playlist.m3u8",
-    "streams": [
-      "http://s6.stweb.tv/radio10/live/playlist.m3u8"
-    ]
-  },
-  {
-    "id": "continental_am590_buenosaires",
-    "nombre": "Radio Continental",
-    "frecuencia": "AM 590",
-    "tipo": "AM",
-    "provincia": "Buenos Aires",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/continental.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC",
-    "streams": [
-      "https://playerservices.streamtheworld.com/api/livestream-redirect/CONTINENTAL_SC"
-    ]
-  },
-  {
     "id": "cadena3_am700",
     "nombre": "Cadena 3",
     "frecuencia": "AM 700",
     "tipo": "AM",
-    "provincia": "Córdoba",
-    "logo": false,
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/radio3.mp3",
-    "streams": [
-      "https://playerservices.streamtheworld.com/api/livestream-redirect/radio3.mp3"
-    ]
-  },
-  {
-    "id": "cadena3_fm1005",
-    "nombre": "Cadena 3",
-    "frecuencia": "FM 100.5",
-    "tipo": "FM",
     "provincia": "Córdoba",
     "logo": false,
     "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/radio3.mp3",
@@ -571,21 +509,21 @@
     "tipo": "FM",
     "provincia": "Córdoba",
     "logo": false,
-    "urlStream": "http://streaming.radiosuquia.com.ar:8000/suquia",
+    "urlStream": "https://streaming01.shockmedia.com.ar:10945/;",
     "streams": [
-      "http://streaming.radiosuquia.com.ar:8000/suquia"
+      "https://streaming01.shockmedia.com.ar:10945/;"
     ]
   },
   {
-    "id": "estaciondelsol_fm1009",
+    "id": "estaciondelsol_fm967",
     "nombre": "Estación del Sol",
-    "frecuencia": "FM 100.9",
+    "frecuencia": "FM 96.7",
     "tipo": "FM",
     "provincia": "Mendoza",
     "logo": false,
-    "urlStream": "http://audio.bustream.com:8064/stream",
+    "urlStream": "https://streaming01.radiosmundiales.com:8000/estaciondelsol",
     "streams": [
-      "http://audio.bustream.com:8064/stream"
+      "https://streaming01.radiosmundiales.com:8000/estaciondelsol"
     ]
   },
   {
@@ -595,21 +533,9 @@
     "tipo": "AM",
     "provincia": "Mendoza",
     "logo": false,
-    "urlStream": "http://nihuil.3mgestion.com:8000/nihuil.mp3",
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/NIHUIL_AM680_SC",
     "streams": [
-      "http://nihuil.3mgestion.com:8000/nihuil.mp3"
-    ]
-  },
-  {
-    "id": "radio2_am1230",
-    "nombre": "Radio 2",
-    "frecuencia": "AM 1230",
-    "tipo": "AM",
-    "provincia": "Santa Fe",
-    "logo": false,
-    "urlStream": "http://stream.rosario3.com:8000/radio2.mp3",
-    "streams": [
-      "http://stream.rosario3.com:8000/radio2.mp3"
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/NIHUIL_AM680_SC"
     ]
   },
   {
@@ -625,15 +551,15 @@
     ]
   },
   {
-    "id": "la100salta_fm1045",
-    "nombre": "La 100 Salta",
-    "frecuencia": "FM 104.5",
-    "tipo": "FM",
-    "provincia": "Salta",
+    "id": "radio2_am1230",
+    "nombre": "Radio 2",
+    "frecuencia": "AM 1230",
+    "tipo": "AM",
+    "provincia": "Santa Fe",
     "logo": false,
-    "urlStream": "https://stream.01stream.com/la100salta",
+    "urlStream": "http://stream.rosario3.com:8000/radio2.mp3",
     "streams": [
-      "https://stream.01stream.com/la100salta"
+      "http://stream.rosario3.com:8000/radio2.mp3"
     ]
   },
   {
@@ -643,21 +569,9 @@
     "tipo": "AM",
     "provincia": "Salta",
     "logo": false,
-    "urlStream": "http://stream.elocuent.com:8000/radiosalta.mp3",
+    "urlStream": "https://01.solumedia.com.ar:8348/stream",
     "streams": [
-      "http://stream.elocuent.com:8000/radiosalta.mp3"
-    ]
-  },
-  {
-    "id": "radiobicentenario_fm1033",
-    "nombre": "Radio Bicentenario",
-    "frecuencia": "FM 103.3",
-    "tipo": "FM",
-    "provincia": "Tucumán",
-    "logo": false,
-    "urlStream": "http://server2.veemelo.com:8012/stream",
-    "streams": [
-      "http://server2.veemelo.com:8012/stream"
+      "https://01.solumedia.com.ar:8348/stream"
     ]
   },
   {
@@ -667,9 +581,9 @@
     "tipo": "AM",
     "provincia": "Tucumán",
     "logo": false,
-    "urlStream": "http://streaming.lv12.com.ar:8000/lv12",
+    "urlStream": "https://ssl.radiosnethosting.com/index.php?port=8032",
     "streams": [
-      "http://streaming.lv12.com.ar:8000/lv12"
+      "https://ssl.radiosnethosting.com/index.php?port=8032"
     ]
   },
   {
@@ -685,51 +599,15 @@
     ]
   },
   {
-    "id": "radiocolon_am560",
-    "nombre": "Radio Colón",
-    "frecuencia": "AM 560",
-    "tipo": "AM",
-    "provincia": "San Juan",
-    "logo": false,
-    "urlStream": "http://stream.radiocolon.com.ar:8000/stream",
-    "streams": [
-      "http://stream.radiocolon.com.ar:8000/stream"
-    ]
-  },
-  {
-    "id": "radiolibertad_fm937",
-    "nombre": "Radio Libertad",
-    "frecuencia": "FM 93.7",
-    "tipo": "FM",
-    "provincia": "Misiones",
-    "logo": false,
-    "urlStream": "http://stream.misionesonline.net:8000/libertad",
-    "streams": [
-      "http://stream.misionesonline.net:8000/libertad"
-    ]
-  },
-  {
-    "id": "radiolibertadchaco_fm991",
-    "nombre": "Radio Libertad Chaco",
-    "frecuencia": "FM 99.1",
-    "tipo": "FM",
-    "provincia": "Chaco",
-    "logo": false,
-    "urlStream": "http://server.laradio.online:20000/stream",
-    "streams": [
-      "http://server.laradio.online:20000/stream"
-    ]
-  },
-  {
     "id": "lu5_am600",
     "nombre": "LU5 Radio Neuquén",
     "frecuencia": "AM 600",
     "tipo": "AM",
     "provincia": "Neuquén",
     "logo": false,
-    "urlStream": "http://stream.lu5am.com.ar:8000/lu5",
+    "urlStream": "https://live.lu5am.com:8443/LU5?type=.mp3",
     "streams": [
-      "http://stream.lu5am.com.ar:8000/lu5"
+      "https://live.lu5am.com:8443/LU5?type=.mp3"
     ]
   },
   {
@@ -739,9 +617,9 @@
     "tipo": "AM",
     "provincia": "Río Negro",
     "logo": false,
-    "urlStream": "http://lu19.com.ar:8000/stream",
+    "urlStream": "http://51.161.119.117:8064/stream",
     "streams": [
-      "http://lu19.com.ar:8000/stream"
+      "http://51.161.119.117:8064/stream"
     ]
   },
   {
@@ -751,9 +629,9 @@
     "tipo": "AM",
     "provincia": "Chubut",
     "logo": false,
-    "urlStream": "http://stream.lu17.com:8000/lu17",
+    "urlStream": "http://138.36.96.199:8001/lu17",
     "streams": [
-      "http://stream.lu17.com:8000/lu17"
+      "http://138.36.96.199:8001/lu17"
     ]
   }
 ]
