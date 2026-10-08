@@ -71,11 +71,6 @@
   },
   {
     "tipo": "banco",
-    "nombre": "Banco de Industria",
-    "url": "https://www.bind.com.ar/"
-  },
-  {
-    "tipo": "banco",
     "nombre": "Hipotecario",
     "url": "https://www.hipotecario.com.ar/beneficios/"
   },
