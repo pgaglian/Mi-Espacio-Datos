@@ -2,81 +2,118 @@
     {
         "nombre": "Banco Nación",
         "logo": "BNA.jpg",
-        "sitioOficial": "https://www.bna.com.ar/"
+        "sitioOficial": "https://www.bna.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.banconacion.bnamas",
+        "ios": "https://apps.apple.com/ar/app/nueva-bna/id6446181557"
     },
     {
         "nombre": "Galicia",
         "logo": "Galicia.jpg",
-        "sitioOficial": "https://www.galicia.ar/"
+        "sitioOficial": "https://www.galicia.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.mosync.app_Banco_Galicia",
+        "ios": "https://apps.apple.com/ar/app/galicia-el-banco-en-tu-celu/id774860115"
     },
     {
         "nombre": "Santander",
         "logo": "Santander.jpg",
-        "sitioOficial": "https://www.santander.com.ar/"
+        "sitioOficial": "https://www.santander.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.com.santander.rio.mbanking",
+        "ios": "https://apps.apple.com/ar/app/santander-argentina/id626971464"
     },
     {
         "nombre": "BBVA",
         "logo": "BBVA.jpg",
-        "sitioOficial": "https://www.bbva.com.ar/"
+        "sitioOficial": "https://www.bbva.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.bbva.nxt_argentina",
+        "ios": "https://apps.apple.com/ar/app/bbva-argentina/id748231035"
     },
     {
         "nombre": "Macro",
         "logo": "Macro.jpg",
-        "sitioOficial": "https://www.macro.com.ar/"
+        "sitioOficial": "https://www.macro.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.macro.banco.ar",
+        "ios": "https://apps.apple.com/ar/app/nueva-app-macro/id6651860993"
     },
     {
         "nombre": "Banco Provincia",
         "logo": "Provincia.jpg",
-        "sitioOficial": "https://www.bancoprovincia.com.ar/"
+        "sitioOficial": "https://www.bancoprovincia.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.bapro",
+        "ios": "https://apps.apple.com/ar/app/bip-m%C3%B3vil/id910702923"
     },
     {
         "nombre": "ICBC",
         "logo": "ICBC.jpg",
-        "sitioOficial": "https://www.icbc.com.ar/"
+        "sitioOficial": "https://www.icbc.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.icbc.mobile.abroadARG",
+        "ios": "https://apps.apple.com/ar/app/icbc-mobile-banking-argentina/id994922054"
     },
     {
         "nombre": "Credicoop",
         "logo": "Crediccop.jpg",
-        "sitioOficial": "https://www.bancocredicoop.coop/"
+        "sitioOficial": "https://www.bancocredicoop.coop/",
+        "android": "https://play.google.com/store/apps/details?id=coop.bancocredicoop.credicoop",
+        "ios": "https://apps.apple.com/ar/app/banca-credicoop/id6459479073"
     },
     {
         "nombre": "Patagonia",
         "logo": "Patagoinia.jpg",
-        "sitioOficial": "https://bancopatagonia.com.ar/"
+        "sitioOficial": "https://bancopatagonia.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.com.bcopatagonia.android",
+        "ios": "https://apps.apple.com/ar/app/patagonia-m%C3%B3vil/id1178757002"
     },
     {
         "nombre": "Banco Ciudad",
         "logo": "Ciudad.jpg",
-        "sitioOficial": "https://www.bancociudad.com.ar/"
+        "sitioOficial": "https://www.bancociudad.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.com.redlink.custom",
+        "ios": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-ciudad/id1515534818"
     },
     {
         "nombre": "Supervielle",
         "logo": "Supervielle.jpg",
-        "sitioOficial": "https://www.supervielle.com.ar/"
+        "sitioOficial": "https://www.supervielle.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.supervielle",
+        "ios": "https://apps.apple.com/ar/app/supervielle/id1547826699"
     },
     {
         "nombre": "Banco de Córdoba",
         "logo": "Córdoba.jpg",
-        "sitioOficial": "https://www.bancor.com.ar/"
+        "sitioOficial": "https://www.bancor.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.com.bancor.bancon",
+        "ios": "https://apps.apple.com/ar/app/banc%C3%B3n/id1438868080"
     },
     {
         "nombre": "Nuevo Banco de Santa Fe",
-        "sitioOficial": "https://www.bancosantafe.com.ar/"
+        "sitioOficial": "https://www.bancosantafe.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.bancosantafe.mobile",
+        "ios": "https://apps.apple.com/ar/app/app-banco-santa-fe/id1516538881"
     },
     {
         "nombre": "Comafi",
-        "sitioOficial": "https://www.comafi.com.ar/"
+        "sitioOficial": "https://www.comafi.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=ar.com.comafi.app.hbi.prod",
+        "ios": "https://apps.apple.com/ar/app/comafi/id6450553669"
     },
     {
         "nombre": "Hipotecario",
-        "sitioOficial": "https://www.hipotecario.com.ar/"
+        "logo": "Hipotecario.jpg",
+        "sitioOficial": "https://www.hipotecario.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.hipotecario.mobile",
+        "ios": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
     },
     {
         "nombre": "Naranja Digital",
-        "sitioOficial": "https://www.naranjax.com/"
+        "logo": "Naranja.jpg",
+        "sitioOficial": "https://www.naranjax.com/",
+        "android": "https://play.google.com/store/apps/details?id=com.tarjetanaranja.naranjax",
+        "ios": "https://apps.apple.com/ar/app/naranja-x-billetera-virtual/id1452691757"
     },
     {
         "nombre": "Banco de Neuquén",
-        "sitioOficial": "https://www.bpn.com.ar/"
+        "logo": "Neuquen.jpg",
+        "sitioOficial": "https://www.bpn.com.ar/",
+        "android": "https://play.google.com/store/apps/details?id=com.redlink.android_hb3.bpn",
+        "ios": "https://apps.apple.com/ar/app/bpn-home-banking-personas/id6471999064"
     }
 ]
