@@ -1,68 +1,82 @@
 [
     {
         "nombre": "Banco Nación",
-        "logo": "BNA.jpg"
+        "logo": "BNA.jpg",
+        "sitioOficial": "https://www.bna.com.ar/"
     },
     {
         "nombre": "Galicia",
-	"logo": "Galicia.jpg"
+        "logo": "Galicia.jpg",
+        "sitioOficial": "https://www.galicia.ar/"
     },
     {
         "nombre": "Santander",
-        "logo": "Santander.jpg"
+        "logo": "Santander.jpg",
+        "sitioOficial": "https://www.santander.com.ar/"
     },
     {
         "nombre": "BBVA",
-        "logo": "BBVA.jpg"
+        "logo": "BBVA.jpg",
+        "sitioOficial": "https://www.bbva.com.ar/"
     },
     {
         "nombre": "Macro",
-        "logo": "Macro.jpg"
+        "logo": "Macro.jpg",
+        "sitioOficial": "https://www.macro.com.ar/"
     },
     {
         "nombre": "Banco Provincia",
-        "logo": "Provincia.jpg"
+        "logo": "Provincia.jpg",
+        "sitioOficial": "https://www.bancoprovincia.com.ar/"
     },
     {
         "nombre": "ICBC",
-	"logo": "ICBC.jpg"
+        "logo": "ICBC.jpg",
+        "sitioOficial": "https://www.icbc.com.ar/"
     },
     {
         "nombre": "Credicoop",
-        "logo": "Crediccop.jpg"
+        "logo": "Crediccop.jpg",
+        "sitioOficial": "https://www.bancocredicoop.coop/"
     },
     {
         "nombre": "Patagonia",
-	"logo": "Patagoinia.jpg"
+        "logo": "Patagoinia.jpg",
+        "sitioOficial": "https://bancopatagonia.com.ar/"
     },
     {
         "nombre": "Banco Ciudad",
-	"logo": "Ciudad.jpg"
+        "logo": "Ciudad.jpg",
+        "sitioOficial": "https://www.bancociudad.com.ar/"
     },
     {
         "nombre": "Supervielle",
-	"logo": "Supervielle.jpg"
+        "logo": "Supervielle.jpg",
+        "sitioOficial": "https://www.supervielle.com.ar/"
     },
     {
         "nombre": "Banco de Córdoba",
-	"logo": "Córdoba.jpg"
+        "logo": "Córdoba.jpg",
+        "sitioOficial": "https://www.bancor.com.ar/"
     },
     {
-        "nombre": "Nuevo Banco de Santa Fe"
+        "nombre": "Nuevo Banco de Santa Fe",
+        "sitioOficial": "https://www.bancosantafe.com.ar/"
     },
     {
-        "nombre": "Comafi"
+        "nombre": "Comafi",
+        "sitioOficial": "https://www.comafi.com.ar/"
     },
     {
-        "nombre": "Banco de Industria"
+        "nombre": "Hipotecario",
+        "sitioOficial": "https://www.hipotecario.com.ar/"
     },
     {
-        "nombre": "Hipotecario"
+        "nombre": "Naranja Digital",
+        "sitioOficial": "https://www.naranjax.com/"
     },
     {
-        "nombre": "Naranja Digital"
-    },
-    {
-        "nombre": "Banco de Neuquén"
+        "nombre": "Banco de Neuquén",
+        "sitioOficial": "https://www.bpn.com.ar/"
     }
 ]
