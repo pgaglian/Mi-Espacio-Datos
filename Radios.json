@@ -268,8 +268,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latribu.jpg",
-    "urlStream": "http://vivo.fmlatribu.com:8000/latribu.mp3",
+    "urlStream": "http://vivo.fmlatribu.com/latribu.m4a",
     "streams": [
+      "http://vivo.fmlatribu.com/latribu.m4a",
       "http://vivo.fmlatribu.com:8000/latribu.mp3"
     ]
   },
@@ -292,8 +293,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vorterix.jpg",
-    "urlStream": "http://147.135.11.82:9904/",
+    "urlStream": "https://ice2.edge-apps.net/radio1_high-20057.audio",
     "streams": [
+      "https://ice2.edge-apps.net/radio1_high-20057.audio",
       "http://147.135.11.82:9904/",
       "http://prepublish.f.qaotic.net/a02/ngrp:Vorterix_radio1_high-20057_all/Playlist.m3u8"
     ]
@@ -305,8 +307,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/la2x4.jpg",
-    "urlStream": "http://radios.argentina.fm:9270/stream",
+    "urlStream": "https://tus.radios.ar/9270/stream",
     "streams": [
+      "https://tus.radios.ar/9270/stream",
       "http://radios.argentina.fm:9270/stream"
     ]
   },
@@ -317,8 +320,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalrock.jpg",
-    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39",
+    "urlStream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad39",
     "streams": [
+      "https://sa.mp3.icecast.magma.edge-access.net/sc_rad39",
       "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad39"
     ]
   },
@@ -329,8 +333,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/mucharadio.jpg",
-    "urlStream": "http://18543.live.streamtheworld.com/MUCHARADIO_SC",
+    "urlStream": "https://us-b5-p-e-wo1-audio.cdn.mdstrm.com/live-audio-aw/60a2765c40105808346c569f",
     "streams": [
+      "https://us-b5-p-e-wo1-audio.cdn.mdstrm.com/live-audio-aw/60a2765c40105808346c569f",
       "http://18543.live.streamtheworld.com/MUCHARADIO_SC"
     ]
   },
@@ -341,8 +346,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/metro.jpg",
-    "urlStream": "http://mp3.metroaudio1.stream.avstreaming.net:7200/metro",
+    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/METROAAC.aac",
     "streams": [
+      "https://playerservices.streamtheworld.com/api/livestream-redirect/METROAAC.aac",
       "http://mp3.metroaudio1.stream.avstreaming.net:7200/metro"
     ]
   },
@@ -353,8 +359,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/concepto.jpg",
-    "urlStream": "http://servidor.ilive.com.ar:9330/",
+    "urlStream": "http://radios.solumedia.com:6002/stream",
     "streams": [
+      "http://radios.solumedia.com:6002/stream",
       "http://servidor.ilive.com.ar:9330/"
     ]
   },
@@ -365,8 +372,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/radiojai.jpg",
-    "urlStream": "https://radiojai.com.ar/stream",
+    "urlStream": "http://163.172.94.129:8032/stream/",
     "streams": [
+      "http://163.172.94.129:8032/stream/",
       "https://radiojai.com.ar/stream"
     ]
   },
@@ -377,8 +385,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalclasica.jpg",
-    "urlStream": "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad37",
+    "urlStream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad37",
     "streams": [
+      "https://sa.mp3.icecast.magma.edge-access.net/sc_rad37",
       "http://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad37"
     ]
   },
@@ -389,8 +398,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vale.jpg",
-    "urlStream": "http://vale.stweb.tv:1935/vale/live/playlist.m3u8",
+    "urlStream": "https://s6.stweb.tv/vale/live/playlist.m3u8",
     "streams": [
+      "https://s6.stweb.tv/vale/live/playlist.m3u8",
       "http://vale.stweb.tv:1935/vale/live/playlist.m3u8"
     ]
   },
@@ -401,22 +411,24 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/cultura.jpg",
-    "urlStream": "https://usa5.fastcast4u.com/proxy/radiocultura",
+    "urlStream": "https://usa5.fastcast4u.com/proxy/radiocultura?mp=/1",
     "streams": [
+      "https://usa5.fastcast4u.com/proxy/radiocultura?mp=/1",
       "https://usa5.fastcast4u.com/proxy/radiocultura"
     ]
   },
-{
-  "id": "nacionalfolklorica_fm987",
-  "nombre": "Nacional Folklórica",
-  "frecuencia": "FM 98.7",
-  "tipo": "FM",
-  "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
-  "urlStream": "https://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38",
-  "streams": [
-    "https://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38"
-  ]
+  {
+    "id": "nacionalfolklorica_fm987",
+    "nombre": "Nacional Folklórica",
+    "frecuencia": "FM 98.7",
+    "tipo": "FM",
+    "provincia": "CABA",
+    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
+    "urlStream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad38",
+    "streams": [
+      "https://sa.mp3.icecast.magma.edge-access.net/sc_rad38",
+      "https://sa.mp3.icecast.magma.edge-access.net:7200/sc_rad38"
+    ]
   },
   {
     "id": "horizonte_fm1019",
@@ -437,8 +449,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lapatriada.jpg",
-    "urlStream": "http://server4.stweb.tv:1935/lapatriada/live/playlist.m3u8",
+    "urlStream": "https://server.laradio.online/proxy/fm_la_patriada?mp=/stream",
     "streams": [
+      "https://server.laradio.online/proxy/fm_la_patriada?mp=/stream",
       "http://server4.stweb.tv:1935/lapatriada/live/playlist.m3u8"
     ]
   },
@@ -449,8 +462,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/dsports.jpg",
-    "urlStream": "https://playerservices.streamtheworld.com/api/livestream-redirect/DSPORTS_ARGAAC_SC",
+    "urlStream": "https://26663.live.streamtheworld.com/DSPORTSRADIOAAC.aac",
     "streams": [
+      "https://26663.live.streamtheworld.com/DSPORTSRADIOAAC.aac",
       "https://playerservices.streamtheworld.com/api/livestream-redirect/DSPORTS_ARGAAC_SC"
     ]
   },
@@ -461,8 +475,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/one.jpg",
-    "urlStream": "http://s11.stweb.tv/one/live/playlist.m3u8",
+    "urlStream": "https://one.stweb.tv/one/live/playlist.m3u8",
     "streams": [
+      "https://one.stweb.tv/one/live/playlist.m3u8",
       "http://s11.stweb.tv/one/live/playlist.m3u8"
     ]
   },
@@ -473,8 +488,9 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lanacionmusica.jpg",
-    "urlStream": "http://playerservices.streamtheworld.com/api/livestream-redirect/LN_MUSICA_SC",
+    "urlStream": "https://stream.radio.co/s2ed3bec0a/listen",
     "streams": [
+      "https://stream.radio.co/s2ed3bec0a/listen",
       "http://playerservices.streamtheworld.com/api/livestream-redirect/LN_MUSICA_SC"
     ]
   },
@@ -485,10 +501,10 @@
     "tipo": "FM",
     "provincia": "CABA",
     "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/milenium.jpg",
-    "urlStream": "http://108.59.9.147/proxy/arvlyxui",
+    "urlStream": "https://sonicpanel.hostradios.com/8002/stream",
     "streams": [
+      "https://sonicpanel.hostradios.com/8002/stream",
       "http://108.59.9.147/proxy/arvlyxui"
     ]
-  
   }
 ]
