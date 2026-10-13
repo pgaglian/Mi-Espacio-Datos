@@ -1,0 +1,106 @@
+[
+    {
+        "id": "spotify",
+        "nombre": "Spotify",
+        "logo": "spotify",
+        "tipo": "musica",
+        "contenido": [
+            "musica",
+            "podcasts"
+        ],
+        "disponibilidad": [
+            "Android",
+            "iOS",
+            "Web"
+        ],
+        "sitioOficial": "https://www.spotify.com/",
+        "urlAyuda": "https://support.spotify.com/",
+        "android": "https://play.google.com/store/apps/details?id=com.spotify.music",
+        "ios": "https://apps.apple.com/app/spotify-music-and-podcasts/id324684580",
+        "registroNecesario": true,
+        "requiereCuenta": true,
+        "requiereSuscripcion": false,
+        "permiteContratacion": true,
+        "activo": true,
+        "ultimaVerificacion": "2026-10-13"
+    },
+    {
+        "id": "youtube",
+        "nombre": "YouTube",
+        "logo": "youtube",
+        "tipo": "musica",
+        "contenido": [
+            "musica",
+            "videoclips",
+            "conciertos",
+            "videos"
+        ],
+        "disponibilidad": [
+            "Android",
+            "iOS",
+            "Web"
+        ],
+        "sitioOficial": "https://www.youtube.com/",
+        "urlAyuda": "https://support.google.com/youtube/",
+        "android": "https://play.google.com/store/apps/details?id=com.google.android.youtube",
+        "ios": "https://apps.apple.com/app/youtube-watch-listen-stream/id544007664",
+        "registroNecesario": false,
+        "requiereCuenta": false,
+        "requiereSuscripcion": false,
+        "permiteContratacion": true,
+        "activo": true,
+        "ultimaVerificacion": "2026-10-13"
+    },
+    {
+        "id": "youtube-music",
+        "nombre": "YouTube Music",
+        "logo": "youtube-music",
+        "tipo": "musica",
+        "contenido": [
+            "musica",
+            "albumes",
+            "listas de reproduccion"
+        ],
+        "disponibilidad": [
+            "Android",
+            "iOS",
+            "Web"
+        ],
+        "sitioOficial": "https://music.youtube.com/",
+        "urlAyuda": "https://support.google.com/youtubemusic/",
+        "android": "https://play.google.com/store/apps/details?id=com.google.android.apps.youtube.music",
+        "ios": "https://apps.apple.com/app/youtube-music/id1017492454",
+        "registroNecesario": false,
+        "requiereCuenta": false,
+        "requiereSuscripcion": false,
+        "permiteContratacion": true,
+        "activo": true,
+        "ultimaVerificacion": "2026-10-13"
+    },
+    {
+        "id": "apple-music",
+        "nombre": "Apple Music",
+        "logo": "apple-music",
+        "tipo": "musica",
+        "contenido": [
+            "musica",
+            "albumes",
+            "listas de reproduccion"
+        ],
+        "disponibilidad": [
+            "Android",
+            "iOS",
+            "Web"
+        ],
+        "sitioOficial": "https://music.apple.com/",
+        "urlAyuda": "https://support.apple.com/music",
+        "android": "https://play.google.com/store/apps/details?id=com.apple.android.music",
+        "ios": "https://apps.apple.com/app/apple-music/id1108187390",
+        "registroNecesario": true,
+        "requiereCuenta": true,
+        "requiereSuscripcion": true,
+        "permiteContratacion": true,
+        "activo": true,
+        "ultimaVerificacion": "2026-10-13"
+    }
+]
