@@ -73,7 +73,7 @@ jobs:
               hora_24 = datetime.strptime(hora_bna, "%H:%M")
               hora_12 = hora_24.strftime("%I:%M %p")
               hora_oficial = f"{fecha_actual} {hora_12}"
-           else:
+          else:
               hora_oficial = "--"
 
           # =========================
