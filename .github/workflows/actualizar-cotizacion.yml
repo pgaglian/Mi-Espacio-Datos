@@ -68,11 +68,12 @@ jobs:
 
           if patron_hora_bna:
               hora_bna = patron_hora_bna.group(1)
-              fecha_actual = datetime.now().strftime("%d/%m/%y")
+              zona_arg = ZoneInfo("America/Argentina/Buenos_Aires")
+              fecha_actual = datetime.now(zona_arg).strftime("%d/%m/%y")
               hora_24 = datetime.strptime(hora_bna, "%H:%M")
               hora_12 = hora_24.strftime("%I:%M %p")
               hora_oficial = f"{fecha_actual} {hora_12}"
-          else:
+           else:
               hora_oficial = "--"
 
           # =========================
