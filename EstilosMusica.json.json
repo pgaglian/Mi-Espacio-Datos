@@ -1,0 +1,138 @@
+[
+    {
+        "id": "rock-internacional",
+        "categoria": "Rock internacional",
+        "emoji": "🤘",
+        "nombre": "Rock internacional",
+        "descripcion": "Rock y clásicos internacionales",
+        "url_stream": ""
+    },
+    {
+        "id": "rock-nacional",
+        "categoria": "Rock Nacional",
+        "emoji": "🇦🇷",
+        "nombre": "Rock nacional argentino",
+        "descripcion": "Rock argentino",
+        "url_stream": ""
+    },
+    {
+        "id": "pop",
+        "categoria": "Pop",
+        "emoji": "🎤",
+        "nombre": "PopTron",
+        "descripcion": "Pop continuo",
+        "url_stream": "https://ice5.somafm.com/poptron-128-mp3"
+    },
+    {
+        "id": "pop-latino",
+        "categoria": "Pop Latino",
+        "emoji": "🇦🇷",
+        "nombre": "Pop latino",
+        "descripcion": "Pop latino y éxitos en español",
+        "url_stream": ""
+    },
+    {
+        "id": "cumbia",
+        "categoria": "Cumbia",
+        "emoji": "🪗",
+        "nombre": "Cumbia",
+        "descripcion": "Cumbia y música tropical",
+        "url_stream": ""
+    },
+    {
+        "id": "cuarteto",
+        "categoria": "Cuarteto",
+        "emoji": "🕺",
+        "nombre": "Cuarteto",
+        "descripcion": "Cuarteto cordobés",
+        "url_stream": ""
+    },
+    {
+        "id": "salsa",
+        "categoria": "Salsa",
+        "emoji": "💃",
+        "nombre": "Salsa",
+        "descripcion": "Salsa y ritmos tropicales",
+        "url_stream": ""
+    },
+    {
+        "id": "reggaeton",
+        "categoria": "Reggaetón",
+        "emoji": "🔥",
+        "nombre": "Reggaetón",
+        "descripcion": "Música urbana",
+        "url_stream": ""
+    },
+    {
+        "id": "disco-funk",
+        "categoria": "Disco y Funk",
+        "emoji": "🪩",
+        "nombre": "Disco y Funk",
+        "descripcion": "Clásicos disco y funk",
+        "url_stream": ""
+    },
+    {
+        "id": "electronica",
+        "categoria": "Electrónica",
+        "emoji": "🎹",
+        "nombre": "Electrónica",
+        "descripcion": "Electrónica, house y lounge",
+        "url_stream": ""
+    },
+    {
+        "id": "jazz-blues",
+        "categoria": "Jazz y Blues",
+        "emoji": "🎷",
+        "nombre": "Jazz y Blues",
+        "descripcion": "Jazz suave y blues",
+        "url_stream": ""
+    },
+    {
+        "id": "tango",
+        "categoria": "Tango",
+        "emoji": "🪗",
+        "nombre": "Tango",
+        "descripcion": "Tango argentino",
+        "url_stream": ""
+    },
+    {
+        "id": "folklore",
+        "categoria": "Folklore",
+        "emoji": "🧉",
+        "nombre": "Folklore",
+        "descripcion": "Folklore argentino",
+        "url_stream": ""
+    },
+    {
+        "id": "romanticos",
+        "categoria": "Románticos",
+        "emoji": "❤️",
+        "nombre": "Románticos",
+        "descripcion": "Lentos y baladas",
+        "url_stream": ""
+    },
+    {
+        "id": "clasica",
+        "categoria": "Clásica",
+        "emoji": "🎻",
+        "nombre": "Música clásica",
+        "descripcion": "Música clásica y orquestal",
+        "url_stream": ""
+    },
+    {
+        "id": "reggae",
+        "categoria": "Reggae",
+        "emoji": "🌿",
+        "nombre": "Reggae",
+        "descripcion": "Reggae roots",
+        "url_stream": ""
+    },
+    {
+        "id": "instrumental-relax",
+        "categoria": "Instrumental y Relax",
+        "emoji": "🎧",
+        "nombre": "Instrumental y Relax",
+        "descripcion": "Música ambiental y relajación",
+        "url_stream": ""
+    }
+]
