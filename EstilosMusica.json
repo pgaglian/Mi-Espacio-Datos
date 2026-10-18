@@ -12,16 +12,16 @@
     ]
   },
   {
-    "id": "rock-nacional",
-    "categoria": "Rock Nacional",
-    "emoji": "🇦🇷",
-    "nombre": "Rock nacional argentino",
-    "descripcion": "Rock argentino",
-    "url_stream": "https://stream.zeno.fm/287z97ksdg8uv",
-    "alternativas": [
-      "https://stream.zeno.fm/a1n0zqyqp2zuv",
-      "https://stream.zeno.fm/pxzwykxbluitv"
-    ]
+  "id": "rock-nacional",
+  "categoria": "Rock Nacional",
+  "emoji": "🇦🇷",
+  "nombre": "Rock nacional argentino",
+  "descripcion": "Rock argentino",
+  "url_stream": "https://stream-280.surfernetwork.com/g9purm3158quv",
+  "alternativas": [
+    "https://stream.zeno.fm/a1n0zqyqp2zuv",
+    "https://stream.zeno.fm/pxzwykxbluitv"
+  ]
   },
   {
     "id": "pop",
@@ -48,27 +48,27 @@
     ]
   },
   {
-    "id": "cumbia",
-    "categoria": "Cumbia",
-    "emoji": "🪗",
-    "nombre": "Cumbia",
-    "descripcion": "Cumbia y música tropical",
-    "url_stream": "https://stream.zeno.fm/54e4v1g992zuv",
-    "alternativas": [
-      "https://stream.zeno.fm/287z97ksdg8uv",
-      "https://stream.zeno.fm/a1n0zqyqp2zuv"
+  "id": "cumbia",
+  "categoria": "Cumbia",
+  "emoji": "🪗",
+  "nombre": "Cumbia",
+  "descripcion": "Cumbia y música tropical",
+  "url_stream": "https://stream-284.surfernetwork.com/60pqgs97f2zuv",
+  "alternativas": [
+    "https://stream.zeno.fm/287z97ksdg8uv",
+    "https://stream.zeno.fm/a1n0zqyqp2zuv"
     ]
   },
   {
-    "id": "cuarteto",
-    "categoria": "Cuarteto",
-    "emoji": "🕺",
-    "nombre": "Cuarteto",
-    "descripcion": "Cuarteto cordobés",
-    "url_stream": "https://stream.zeno.fm/f9p1vzm224zuv",
-    "alternativas": [
-      "https://stream.zeno.fm/54e4v1g992zuv",
-      "https://stream.zeno.fm/287z97ksdg8uv"
+  "id": "cuarteto",
+  "categoria": "Cuarteto",
+  "emoji": "🕺",
+  "nombre": "Cuarteto",
+  "descripcion": "Cuarteto cordobés",
+  "url_stream": "https://streaming.radiosenlinea.com.ar:10763/live",
+  "alternativas": [
+    "https://stream.zeno.fm/54e4v1g992zuv",
+    "https://stream.zeno.fm/287z97ksdg8uv"
     ]
   },
   {
