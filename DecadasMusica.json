@@ -37,16 +37,12 @@
     ]
   },
   {
-    "id": "decada-80",
+    "id": "80-internacional",
+    "nombre": "80 Internacional",
     "categoria": "Años 80",
-    "emoji": "📼",
-    "nombre": "Años 80",
-    "descripcion": "Pop y rock de los años 80",
-    "url_stream": "https://ice5.somafm.com/u80s-128-mp3",
-    "alternativas": [
-      "https://ice2.somafm.com/u80s-128-mp3",
-      "https://listen.181fm.com/181-awesome80s_128k.mp3"
-    ]
+    "descripcion": "Éxitos internacionales de los años 80",
+    "url_stream": "https://27423.live.streamtheworld.com/80INTERNACIONAL_PYTAAC.aac",
+    "alternativas": []
   },
   {
     "id": "decada-90",
