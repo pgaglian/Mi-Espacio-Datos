@@ -1,0 +1,206 @@
+[
+  {
+    "id": "rock-internacional",
+    "categoria": "Rock internacional",
+    "emoji": "🤘",
+    "nombre": "Rock internacional",
+    "descripcion": "Rock y clásicos internacionales",
+    "url_stream": "https://ice1.somafm.com/u80s-128-mp3",
+    "alternativas": [
+      "https://ice1.somafm.com/defcon-128-mp3",
+      "https://listen.181fm.com/181-rock_128k.mp3"
+    ]
+  },
+  {
+    "id": "rock-nacional",
+    "categoria": "Rock Nacional",
+    "emoji": "🇦🇷",
+    "nombre": "Rock nacional argentino",
+    "descripcion": "Rock argentino",
+    "url_stream": "https://stream.zeno.fm/287z97ksdg8uv",
+    "alternativas": [
+      "https://stream.zeno.fm/a1n0zqyqp2zuv",
+      "https://stream.zeno.fm/pxzwykxbluitv"
+    ]
+  },
+  {
+    "id": "pop",
+    "categoria": "Pop",
+    "emoji": "🎤",
+    "nombre": "PopTron",
+    "descripcion": "Pop continuo",
+    "url_stream": "https://ice5.somafm.com/poptron-128-mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-top40_128k.mp3",
+      "https://ice1.somafm.com/seventies-128-mp3"
+    ]
+  },
+  {
+    "id": "pop-latino",
+    "categoria": "Pop Latino",
+    "emoji": "🇦🇷",
+    "nombre": "Pop latino",
+    "descripcion": "Pop latino y éxitos en español",
+    "url_stream": "https://stream.zeno.fm/u21z32p792zuv",
+    "alternativas": [
+      "https://stream.zeno.fm/3bkb8a7nq2zuv",
+      "https://stream.zeno.fm/79e8m81yq4zuv"
+    ]
+  },
+  {
+    "id": "cumbia",
+    "categoria": "Cumbia",
+    "emoji": "🪗",
+    "nombre": "Cumbia",
+    "descripcion": "Cumbia y música tropical",
+    "url_stream": "https://stream.zeno.fm/54e4v1g992zuv",
+    "alternativas": [
+      "https://stream.zeno.fm/287z97ksdg8uv",
+      "https://stream.zeno.fm/a1n0zqyqp2zuv"
+    ]
+  },
+  {
+    "id": "cuarteto",
+    "categoria": "Cuarteto",
+    "emoji": "🕺",
+    "nombre": "Cuarteto",
+    "descripcion": "Cuarteto cordobés",
+    "url_stream": "https://stream.zeno.fm/f9p1vzm224zuv",
+    "alternativas": [
+      "https://stream.zeno.fm/54e4v1g992zuv",
+      "https://stream.zeno.fm/287z97ksdg8uv"
+    ]
+  },
+  {
+    "id": "salsa",
+    "categoria": "Salsa",
+    "emoji": "💃",
+    "nombre": "Salsa",
+    "descripcion": "Salsa y ritmos tropicales",
+    "url_stream": "https://listen.181fm.com/181-salsa_128k.mp3",
+    "alternativas": [
+      "https://stream.zeno.fm/79e8m81yq4zuv",
+      "https://stream.zeno.fm/u21z32p792zuv"
+    ]
+  },
+  {
+    "id": "reggaeton",
+    "categoria": "Reggaetón",
+    "emoji": "🔥",
+    "nombre": "Reggaetón",
+    "descripcion": "Música urbana",
+    "url_stream": "https://stream.zeno.fm/8wup8yd9dm0uv",
+    "alternativas": [
+      "https://stream.zeno.fm/e22y3q4c14zuv",
+      "https://stream.zeno.fm/3bkb8a7nq2zuv"
+    ]
+  },
+  {
+    "id": "disco-funk",
+    "categoria": "Disco y Funk",
+    "emoji": "🪩",
+    "nombre": "Disco y Funk",
+    "descripcion": "Clásicos disco y funk",
+    "url_stream": "https://ice1.somafm.com/leftcoast70s-128-mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-soul_128k.mp3",
+      "https://ice1.somafm.com/funkblaster-128-mp3"
+    ]
+  },
+  {
+    "id": "electronica",
+    "categoria": "Electrónica",
+    "emoji": "🎹",
+    "nombre": "Electrónica",
+    "descripcion": "Electrónica, house y lounge",
+    "url_stream": "https://ice1.somafm.com/groovesalad-128-mp3",
+    "alternativas": [
+      "https://ice1.somafm.com/deepspaceone-128-mp3",
+      "https://ice1.somafm.com/beatblender-128-mp3"
+    ]
+  },
+  {
+    "id": "jazz-blues",
+    "categoria": "Jazz y Blues",
+    "emoji": "🎷",
+    "nombre": "Jazz y Blues",
+    "descripcion": "Jazz suave y blues",
+    "url_stream": "https://ice1.somafm.com/sonicuniverse-128-mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-jazz_128k.mp3",
+      "https://listen.181fm.com/181-greatblues_128k.mp3"
+    ]
+  },
+  {
+    "id": "tango",
+    "categoria": "Tango",
+    "emoji": "🪗",
+    "nombre": "Tango",
+    "descripcion": "Tango argentino",
+    "url_stream": "https://stream.zeno.fm/287z97ksdg8uv",
+    "alternativas": [
+      "https://stream.zeno.fm/65b9s6t382zuv",
+      "https://stream.zeno.fm/pxzwykxbluitv"
+    ]
+  },
+  {
+    "id": "folklore",
+    "categoria": "Folklore",
+    "emoji": "🧉",
+    "nombre": "Folklore",
+    "descripcion": "Folklore argentino",
+    "url_stream": "https://stream.zeno.fm/b9k69p9yag8uv",
+    "alternativas": [
+      "https://stream.zeno.fm/65b9s6t382zuv",
+      "https://stream.zeno.fm/287z97ksdg8uv"
+    ]
+  },
+  {
+    "id": "romanticos",
+    "categoria": "Románticos",
+    "emoji": "❤️",
+    "nombre": "Románticos",
+    "descripcion": "Lentos y baladas",
+    "url_stream": "https://listen.181fm.com/181-ballads_128k.mp3",
+    "alternativas": [
+      "https://stream.zeno.fm/p8vca7x133zuv",
+      "https://listen.181fm.com/181-slowhits_128k.mp3"
+    ]
+  },
+  {
+    "id": "clasica",
+    "categoria": "Clásica",
+    "emoji": "🎻",
+    "nombre": "Música clásica",
+    "descripcion": "Música clásica y orquestal",
+    "url_stream": "https://swr-swr2-live.cast.addradio.de/swr/swr2/live/mp3/128/stream.mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-classical_128k.mp3",
+      "https://stream.zeno.fm/f14a796w88quv"
+    ]
+  },
+  {
+    "id": "reggae",
+    "categoria": "Reggae",
+    "emoji": "🌿",
+    "nombre": "Reggae",
+    "descripcion": "Reggae roots",
+    "url_stream": "https://ice1.somafm.com/heavyweightreggae-128-mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-reggae_128k.mp3",
+      "https://ice1.somafm.com/suburbsofgoa-128-mp3"
+    ]
+  },
+  {
+    "id": "instrumental-relax",
+    "categoria": "Instrumental y Relax",
+    "emoji": "🎧",
+    "nombre": "Instrumental y Relax",
+    "descripcion": "Música ambiental y relajación",
+    "url_stream": "https://ice1.somafm.com/dronezone-128-mp3",
+    "alternativas": [
+      "https://ice1.somafm.com/spacestation-128-mp3",
+      "https://listen.181fm.com/181-chillout_128k.mp3"
+    ]
+  }
+]
