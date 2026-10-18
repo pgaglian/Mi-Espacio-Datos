@@ -1,18 +1,5 @@
-
 [
-  {
-    "id": "decada-50",
-    "categoria": "Años 50",
-    "emoji": "🎙️",
-    "nombre": "Años 50",
-    "descripcion": "Rock and roll y clásicos de los años 50",
-    "url_stream": "https://listen.181fm.com/181-50s_128k.mp3",
-    "alternativas": [
-      "https://ice1.somafm.com/u80s-128-mp3",
-      "https://stream.zeno.fm/f14a796w88quv"
-    ]
-  },
-  {
+    {
     "id": "decada-60",
     "categoria": "Años 60",
     "emoji": "✌️",
@@ -37,12 +24,16 @@
     ]
   },
   {
-    "id": "80-internacional",
-    "nombre": "80 Internacional",
+    "id": "decada-80",
     "categoria": "Años 80",
-    "descripcion": "Éxitos internacionales de los años 80",
-    "url_stream": "https://27423.live.streamtheworld.com/80INTERNACIONAL_PYTAAC.aac",
-    "alternativas": []
+    "emoji": "📼",
+    "nombre": "Años 80",
+    "descripcion": "Pop y rock de los años 80",
+    "url_stream": "https://ice1.somafm.com/u80s-128-mp3",
+    "alternativas": [
+      "https://listen.181fm.com/181-80s_128k.mp3",
+      "https://listen.181fm.com/181-awesome80s_128k.mp3"
+    ]
   },
   {
     "id": "decada-90",
