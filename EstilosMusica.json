@@ -27,7 +27,7 @@
     "id": "pop",
     "categoria": "Pop",
     "emoji": "🎤",
-    "nombre": "PopTron",
+    "nombre": "Pop",
     "descripcion": "Pop continuo",
     "url_stream": "https://ice5.somafm.com/poptron-128-mp3",
     "alternativas": [
@@ -38,13 +38,12 @@
   {
     "id": "pop-latino",
     "categoria": "Pop Latino",
-    "emoji": "🇦🇷",
+    "emoji": "🌴",
     "nombre": "Pop latino",
     "descripcion": "Pop latino y éxitos en español",
-    "url_stream": "https://stream.zeno.fm/u21z32p792zuv",
+    "url_stream": "https://media.streamingradiomx.com/listen/pop/on",
     "alternativas": [
-      "https://stream.zeno.fm/3bkb8a7nq2zuv",
-      "https://stream.zeno.fm/79e8m81yq4zuv"
+     "https://stream.zeno.fm/3bkb8a7nq2zuv"
     ]
   },
   {
@@ -146,11 +145,8 @@
     "emoji": "🧉",
     "nombre": "Folklore",
     "descripcion": "Folklore argentino",
-    "url_stream": "https://stream.zeno.fm/b9k69p9yag8uv",
-    "alternativas": [
-      "https://stream.zeno.fm/65b9s6t382zuv",
-      "https://stream.zeno.fm/287z97ksdg8uv"
-    ]
+    "url_stream": "https://dj91.hostingnuclear.com:10944/stream;",
+    "alternativas": []
   },
   {
     "id": "romanticos",
@@ -158,7 +154,7 @@
     "emoji": "❤️",
     "nombre": "Románticos",
     "descripcion": "Lentos y baladas",
-    "url_stream": "https://listen.181fm.com/181-ballads_128k.mp3",
+    "url_stream": "https://s3.conectarmedia.com:8016/stream",
     "alternativas": [
       "https://stream.zeno.fm/p8vca7x133zuv",
       "https://listen.181fm.com/181-slowhits_128k.mp3"
