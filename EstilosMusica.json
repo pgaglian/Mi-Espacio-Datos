@@ -137,11 +137,8 @@
     "emoji": "🪗",
     "nombre": "Tango",
     "descripcion": "Tango argentino",
-    "url_stream": "https://stream.zeno.fm/287z97ksdg8uv",
-    "alternativas": [
-      "https://stream.zeno.fm/65b9s6t382zuv",
-      "https://stream.zeno.fm/pxzwykxbluitv"
-    ]
+    "url_stream": "https://tangoparabailar.stream.laut.fm/tangoparabailar?ref=web-app&aw_0_req.userConsentV2=%5Bobject+Object%5D",
+    "alternativas": []
   },
   {
     "id": "folklore",
