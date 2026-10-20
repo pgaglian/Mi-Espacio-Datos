@@ -5,7 +5,7 @@
     "emoji": "✌️",
     "nombre": "Años 60",
     "descripcion": "Beat, pop y rock de los años 60",
-    "url_stream": "https://listen.181fm.com/181-60s_128k.mp3",
+    "url_stream": "https://stream-icy.bauermedia.pt/m8060.aac",
     "alternativas": [
       "https://ice1.somafm.com/seventies-128-mp3",
       "https://stream.zeno.fm/3bkb8a7nq2zuv"
@@ -29,9 +29,9 @@
     "emoji": "📼",
     "nombre": "Años 80",
     "descripcion": "Pop y rock de los años 80",
-    "url_stream": "https://ice1.somafm.com/u80s-128-mp3",
+    "url_stream": "https://stream.laut.fm/forever80-pop",
     "alternativas": [
-      "https://listen.181fm.com/181-80s_128k.mp3",
+      "https://rfm.lmn.fm/rfm-wr4.aac",
       "https://listen.181fm.com/181-awesome80s_128k.mp3"
     ]
   },
@@ -41,7 +41,7 @@
     "emoji": "💿",
     "nombre": "Años 90",
     "descripcion": "Pop, rock y dance de los años 90",
-    "url_stream": "https://listen.181fm.com/181-90s_128k.mp3",
+    "url_stream": "https://audiopanel.com.ar:8010/radio.aac",
     "alternativas": [
       "https://listen.181fm.com/181-90salt_128k.mp3",
       "https://ice1.somafm.com/poptron-128-mp3"
