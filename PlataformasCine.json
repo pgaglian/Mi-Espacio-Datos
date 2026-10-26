@@ -162,6 +162,24 @@
     "ultimaVerificacion": "2026-10-02"
   },
   {
+  "id": "movistartv",
+  "nombre": "Movistar TV",
+  "logo": "movistartv",
+  "tipo": "pago",
+  "contenido": "peliculas_series_tv",
+  "disponibilidad": "Argentina",
+  "sitioOficial": "https://www.movistar.com.ar/productos-y-servicios/tv",
+  "urlAyuda": "",
+  "android": "https://play.google.com/store/apps/details?id=com.telefonica.video.movistartv.ar",
+  "ios": "https://apps.apple.com/ar/app/movistar-tv-argentina/id1450212002",
+  "registroNecesario": true,
+  "requiereCuenta": true,
+  "requiereSuscripcion": true,
+  "permiteContratacion": true,
+  "activo": true,
+  "ultimaVerificacion": "2026-10-26"
+  },
+  {
     "id": "flow",
     "nombre": "Flow",
     "logo": "flow",
