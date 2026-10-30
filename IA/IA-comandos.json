@@ -1,3 +1,4 @@
+
 {
   "acciones": [
     {
@@ -6,10 +7,13 @@
       "icono": "📅",
       "destino": "Calendario",
       "comandos": [
+        "calendario",
         "abrir calendario",
-        "mostrar calendario",
-        "quiero ver mi agenda",
-        "ver eventos"
+        "ver calendario",
+        "agenda",
+        "mis eventos",
+        "turnos",
+        "fechas"
       ]
     },
     {
@@ -18,11 +22,14 @@
       "icono": "🌤",
       "destino": "Clima",
       "comandos": [
-        "abrir clima",
-        "mostrar clima",
-        "cómo está el clima",
-        "consultar el tiempo",
-        "pronóstico del tiempo"
+        "clima",
+        "el tiempo",
+        "pronostico",
+        "temperatura",
+        "lluvia",
+        "va a llover",
+        "clima de mañana",
+        "clima de hoy"
       ]
     },
     {
@@ -31,10 +38,12 @@
       "icono": "📝",
       "destino": "Pizarra",
       "comandos": [
-        "abrir pizarra",
-        "mostrar pizarra",
-        "ver mis notas",
-        "quiero escribir una nota"
+        "pizarra",
+        "notas",
+        "mis notas",
+        "anotaciones",
+        "escribir una nota",
+        "bloc de notas"
       ]
     },
     {
@@ -43,10 +52,10 @@
       "icono": "💬",
       "destino": "Chat",
       "comandos": [
-        "abrir chat",
-        "mostrar chat",
-        "quiero chatear",
-        "ver conversaciones"
+        "chat",
+        "mensajes",
+        "conversaciones",
+        "mensajeria"
       ]
     },
     {
@@ -55,10 +64,12 @@
       "icono": "📧",
       "destino": "Correo",
       "comandos": [
-        "abrir correo",
-        "mostrar correo",
-        "ver mis correos",
-        "quiero revisar mi email"
+        "correo",
+        "email",
+        "e mail",
+        "mail",
+        "bandeja de entrada",
+        "mis correos"
       ]
     },
     {
@@ -67,11 +78,14 @@
       "icono": "🏦",
       "destino": "Bancos",
       "comandos": [
-        "abrir bancos",
-        "mostrar bancos",
-        "ver mis bancos",
+        "bancos",
+        "banco",
+        "mi banco",
+        "mis bancos",
+        "cuentas bancarias",
         "promociones bancarias",
-        "promociones de bancos"
+        "promociones de bancos",
+        "dolar"
       ]
     },
     {
@@ -80,11 +94,13 @@
       "icono": "💳",
       "destino": "Billeteras",
       "comandos": [
-        "abrir billeteras",
-        "mostrar billeteras",
-        "ver mis billeteras",
-        "promociones de billeteras",
-        "pagos y servicios"
+        "billeteras",
+        "billetera",
+        "bille",
+        "billeteras virtuales",
+        "billetera virtual",
+        "pagos digitales",
+        "promociones de billeteras"
       ]
     }
   ],
@@ -95,10 +111,12 @@
       "icono": "📚",
       "destino": "Biblioteca",
       "comandos": [
-        "abrir biblioteca",
-        "mostrar biblioteca",
-        "ver mis libros",
-        "abrir documentos"
+        "biblioteca",
+        "libros",
+        "mis libros",
+        "lectura",
+        "leer",
+        "material de lectura"
       ]
     },
     {
@@ -107,10 +125,13 @@
       "icono": "🎵",
       "destino": "Musica",
       "comandos": [
-        "abrir música",
-        "mostrar música",
-        "escuchar música",
-        "quiero escuchar música"
+        "musica",
+        "escuchar musica",
+        "reproducir musica",
+        "canciones",
+        "plataformas de musica",
+        "decadas musicales",
+        "estilos musicales"
       ]
     },
     {
@@ -119,24 +140,30 @@
       "icono": "📻",
       "destino": "Radios",
       "comandos": [
-        "abrir radios",
-        "mostrar radios",
+        "radios",
+        "radio",
         "escuchar radio",
-        "poner una radio",
-        "quiero escuchar la radio"
+        "poner la radio",
+        "emisoras",
+        "estaciones de radio",
+        "radio am",
+        "radio fm"
       ]
     },
     {
-      "id": "fitness",
-      "nombre": "Fitness",
+      "id": "entrenamiento",
+      "nombre": "Entrenamiento",
       "icono": "🏋️",
       "destino": "Entrenamiento",
       "comandos": [
-        "abrir fitness",
-        "abrir entrenamiento",
-        "mostrar entrenamiento",
-        "quiero entrenar",
-        "iniciar entrenamiento"
+        "entrenamiento",
+        "fitness",
+        "ejercicio",
+        "ejercicios",
+        "entrenar",
+        "rutina",
+        "tabata",
+        "temporizador de entrenamiento"
       ]
     },
     {
@@ -145,10 +172,12 @@
       "icono": "🎬",
       "destino": "Cine",
       "comandos": [
-        "abrir cine",
-        "mostrar cine",
-        "ver películas",
-        "ver series"
+        "cine",
+        "peliculas",
+        "series",
+        "ver peliculas",
+        "plataformas de streaming",
+        "streaming"
       ]
     },
     {
@@ -157,10 +186,12 @@
       "icono": "📸",
       "destino": "Recuerdos",
       "comandos": [
-        "abrir recuerdos",
-        "mostrar recuerdos",
-        "ver mis fotos",
-        "ver mis momentos"
+        "recuerdos",
+        "fotos",
+        "fotografias",
+        "mis fotos",
+        "album",
+        "imagenes"
       ]
     },
     {
@@ -169,9 +200,10 @@
       "icono": "▶️",
       "destino": "Videos",
       "comandos": [
-        "abrir videos",
-        "mostrar videos",
-        "ver mis videos"
+        "videos",
+        "video",
+        "ver videos",
+        "reproducir videos"
       ]
     },
     {
@@ -180,10 +212,11 @@
       "icono": "🌐",
       "destino": "Redes",
       "comandos": [
-        "abrir redes sociales",
-        "mostrar redes sociales",
-        "abrir redes",
-        "ver redes sociales"
+        "redes",
+        "redes sociales",
+        "mis redes",
+        "red social",
+        "sociales"
       ]
     },
     {
@@ -192,10 +225,12 @@
       "icono": "🎮",
       "destino": "Juegos",
       "comandos": [
-        "abrir juegos",
-        "mostrar juegos",
-        "quiero jugar",
-        "vamos a jugar"
+        "juegos",
+        "juego",
+        "mis juegos",
+        "perfiles de juegos",
+        "videojuegos",
+        "jugar"
       ]
     }
   ]
