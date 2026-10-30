@@ -389,7 +389,8 @@ function programarEscaneo() {
        OBSERVAR ELEMENTOS NUEVOS Y CAMBIOS
        ===================================================== */
 
-    function observarIndex() {
+
+function observarIndex() {
 
     if (
         observadorActivo ||
@@ -401,34 +402,64 @@ function programarEscaneo() {
     const selectorRelevante =
         "[id], [onclick], button, a, input, select, textarea, [role='button']";
 
+    const atributosRelevantes = [
+        "id",
+        "onclick",
+        "aria-label",
+        "title",
+        "data-titulo",
+        "data-nombre",
+        "placeholder"
+    ];
+
     const observador = new MutationObserver(cambios => {
 
-        let hayElementosNuevos = false;
+        let necesitaEscaneo = false;
 
         cambios.forEach(cambio => {
 
-            if (cambio.type !== "childList") {
+            /* ELEMENTOS AGREGADOS O ELIMINADOS */
+
+            if (cambio.type === "childList") {
+
+                necesitaEscaneo = true;
                 return;
+
             }
 
-            cambio.addedNodes.forEach(nodo => {
+            /* ATRIBUTOS MODIFICADOS */
 
-                if (nodo.nodeType !== 1) {
-                    return;
-                }
+            if (cambio.type === "attributes") {
 
                 if (
-                    nodo.matches(selectorRelevante) ||
-                    nodo.querySelector(selectorRelevante)
+                    cambio.target.matches(selectorRelevante)
                 ) {
-                    hayElementosNuevos = true;
+                    necesitaEscaneo = true;
                 }
 
-            });
+                return;
+
+            }
+
+            /* TEXTO MODIFICADO */
+
+            if (cambio.type === "characterData") {
+
+                const elemento =
+                    cambio.target.parentElement;
+
+                if (
+                    elemento &&
+                    elemento.closest(selectorRelevante)
+                ) {
+                    necesitaEscaneo = true;
+                }
+
+            }
 
         });
 
-        if (hayElementosNuevos) {
+        if (necesitaEscaneo) {
             programarEscaneo();
         }
 
@@ -438,13 +469,17 @@ function programarEscaneo() {
         document.body,
         {
             childList: true,
-            subtree: true
+            subtree: true,
+            attributes: true,
+            attributeFilter: atributosRelevantes,
+            characterData: true
         }
     );
 
     observadorActivo = true;
 
 }
+
     /* =====================================================
        PROCESAR COMANDOS
        ===================================================== */
