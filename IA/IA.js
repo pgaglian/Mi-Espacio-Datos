@@ -14,7 +14,7 @@ const MiEspacioIA = (() => {
     };
 
     let observadorActivo = false;
-    let escaneoPendiente = false;
+    let temporizadorEscaneo = null;
 
 
     /* =====================================================
@@ -368,23 +368,21 @@ const MiEspacioIA = (() => {
        ACTUALIZAR ESCANEO CUANDO CAMBIA EL INDEX
        ===================================================== */
 
-    function programarEscaneo() {
+function programarEscaneo() {
 
-        if (escaneoPendiente) {
-            return;
-        }
-
-        escaneoPendiente = true;
-
-        Promise.resolve().then(() => {
-
-            escaneoPendiente = false;
-
-            escanearIndex();
-
-        });
-
+    if (temporizadorEscaneo) {
+        clearTimeout(temporizadorEscaneo);
     }
+
+    temporizadorEscaneo = setTimeout(() => {
+
+        temporizadorEscaneo = null;
+
+        escanearIndex();
+
+    }, 800);
+
+}
 
 
     /* =====================================================
@@ -393,65 +391,60 @@ const MiEspacioIA = (() => {
 
     function observarIndex() {
 
-        if (
-            observadorActivo ||
-            !document.body
-        ) {
-            return;
-        }
-
-        const observador = new MutationObserver(
-            cambios => {
-
-                const hayCambiosRelevantes =
-                    cambios.some(cambio => {
-
-                        if (
-                            cambio.type === "childList"
-                        ) {
-                            return true;
-                        }
-
-                        return [
-                            "id",
-                            "onclick",
-                            "title",
-                            "aria-label",
-                            "data-titulo",
-                            "data-nombre"
-                        ].includes(cambio.attributeName);
-
-                    });
-
-                if (hayCambiosRelevantes) {
-                    programarEscaneo();
-                }
-
-            }
-        );
-
-        observador.observe(
-            document.body,
-            {
-                childList: true,
-                subtree: true,
-                attributes: true,
-                attributeFilter: [
-                    "id",
-                    "onclick",
-                    "title",
-                    "aria-label",
-                    "data-titulo",
-                    "data-nombre"
-                ]
-            }
-        );
-
-        observadorActivo = true;
-
+    if (
+        observadorActivo ||
+        !document.body
+    ) {
+        return;
     }
 
+    const selectorRelevante =
+        "[id], [onclick], button, a, input, select, textarea, [role='button']";
 
+    const observador = new MutationObserver(cambios => {
+
+        let hayElementosNuevos = false;
+
+        cambios.forEach(cambio => {
+
+            if (cambio.type !== "childList") {
+                return;
+            }
+
+            cambio.addedNodes.forEach(nodo => {
+
+                if (nodo.nodeType !== 1) {
+                    return;
+                }
+
+                if (
+                    nodo.matches(selectorRelevante) ||
+                    nodo.querySelector(selectorRelevante)
+                ) {
+                    hayElementosNuevos = true;
+                }
+
+            });
+
+        });
+
+        if (hayElementosNuevos) {
+            programarEscaneo();
+        }
+
+    });
+
+    observador.observe(
+        document.body,
+        {
+            childList: true,
+            subtree: true
+        }
+    );
+
+    observadorActivo = true;
+
+}
     /* =====================================================
        PROCESAR COMANDOS
        ===================================================== */
@@ -492,13 +485,14 @@ const MiEspacioIA = (() => {
 
                 const comando = normalizar(opcion);
 
-                return (
-                    pedido === comando ||
-                    (
-                        comando.length >= 4 &&
-                        pedido.includes(comando)
-                    )
-                );
+              return (
+    pedido === comando ||
+    comando.includes(pedido) ||
+    (
+        comando.length >= 4 &&
+        pedido.includes(comando)
+    )
+);
 
             });
 
