@@ -1,0 +1,202 @@
+{
+  "acciones": [
+    {
+      "id": "calendario",
+      "nombre": "Calendario",
+      "icono": "📅",
+      "destino": "Calendario",
+      "comandos": [
+        "abrir calendario",
+        "mostrar calendario",
+        "quiero ver mi agenda",
+        "ver eventos"
+      ]
+    },
+    {
+      "id": "clima",
+      "nombre": "Clima",
+      "icono": "🌤",
+      "destino": "Clima",
+      "comandos": [
+        "abrir clima",
+        "mostrar clima",
+        "cómo está el clima",
+        "consultar el tiempo",
+        "pronóstico del tiempo"
+      ]
+    },
+    {
+      "id": "pizarra",
+      "nombre": "Pizarra",
+      "icono": "📝",
+      "destino": "Pizarra",
+      "comandos": [
+        "abrir pizarra",
+        "mostrar pizarra",
+        "ver mis notas",
+        "quiero escribir una nota"
+      ]
+    },
+    {
+      "id": "chat",
+      "nombre": "Chat",
+      "icono": "💬",
+      "destino": "Chat",
+      "comandos": [
+        "abrir chat",
+        "mostrar chat",
+        "quiero chatear",
+        "ver conversaciones"
+      ]
+    },
+    {
+      "id": "correo",
+      "nombre": "Correo",
+      "icono": "📧",
+      "destino": "Correo",
+      "comandos": [
+        "abrir correo",
+        "mostrar correo",
+        "ver mis correos",
+        "quiero revisar mi email"
+      ]
+    },
+    {
+      "id": "bancos",
+      "nombre": "Bancos",
+      "icono": "🏦",
+      "destino": "Bancos",
+      "comandos": [
+        "abrir bancos",
+        "mostrar bancos",
+        "ver mis bancos",
+        "promociones bancarias",
+        "promociones de bancos"
+      ]
+    },
+    {
+      "id": "billeteras",
+      "nombre": "Billeteras",
+      "icono": "💳",
+      "destino": "Billeteras",
+      "comandos": [
+        "abrir billeteras",
+        "mostrar billeteras",
+        "ver mis billeteras",
+        "promociones de billeteras",
+        "pagos y servicios"
+      ]
+    }
+  ],
+  "ambientes": [
+    {
+      "id": "biblioteca",
+      "nombre": "Biblioteca",
+      "icono": "📚",
+      "destino": "Biblioteca",
+      "comandos": [
+        "abrir biblioteca",
+        "mostrar biblioteca",
+        "ver mis libros",
+        "abrir documentos"
+      ]
+    },
+    {
+      "id": "musica",
+      "nombre": "Música",
+      "icono": "🎵",
+      "destino": "Musica",
+      "comandos": [
+        "abrir música",
+        "mostrar música",
+        "escuchar música",
+        "quiero escuchar música"
+      ]
+    },
+    {
+      "id": "radios",
+      "nombre": "Radios",
+      "icono": "📻",
+      "destino": "Radios",
+      "comandos": [
+        "abrir radios",
+        "mostrar radios",
+        "escuchar radio",
+        "poner una radio",
+        "quiero escuchar la radio"
+      ]
+    },
+    {
+      "id": "fitness",
+      "nombre": "Fitness",
+      "icono": "🏋️",
+      "destino": "Entrenamiento",
+      "comandos": [
+        "abrir fitness",
+        "abrir entrenamiento",
+        "mostrar entrenamiento",
+        "quiero entrenar",
+        "iniciar entrenamiento"
+      ]
+    },
+    {
+      "id": "cine",
+      "nombre": "Cine",
+      "icono": "🎬",
+      "destino": "Cine",
+      "comandos": [
+        "abrir cine",
+        "mostrar cine",
+        "ver películas",
+        "ver series"
+      ]
+    },
+    {
+      "id": "recuerdos",
+      "nombre": "Recuerdos",
+      "icono": "📸",
+      "destino": "Recuerdos",
+      "comandos": [
+        "abrir recuerdos",
+        "mostrar recuerdos",
+        "ver mis fotos",
+        "ver mis momentos"
+      ]
+    },
+    {
+      "id": "videos",
+      "nombre": "Videos",
+      "icono": "▶️",
+      "destino": "Videos",
+      "comandos": [
+        "abrir videos",
+        "mostrar videos",
+        "ver mis videos"
+      ]
+    },
+    {
+      "id": "redes",
+      "nombre": "Redes Sociales",
+      "icono": "🌐",
+      "destino": "Redes",
+      "comandos": [
+        "abrir redes sociales",
+        "mostrar redes sociales",
+        "abrir redes",
+        "ver redes sociales"
+      ]
+    },
+    {
+      "id": "juegos",
+      "nombre": "Juegos",
+      "icono": "🎮",
+      "destino": "Juegos",
+      "comandos": [
+        "abrir juegos",
+        "mostrar juegos",
+        "quiero jugar",
+        "vamos a jugar"
+      ]
+    }
+  ]
+}

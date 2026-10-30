@@ -1,0 +1,34 @@
+{
+  "titulo": "¿Qué puedo pedir?",
+  "categorias": [
+    {
+      "nombre": "Ambientes",
+      "comandos": [
+        "Abrí Radios",
+        "Abrí Música",
+        "Abrí Cine",
+        "Abrí Videos",
+        "Abrí Recuerdos",
+        "Abrí Biblioteca"
+      ]
+    },
+    {
+      "nombre": "Acciones",
+      "comandos": [
+        "Abrí el Calendario",
+        "Mostrame el Clima",
+        "Abrí la Pizarra",
+        "Abrí el Chat",
+        "Abrí Bancos",
+        "Abrí Billeteras"
+      ]
+    },
+    {
+      "nombre": "Plataformas",
+      "comandos": [
+        "Abrí Netflix",
+        "Abrí YouTube"
+      ]
+    }
+  ]
+}
