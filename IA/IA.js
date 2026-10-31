@@ -626,41 +626,89 @@ const MiEspacioIA = (() => {
 
 
     /* =====================================================
-       MOSTRAR OPCIONES
-       ===================================================== */
+   MOSTRAR OPCIONES SELECCIONABLES
+   ===================================================== */
 
-    function describirOpciones(titulo, opciones) {
+function describirOpciones(titulo, opciones) {
 
-        const unicas = [];
+    const unicas = [];
 
-        const claves = new Set();
+    const claves = new Set();
 
-        opciones.forEach(opcion => {
+    opciones.forEach(opcion => {
 
-            const clave = normalizar(opcion);
+        const clave = normalizar(opcion);
 
-            if (!clave || claves.has(clave)) {
-                return;
-            }
+        if (!clave || claves.has(clave)) {
+            return;
+        }
 
-            claves.add(clave);
+        claves.add(clave);
 
-            unicas.push(opcion);
+        unicas.push(opcion);
+
+    });
+
+    const contenedor =
+        document.getElementById("respuestaMiEspacioIA");
+
+    if (!contenedor) {
+        responder(titulo);
+        return;
+    }
+
+    contenedor.innerHTML = "";
+
+    const encabezado =
+        document.createElement("div");
+
+    encabezado.textContent = titulo;
+
+    encabezado.style.marginBottom = "10px";
+
+    contenedor.appendChild(encabezado);
+
+    unicas.slice(0, 12).forEach(opcion => {
+
+        const boton =
+            document.createElement("button");
+
+        boton.type = "button";
+
+        boton.textContent = opcion;
+
+        boton.style.display = "block";
+        boton.style.width = "100%";
+        boton.style.margin = "6px 0";
+        boton.style.padding = "9px 12px";
+        boton.style.borderRadius = "8px";
+        boton.style.border = "1px solid #D4AF37";
+        boton.style.background = "#252525";
+        boton.style.color = "#FFFFFF";
+        boton.style.cursor = "pointer";
+        boton.style.textAlign = "left";
+
+        boton.addEventListener("click", () => {
+
+            procesar(opcion);
 
         });
 
-        responder(
-            titulo +
-            "\n" +
-            unicas.slice(0, 12)
-                .map(
-                    (opcion, indice) =>
-                        (indice + 1) + ". " + opcion
-                )
-                .join("\n") +
-            "\n\nAgregá alguna palabra para precisar qué querés abrir."
-        );
-    }
+        contenedor.appendChild(boton);
+
+    });
+
+    const aclaracion =
+        document.createElement("div");
+
+    aclaracion.textContent =
+        "Elegí una opción para continuar.";
+
+    aclaracion.style.marginTop = "10px";
+
+    contenedor.appendChild(aclaracion);
+
+}
 
 
     /* =====================================================
