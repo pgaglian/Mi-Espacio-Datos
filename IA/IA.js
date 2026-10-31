@@ -452,123 +452,236 @@ const MiEspacioIA = (() => {
 
         observadorActivo = true;
     }
+  
+  /* =====================================================
+   CARGAR Y VALIDAR COMANDOS JSON
+   ===================================================== */
 
+async function cargarComandos() {
 
-    /* =====================================================
-       CARGAR JSON EXISTENTE
-       ===================================================== */
+    if (
+        comandosIA &&
+        Array.isArray(comandosIA.acciones) &&
+        Array.isArray(comandosIA.ambientes)
+    ) {
+        return comandosIA;
+    }
 
-    async function cargarComandos() {
+    try {
 
-        if (comandosIA) {
-            return comandosIA;
+        const respuesta = await fetch(
+            URL_COMANDOS,
+            { cache: "no-cache" }
+        );
+
+        if (!respuesta.ok) {
+            throw new Error(
+                "HTTP " + respuesta.status
+            );
         }
 
-        try {
+        const datos = await respuesta.json();
 
-            const respuesta = await fetch(
-                URL_COMANDOS,
-                { cache: "no-cache" }
+        if (
+            !datos ||
+            !Array.isArray(datos.acciones) ||
+            !Array.isArray(datos.ambientes)
+        ) {
+            throw new Error(
+                "La estructura del JSON no es válida."
             );
+        }
 
-            if (!respuesta.ok) {
-                throw new Error(
-                    "HTTP " + respuesta.status
+        const validarLista = lista => {
+
+            return lista.filter(item => {
+
+                return (
+                    item &&
+                    typeof item.nombre === "string" &&
+                    typeof item.destino === "string" &&
+                    Array.isArray(item.comandos)
                 );
-            }
 
-            comandosIA = await respuesta.json();
+            }).map(item => ({
 
-            return comandosIA;
+                id: item.id || "",
+                nombre: item.nombre,
+                icono: item.icono || "",
+                destino: item.destino,
 
-        } catch (error) {
-
-            console.warn(
-                "Mi Espacio IA: no se pudo cargar el archivo opcional de comandos.",
-                error
-            );
-
-            return null;
-        }
-    }
-
-
-    /* =====================================================
-       PUNTUAR COINCIDENCIAS
-       ===================================================== */
-
-    function puntuarCoincidencia(pedido, texto) {
-
-        const candidato = normalizar(texto);
-
-        if (!pedido || !candidato) return 0;
-
-        if (pedido === candidato) return 100;
-
-        if (
-            candidato.startsWith(pedido) &&
-            pedido.length >= 2
-        ) {
-            return 82;
-        }
-
-        const palabras =
-            candidato.split(/\s+/);
-
-        if (
-            palabras.some(
-                palabra => palabra === pedido
-            )
-        ) {
-            return 78;
-        }
-
-        if (
-            palabras.some(
-                palabra =>
-                    palabra.startsWith(pedido) &&
-                    pedido.length >= 2
-            )
-        ) {
-            return 68;
-        }
-
-        if (
-            pedido.length >= 4 &&
-            candidato.includes(pedido)
-        ) {
-            return 55;
-        }
-
-        return 0;
-    }
-
-
-    /* =====================================================
-       BUSCAR MÓDULOS
-       ===================================================== */
-
-    function buscarModulos(pedido) {
-
-        return catalogoIndex.modulos
-
-            .map(modulo => ({
-
-                modulo,
-
-                puntaje: puntuarCoincidencia(
-                    pedido,
-                    modulo.nombre
+                comandos: item.comandos.filter(
+                    comando =>
+                        typeof comando === "string" &&
+                        comando.trim() !== ""
                 )
 
-            }))
+            }));
 
-            .filter(item => item.puntaje > 0)
+        };
 
-            .sort(
-                (a, b) => b.puntaje - a.puntaje
-            );
+        comandosIA = {
+
+            acciones: validarLista(datos.acciones),
+
+            ambientes: validarLista(datos.ambientes)
+
+        };
+
+        console.info(
+            "🐸 Mi Espacio IA: comandos JSON cargados",
+            {
+                acciones: comandosIA.acciones.length,
+                ambientes: comandosIA.ambientes.length
+            }
+        );
+
+        return comandosIA;
+
+    } catch (error) {
+
+        console.warn(
+            "Mi Espacio IA: error al cargar comandos JSON.",
+            error
+        );
+
+        comandosIA = null;
+
+        return null;
     }
+}
+    
+    /* =====================================================
+   PUNTUAR COINCIDENCIAS
+   ===================================================== */
+
+function puntuarCoincidencia(pedido, texto) {
+
+    const candidato = normalizar(texto);
+
+    if (!pedido || !candidato) return 0;
+
+    // Una sola letra: buscar únicamente como inicio.
+    if (pedido.length === 1) {
+
+        return candidato.startsWith(pedido)
+            ? 40
+            : 0;
+    }
+
+    if (pedido === candidato) return 100;
+
+    if (candidato.startsWith(pedido)) {
+        return 82;
+    }
+
+    const palabras = candidato.split(/\s+/);
+
+    if (
+        palabras.some(
+            palabra => palabra === pedido
+        )
+    ) {
+        return 78;
+    }
+
+    if (
+        palabras.some(
+            palabra => palabra.startsWith(pedido)
+        )
+    ) {
+        return 68;
+    }
+
+    if (
+        pedido.length >= 4 &&
+        candidato.includes(pedido)
+    ) {
+        return 55;
+    }
+
+    return 0;
+}
+
+/* =====================================================
+   BUSCAR MÓDULOS Y ALIAS DEL JSON
+   ===================================================== */
+
+function buscarModulos(pedido) {
+
+    const configurados = [
+
+        ...(comandosIA?.acciones || []),
+
+        ...(comandosIA?.ambientes || [])
+
+    ];
+
+    return catalogoIndex.modulos
+
+        .map(modulo => {
+
+            const configuracion =
+                configurados.find(
+                    item =>
+                        item.destino === modulo.destino
+                );
+
+            let puntaje =
+                puntuarCoincidencia(
+                    pedido,
+                    modulo.nombre
+                );
+
+            if (configuracion) {
+
+                puntaje = Math.max(
+                    puntaje,
+
+                    puntuarCoincidencia(
+                        pedido,
+                        configuracion.nombre
+                    )
+                );
+
+                configuracion.comandos.forEach(comando => {
+
+                    puntaje = Math.max(
+                        puntaje,
+
+                        puntuarCoincidencia(
+                            pedido,
+                            comando
+                        )
+                    );
+
+                });
+
+            }
+
+            return {
+
+                modulo: configuracion
+                    ? {
+                        ...modulo,
+                        nombre: configuracion.nombre,
+                        icono: configuracion.icono
+                    }
+                    : modulo,
+
+                puntaje
+
+            };
+
+        })
+
+        .filter(item => item.puntaje > 0)
+
+        .sort(
+            (a, b) => b.puntaje - a.puntaje
+        );
+}
+    
 
 
     /* =====================================================
@@ -760,7 +873,7 @@ function describirOpciones(titulo, opciones) {
                 "Esa acción puede borrar o modificar información. Abrí el módulo y realizala desde sus controles para evitar una operación accidental."
             );
 
-            return true;
+           return false;
         }
 
         if (!resultado.item.interactivo) {
@@ -801,179 +914,152 @@ function describirOpciones(titulo, opciones) {
        PROCESAR PEDIDOS
        ===================================================== */
 
-    async function procesar(texto) {
+   async function procesar(texto) {
 
-        const original =
-            String(texto || "").trim();
+    const original =
+        String(texto || "").trim();
 
-        if (!original) {
+    if (!original) {
 
-            responder(
-                "Decime qué necesitás y lo busco en Mi Espacio."
-            );
+        responder(
+            "Decime qué necesitás y lo busco en Mi Espacio."
+        );
 
-            return;
-        }
+        return;
+    }
 
-        ultimaConsulta = original;
+    ultimaConsulta = original;
 
-        if (!catalogoIndex.fechaEscaneo) {
-            escanearIndex();
-        }
-
-        const pedido =
-            limpiarPedido(original);
-
-        if (!pedido) {
-
-            responder(
-                "Decime qué módulo o contenido querés encontrar."
-            );
-
-            return;
-        }
-
-        // Carga opcional del JSON existente.
-
-        await cargarComandos();
-
-        // Actualizar el catálogo antes de buscar.
-
+    if (!catalogoIndex.fechaEscaneo) {
         escanearIndex();
+    }
 
-        const modulos =
-            buscarModulos(pedido);
+    const pedido =
+        limpiarPedido(original);
 
-        const elementos =
-            buscarElementos(pedido);
+    if (!pedido) {
 
-        const quiereAccion =
-            VERBOS_DE_ACCION.test(
-                normalizar(original)
+        responder(
+            "Decime qué módulo o contenido querés encontrar."
+        );
+
+        return;
+    }
+
+    await cargarComandos();
+
+    escanearIndex();
+
+    const modulos =
+        buscarModulos(pedido);
+
+    const elementos =
+        buscarElementos(pedido);
+
+    const quiereAccion =
+        VERBOS_DE_ACCION.test(
+            normalizar(original)
+        );
+
+
+    /* -----------------------------------------------
+       1. UNA SOLA LETRA: OFRECER MÓDULOS
+       ----------------------------------------------- */
+
+    if (pedido.length === 1) {
+
+        const opcionesModulos =
+            modulos
+                .filter(item => item.puntaje > 0)
+                .map(item => item.modulo.nombre);
+
+        if (opcionesModulos.length) {
+
+            describirOpciones(
+                "¿Qué sección querés abrir?",
+                opcionesModulos
             );
 
-
-        /* -----------------------------------------------
-           1. NOMBRE EXACTO DE MÓDULO
-           ----------------------------------------------- */
-
-        const moduloExacto =
-            modulos.find(
-                item => item.puntaje === 100
-            );
-
-        if (
-            moduloExacto &&
-            modulos.filter(
-                item => item.puntaje === 100
-            ).length === 1
-        ) {
-
-            if (
-                abrirModulo(moduloExacto.modulo)
-            ) {
-
-                responder(
-                    "Abriendo " +
-                    moduloExacto.modulo.nombre +
-                    "."
-                );
-
-                return;
-            }
+            return;
         }
 
+        responder(
+            "No encontré módulos que comiencen con esa letra."
+        );
 
-        /* -----------------------------------------------
-           2. CONTROL INTERNO EXACTO
-           ----------------------------------------------- */
+        return;
+    }
 
-        const elementoExacto =
-            elementos.find(
-                item => item.puntaje === 100
+
+    /* -----------------------------------------------
+       2. NOMBRE EXACTO DE MÓDULO
+       ----------------------------------------------- */
+
+    const exactosModulos =
+        modulos.filter(
+            item => item.puntaje === 100
+        );
+
+    if (exactosModulos.length === 1) {
+
+        if (abrirModulo(exactosModulos[0].modulo)) {
+
+            responder(
+                "Abriendo " +
+                exactosModulos[0].modulo.nombre +
+                "."
             );
 
-        const exactosElementos =
-            elementos.filter(
-                item => item.puntaje === 100
-            );
+            return;
+        }
+    }
+
+
+    /* -----------------------------------------------
+       3. CONTROL INTERNO EXACTO
+       ----------------------------------------------- */
+
+    const elementoExacto =
+        elementos.find(
+            item => item.puntaje === 100
+        );
+
+    const exactosElementos =
+        elementos.filter(
+            item => item.puntaje === 100
+        );
+
+    if (
+        quiereAccion &&
+        exactosElementos.length === 1
+    ) {
+
+        const resultado =
+            elementoExacto;
 
         if (
-            quiereAccion &&
-            exactosElementos.length === 1
-        ) {
-
-            const resultado =
-                elementoExacto;
-
-            if (
-                ejecutarElemento(
-                    resultado,
-                    original
-                )
-            ) {
-
-                responder(
-                    "Listo. Activé " +
-                    resultado.item.nombre +
-                    "."
-                );
-
-                return;
-            }
-
-            if (resultado.item.modulo) {
-
-                const padre =
-                    catalogoIndex.modulos.find(
-                        modulo =>
-                            modulo.destino ===
-                            resultado.item.modulo
-                    );
-
-                if (
-                    padre &&
-                    abrirModulo(padre)
-                ) {
-
-                    responder(
-                        "Abrí " +
-                        padre.nombre +
-                        ". El elemento está dentro de ese módulo; completá la acción desde allí."
-                    );
-
-                    return;
-                }
-            }
-        }
-
-
-        /* -----------------------------------------------
-           3. CONTENIDO INTERNO Y MÓDULO PADRE
-           ----------------------------------------------- */
-
-        const mejoresElementos =
-            elementos.filter(
-                item => item.puntaje >= 68
-            );
-
-        const padres = [
-            ...new Set(
-                mejoresElementos
-                    .map(item => item.item.modulo)
-                    .filter(Boolean)
+            ejecutarElemento(
+                resultado,
+                original
             )
-        ];
-
-        if (
-            mejoresElementos.length &&
-            padres.length === 1
         ) {
+
+            responder(
+                "Listo. Activé " +
+                resultado.item.nombre +
+                "."
+            );
+
+            return;
+        }
+
+        if (resultado.item.modulo) {
 
             const padre =
                 catalogoIndex.modulos.find(
                     modulo =>
-                        modulo.destino === padres[0]
+                        modulo.destino ===
+                        resultado.item.modulo
                 );
 
             if (
@@ -982,69 +1068,115 @@ function describirOpciones(titulo, opciones) {
             ) {
 
                 responder(
-                    "Encontré ‘" +
-                    mejoresElementos[0].item.nombre +
-                    "’ dentro de " +
+                    "Abrí " +
                     padre.nombre +
-                    ". Abrí ese módulo."
+                    ". El elemento está dentro de ese módulo; completá la acción desde allí."
                 );
 
                 return;
             }
         }
+    }
 
 
-        /* -----------------------------------------------
-           4. VARIAS COINCIDENCIAS
-           ----------------------------------------------- */
+    /* -----------------------------------------------
+       4. CONTENIDO INTERNO Y MÓDULO PADRE
+       ----------------------------------------------- */
 
-        const opciones = [];
+    const mejoresElementos =
+        elementos.filter(
+            item => item.puntaje >= 68
+        );
 
-        modulos
-            .filter(item => item.puntaje >= 55)
-            .forEach(item => {
+    const padres = [
+        ...new Set(
+            mejoresElementos
+                .map(item => item.item.modulo)
+                .filter(Boolean)
+        )
+    ];
 
-                opciones.push(
-                    item.modulo.nombre
-                );
+    if (
+        mejoresElementos.length &&
+        padres.length === 1
+    ) {
 
-            });
+        const padre =
+            catalogoIndex.modulos.find(
+                modulo =>
+                    modulo.destino === padres[0]
+            );
 
-        mejoresElementos
-            .slice(0, 8)
-            .forEach(item => {
+        if (
+            padre &&
+            abrirModulo(padre)
+        ) {
 
-                const nombre =
-                    item.item.nombre;
-
-                opciones.push(
-                    item.item.modulo
-                        ? nombre + " — " + item.item.modulo
-                        : nombre
-                );
-
-            });
-
-        if (opciones.length) {
-
-            describirOpciones(
-                "Encontré estas coincidencias:",
-                opciones
+            responder(
+                "Encontré ‘" +
+                mejoresElementos[0].item.nombre +
+                "’ dentro de " +
+                padre.nombre +
+                ". Abrí ese módulo."
             );
 
             return;
         }
+    }
 
 
-        /* -----------------------------------------------
-           5. SIN COINCIDENCIAS
-           ----------------------------------------------- */
+    /* -----------------------------------------------
+       5. VARIAS COINCIDENCIAS
+       ----------------------------------------------- */
 
-        responder(
-            "Todavía no encuentro ‘" +
-            original +
-            "’ en los elementos visibles de Mi Espacio. Probá con el nombre del módulo o con otra palabra."
+    const opciones = [];
+
+    modulos
+        .filter(item => item.puntaje >= 55)
+        .forEach(item => {
+
+            opciones.push(
+                item.modulo.nombre
+            );
+
+        });
+
+    mejoresElementos
+        .slice(0, 8)
+        .forEach(item => {
+
+            const nombre =
+                item.item.nombre;
+
+            opciones.push(
+                item.item.modulo
+                    ? nombre + " — " + item.item.modulo
+                    : nombre
+            );
+
+        });
+
+    if (opciones.length) {
+
+        describirOpciones(
+            "Encontré estas coincidencias:",
+            opciones
         );
+
+        return;
+    }
+
+
+    /* -----------------------------------------------
+       6. SIN COINCIDENCIAS
+       ----------------------------------------------- */
+
+    responder(
+        "Todavía no encuentro ‘" +
+        original +
+        "’ en los elementos visibles de Mi Espacio. Probá con el nombre del módulo o con otra palabra."
+    );
+
 
     }
 
