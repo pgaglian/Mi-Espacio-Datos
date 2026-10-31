@@ -990,8 +990,6 @@ function describirOpciones(titulo, opciones) {
 
     await cargarComandos();
 
-    escanearIndex();
-
     const modulos =
         buscarModulos(pedido);
 
