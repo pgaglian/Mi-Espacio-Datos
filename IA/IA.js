@@ -383,75 +383,117 @@ const MiEspacioIA = (() => {
     /* =====================================================
        OBSERVAR CAMBIOS EN EL INDEX
        ===================================================== */
+function observarIndex() {
 
-    function observarIndex() {
+    if (
+        observadorActivo ||
+        !document.body
+    ) {
+        return;
+    }
 
-        if (
-            observadorActivo ||
-            !document.body
-        ) {
-            return;
-        }
+    const selectorRelevante = [
+        "[id]",
+        "[onclick]",
+        "button",
+        "a",
+        "input",
+        "select",
+        "textarea",
+        "[role='button']",
+        "[role='tab']",
+        "label"
+    ].join(",");
 
-        const observador =
-            new MutationObserver(cambios => {
+    const observador =
+        new MutationObserver(cambios => {
 
-                const cambioRelevante =
-                    cambios.some(cambio => {
+            const cambioRelevante =
+                cambios.some(cambio => {
 
-                        if (cambio.type === "childList") {
+                    const destino =
+                        cambio.target.nodeType === 1
+                            ? cambio.target
+                            : cambio.target.parentElement;
+
+                    if (
+                        !destino ||
+                        destino.closest("#panelMiEspacioIA")
+                    ) {
+                        return false;
+                    }
+
+                    if (cambio.type === "attributes") {
+                        return true;
+                    }
+
+                    if (cambio.type === "characterData") {
+                        return Boolean(
+                            destino.closest(
+                                "button, a, label, [role='button'], [role='tab']"
+                            )
+                        );
+                    }
+
+                    if (cambio.type === "childList") {
+
+                        if (
+                            destino.closest(
+                                "button, a, label, [role='button'], [role='tab']"
+                            )
+                        ) {
                             return true;
                         }
 
-                        if (cambio.type === "attributes") {
+                        return [
+                            ...cambio.addedNodes,
+                            ...cambio.removedNodes
+                        ].some(nodo => {
 
-                            return [
-                                "id",
-                                "onclick",
-                                "aria-label",
-                                "title",
-                                "data-titulo",
-                                "data-nombre",
-                                "placeholder",
-                                "disabled",
-                                "aria-disabled"
-                            ].includes(cambio.attributeName);
+                            if (nodo.nodeType !== 1) {
+                                return false;
+                            }
 
-                        }
+                            return (
+                                nodo.matches(selectorRelevante) ||
+                                Boolean(
+                                    nodo.querySelector(selectorRelevante)
+                                )
+                            );
+                        });
+                    }
 
-                        return cambio.type === "characterData";
+                    return false;
+                });
 
-                    });
-
-                if (cambioRelevante) {
-                    programarEscaneo();
-                }
-
-            });
-
-        observador.observe(
-            document.body,
-            {
-                childList: true,
-                subtree: true,
-                attributes: true,
-                attributeFilter: [
-                    "id",
-                    "onclick",
-                    "aria-label",
-                    "title",
-                    "data-titulo",
-                    "data-nombre",
-                    "placeholder",
-                    "disabled",
-                    "aria-disabled"
-                ],
-                characterData: true
+            if (cambioRelevante) {
+                programarEscaneo();
             }
-        );
+        });
 
-        observadorActivo = true;
-    }
+    observador.observe(
+        document.body,
+        {
+            childList: true,
+            subtree: true,
+            attributes: true,
+            attributeFilter: [
+                "id",
+                "onclick",
+                "aria-label",
+                "title",
+                "data-titulo",
+                "data-nombre",
+                "placeholder",
+                "disabled",
+                "aria-disabled"
+            ],
+            characterData: true
+        }
+    );
+
+    observadorActivo = true;
+}
   
   /* =====================================================
    CARGAR Y VALIDAR COMANDOS JSON
