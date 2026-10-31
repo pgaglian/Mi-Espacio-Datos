@@ -1,3 +1,8 @@
+/* =========================================================
+   MI ESPACIO IA - MOTOR DINÁMICO
+   Lee el index actual en tiempo de ejecución.
+   No modifica módulos ni archivos JSON.
+   ========================================================= */
 
 const MiEspacioIA = (() => {
 
@@ -5,16 +10,34 @@ const MiEspacioIA = (() => {
         "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/IA/IA-comandos.json";
 
     let comandosIA = null;
+
     let catalogoIndex = {
         modulos: [],
-        tarjetas: [],
-        controles: [],
-        funciones: [],
+        elementos: [],
         fechaEscaneo: null
     };
 
     let observadorActivo = false;
     let temporizadorEscaneo = null;
+    let ultimaConsulta = "";
+
+    const MODULOS_EXCLUIDOS = new Set([
+        "panelCliente",
+        "acciones",
+        "menu",
+        "menuAndroid",
+        "header",
+        "panelMiEspacioIA",
+        "contenidoMiEspacioIA",
+        "respuestaMiEspacioIA",
+        "entradaMiEspacioIA"
+    ]);
+
+    const VERBOS_DE_ACCION =
+        /\b(abr[ií]|abrime|abrir|mostr[aá]|mostrame|mostrar|entr[aá]|entrar|ingres[aá]|ingresar|seleccion[aá]|seleccionar|eleg[ií]|elegir|activ[aá]|activar|inici[aá]|iniciar|reproduc[ií]|reproducir|pon[eé]|poner|us[aá]|usar)\b/;
+
+    const VERBOS_DESTRUCTIVOS =
+        /\b(elimin[aá]|eliminar|borr[aá]|borrar|quit[aá]|quitar|restablec[eé]|restablecer|formate[aá]|formatear)\b/;
 
 
     /* =====================================================
@@ -23,17 +46,17 @@ const MiEspacioIA = (() => {
 
     function responder(mensaje) {
 
-        const elemento =
+        const salida =
             document.getElementById("respuestaMiEspacioIA");
 
-        if (elemento) {
-            elemento.textContent = mensaje;
+        if (salida) {
+            salida.textContent = mensaje;
         }
     }
 
 
     /* =====================================================
-       NORMALIZAR TEXTOS
+       NORMALIZACIÓN
        ===================================================== */
 
     function normalizar(texto) {
@@ -42,13 +65,397 @@ const MiEspacioIA = (() => {
             .toLowerCase()
             .normalize("NFD")
             .replace(/[\u0300-\u036f]/g, "")
+            .replace(/[^a-z0-9_\s-]/g, " ")
             .replace(/\s+/g, " ")
             .trim();
     }
 
 
+    function limpiarPedido(texto) {
+
+        let pedido = normalizar(texto);
+
+        pedido = pedido.replace(
+            /^(por favor|porfa)\s+/,
+            ""
+        );
+
+        pedido = pedido.replace(
+            /^(hola|che)\s+/,
+            ""
+        );
+
+        pedido = pedido.replace(
+            /^(mostrame|mostrarme|abrime|abrir|abri|quiero ver|quiero abrir|necesito ver|necesito abrir|ver|mostrar|buscame|buscar|busca|entra a|entrar a|ingresa a|ingresar a)\s+/,
+            ""
+        );
+
+        pedido = pedido.replace(
+            /^(mis|mi|el|la|los|las|un|una|unos|unas)\s+/,
+            ""
+        );
+
+        pedido = pedido.replace(
+            /\s+(por favor|porfa)$/,
+            ""
+        );
+
+        return pedido.trim();
+    }
+
+
     /* =====================================================
-       CARGAR COMANDOS DEL JSON
+       OBTENER TEXTO DE UN ELEMENTO
+       ===================================================== */
+
+    function obtenerTexto(elemento) {
+
+        if (!elemento) return "";
+
+        const atributos = [
+            elemento.getAttribute("aria-label"),
+            elemento.getAttribute("title"),
+            elemento.getAttribute("data-titulo"),
+            elemento.getAttribute("data-nombre"),
+            elemento.getAttribute("placeholder"),
+            elemento.getAttribute("alt")
+        ];
+
+        const texto = [
+            ...atributos,
+            elemento.innerText,
+            elemento.textContent
+        ]
+            .filter(Boolean)
+            .join(" ");
+
+        return texto
+            .replace(/\s+/g, " ")
+            .trim()
+            .slice(0, 180);
+    }
+
+
+    /* =====================================================
+       DETECTAR MÓDULOS
+       ===================================================== */
+
+    function obtenerLlamadasMostrar(codigo) {
+
+        const resultados = [];
+
+        const regex =
+            /\bmostrar\s*\(\s*['"]([^'"]+)['"]\s*\)/g;
+
+        let coincidencia;
+
+        while (
+            (coincidencia = regex.exec(codigo || "")) !== null
+        ) {
+
+            resultados.push(coincidencia[1]);
+
+        }
+
+        return resultados;
+    }
+
+
+    function obtenerModulosDelIndex() {
+
+        const encontrados = new Map();
+
+        document.querySelectorAll("[onclick]")
+            .forEach(elemento => {
+
+                obtenerLlamadasMostrar(
+                    elemento.getAttribute("onclick")
+                ).forEach(destino => {
+
+                    if (MODULOS_EXCLUIDOS.has(destino)) {
+                        return;
+                    }
+
+                    const contenedor =
+                        document.getElementById(destino);
+
+                    encontrados.set(destino, {
+
+                        nombre: destino,
+
+                        destino: destino,
+
+                        disponible: Boolean(contenedor),
+
+                        elemento: contenedor || null
+
+                    });
+
+                });
+
+            });
+
+        return Array.from(encontrados.values());
+    }
+
+
+    /* =====================================================
+       RELACIONAR ELEMENTOS CON SU MÓDULO PADRE
+       ===================================================== */
+
+    function obtenerModuloPadre(elemento, modulos) {
+
+        let actual = elemento;
+
+        while (
+            actual &&
+            actual !== document.body
+        ) {
+
+            if (
+                actual.id &&
+                modulos.some(
+                    modulo => modulo.destino === actual.id
+                )
+            ) {
+
+                return actual.id;
+
+            }
+
+            actual = actual.parentElement;
+        }
+
+        return null;
+    }
+
+
+    /* =====================================================
+       ESCANEAR EL INDEX
+       ===================================================== */
+
+    function escanearIndex() {
+
+        const modulos =
+            obtenerModulosDelIndex();
+
+        const elementos = [];
+
+        const vistos = new WeakSet();
+
+        const selector = [
+            "[id]",
+            "[onclick]",
+            "button",
+            "a",
+            "input",
+            "select",
+            "textarea",
+            "[role='button']",
+            "[role='tab']",
+            "label"
+        ].join(",");
+
+        document.querySelectorAll(selector)
+            .forEach(elemento => {
+
+                if (vistos.has(elemento)) return;
+
+                vistos.add(elemento);
+
+                if (
+                    elemento.closest("#panelMiEspacioIA")
+                ) {
+                    return;
+                }
+
+                const id = elemento.id || "";
+
+                const texto =
+                    obtenerTexto(elemento);
+
+                const codigo =
+                    elemento.getAttribute("onclick") || "";
+
+                const tag =
+                    elemento.tagName.toLowerCase();
+
+                const esInteractivo =
+                    /^(button|a|input|select|textarea|label)$/.test(tag) ||
+                    elemento.getAttribute("role") === "button" ||
+                    elemento.getAttribute("role") === "tab" ||
+                    Boolean(codigo);
+
+                if (!id && !texto) return;
+
+                if (
+                    elemento.disabled ||
+                    elemento.getAttribute("aria-disabled") === "true"
+                ) {
+                    return;
+                }
+
+                elementos.push({
+
+                    id: id || null,
+
+                    nombre: texto || id,
+
+                    tipo: tag,
+
+                    interactivo: esInteractivo,
+
+                    tieneAccionDeclarada: Boolean(codigo),
+
+                    modulo: obtenerModuloPadre(
+                        elemento,
+                        modulos
+                    ),
+
+                    elemento: elemento
+
+                });
+
+            });
+
+        catalogoIndex = {
+
+            modulos,
+
+            elementos,
+
+            fechaEscaneo: new Date().toISOString()
+
+        };
+
+        console.info(
+            "🐸 Mi Espacio IA: index actualizado",
+            {
+                modulos: modulos.length,
+                elementos: elementos.length
+            }
+        );
+
+        return obtenerCatalogo();
+    }
+
+
+    /* =====================================================
+       DEVOLVER CATÁLOGO
+       ===================================================== */
+
+    function obtenerCatalogo() {
+
+        return {
+
+            modulos: catalogoIndex.modulos.map(
+                ({ elemento, ...modulo }) => modulo
+            ),
+
+            elementos: catalogoIndex.elementos.map(
+                ({ elemento, ...item }) => item
+            ),
+
+            fechaEscaneo: catalogoIndex.fechaEscaneo
+
+        };
+    }
+
+
+    /* =====================================================
+       ACTUALIZAR ESCANEO AUTOMÁTICAMENTE
+       ===================================================== */
+
+    function programarEscaneo() {
+
+        clearTimeout(temporizadorEscaneo);
+
+        temporizadorEscaneo = setTimeout(() => {
+
+            temporizadorEscaneo = null;
+
+            escanearIndex();
+
+        }, 700);
+    }
+
+
+    /* =====================================================
+       OBSERVAR CAMBIOS EN EL INDEX
+       ===================================================== */
+
+    function observarIndex() {
+
+        if (
+            observadorActivo ||
+            !document.body
+        ) {
+            return;
+        }
+
+        const observador =
+            new MutationObserver(cambios => {
+
+                const cambioRelevante =
+                    cambios.some(cambio => {
+
+                        if (cambio.type === "childList") {
+                            return true;
+                        }
+
+                        if (cambio.type === "attributes") {
+
+                            return [
+                                "id",
+                                "onclick",
+                                "aria-label",
+                                "title",
+                                "data-titulo",
+                                "data-nombre",
+                                "placeholder",
+                                "disabled",
+                                "aria-disabled"
+                            ].includes(cambio.attributeName);
+
+                        }
+
+                        return cambio.type === "characterData";
+
+                    });
+
+                if (cambioRelevante) {
+                    programarEscaneo();
+                }
+
+            });
+
+        observador.observe(
+            document.body,
+            {
+                childList: true,
+                subtree: true,
+                attributes: true,
+                attributeFilter: [
+                    "id",
+                    "onclick",
+                    "aria-label",
+                    "title",
+                    "data-titulo",
+                    "data-nombre",
+                    "placeholder",
+                    "disabled",
+                    "aria-disabled"
+                ],
+                characterData: true
+            }
+        );
+
+        observadorActivo = true;
+    }
+
+
+    /* =====================================================
+       CARGAR JSON EXISTENTE
        ===================================================== */
 
     async function cargarComandos() {
@@ -59,11 +466,14 @@ const MiEspacioIA = (() => {
 
         try {
 
-            const respuesta = await fetch(URL_COMANDOS);
+            const respuesta = await fetch(
+                URL_COMANDOS,
+                { cache: "no-cache" }
+            );
 
             if (!respuesta.ok) {
                 throw new Error(
-                    "No se pudo cargar IA-comandos.json"
+                    "HTTP " + respuesta.status
                 );
             }
 
@@ -73,13 +483,9 @@ const MiEspacioIA = (() => {
 
         } catch (error) {
 
-            console.error(
-                "Mi Espacio IA:",
+            console.warn(
+                "Mi Espacio IA: no se pudo cargar el archivo opcional de comandos.",
                 error
-            );
-
-            responder(
-                "No pude cargar mis comandos. Intentá nuevamente."
             );
 
             return null;
@@ -88,477 +494,515 @@ const MiEspacioIA = (() => {
 
 
     /* =====================================================
-       OBTENER TEXTO DESCRIPTIVO DE UN ELEMENTO
+       PUNTUAR COINCIDENCIAS
        ===================================================== */
 
-    function obtenerTexto(elemento) {
+    function puntuarCoincidencia(pedido, texto) {
 
-        if (!elemento) {
-            return "";
+        const candidato = normalizar(texto);
+
+        if (!pedido || !candidato) return 0;
+
+        if (pedido === candidato) return 100;
+
+        if (
+            candidato.startsWith(pedido) &&
+            pedido.length >= 2
+        ) {
+            return 82;
         }
 
-        const partes = [
-            elemento.getAttribute("aria-label"),
-            elemento.getAttribute("title"),
-            elemento.getAttribute("data-titulo"),
-            elemento.getAttribute("data-nombre"),
-            elemento.getAttribute("placeholder"),
-            elemento.innerText,
-            elemento.textContent
-        ];
+        const palabras =
+            candidato.split(/\s+/);
 
-        return partes
-            .filter(Boolean)
-            .join(" ")
-            .replace(/\s+/g, " ")
-            .trim()
-            .slice(0, 250);
+        if (
+            palabras.some(
+                palabra => palabra === pedido
+            )
+        ) {
+            return 78;
+        }
+
+        if (
+            palabras.some(
+                palabra =>
+                    palabra.startsWith(pedido) &&
+                    pedido.length >= 2
+            )
+        ) {
+            return 68;
+        }
+
+        if (
+            pedido.length >= 4 &&
+            candidato.includes(pedido)
+        ) {
+            return 55;
+        }
+
+        return 0;
     }
 
 
     /* =====================================================
-       EXTRAER NOMBRES DE FUNCIONES
+       BUSCAR MÓDULOS
        ===================================================== */
 
-    function obtenerFunciones(codigo) {
+    function buscarModulos(pedido) {
 
-        if (!codigo) {
-            return [];
-        }
+        return catalogoIndex.modulos
 
-        const coincidencias = [
-            ...codigo.matchAll(
-                /([a-zA-Z_$][\w$]*)\s*\(/g
-            )
-        ];
+            .map(modulo => ({
 
-        return coincidencias
-            .map(coincidencia => coincidencia[1])
-            .filter(nombre =>
-                ![
-                    "if",
-                    "for",
-                    "while",
-                    "switch",
-                    "function"
-                ].includes(nombre)
+                modulo,
+
+                puntaje: puntuarCoincidencia(
+                    pedido,
+                    modulo.nombre
+                )
+
+            }))
+
+            .filter(item => item.puntaje > 0)
+
+            .sort(
+                (a, b) => b.puntaje - a.puntaje
             );
     }
 
 
     /* =====================================================
-       ESCANEAR EL INDEX COMPLETO
+       BUSCAR ELEMENTOS INTERNOS
        ===================================================== */
 
-    function escanearIndex() {
+    function buscarElementos(pedido) {
 
-        const nuevoCatalogo = {
-            modulos: [],
-            tarjetas: [],
-            controles: [],
-            funciones: [],
-            fechaEscaneo: new Date().toISOString()
-        };
+        return catalogoIndex.elementos
 
-        const elementos = document.querySelectorAll(
-            "[id], [onclick], button, a, input, select, textarea, [role='button']"
-        );
+            .map(item => ({
 
-        const destinosRegistrados = new Set();
-        const elementosRegistrados = new Set();
-        const funcionesRegistradas = new Set();
+                item,
 
-        elementos.forEach(elemento => {
-
-            const id = elemento.id || "";
-
-            const texto = obtenerTexto(elemento);
-
-            const codigo =
-                elemento.getAttribute("onclick") || "";
-
-            const tag = elemento.tagName.toLowerCase();
-
-            const esControl =
-                [
-                    "button",
-                    "a",
-                    "input",
-                    "select",
-                    "textarea"
-                ].includes(tag) ||
-                elemento.getAttribute("role") === "button";
-
-            /* ---------------------------------------------
-               DETECTAR MÓDULOS QUE SE ABREN CON mostrar()
-               --------------------------------------------- */
-
-            const destinos = [
-                ...codigo.matchAll(
-                    /mostrar\s*\(\s*['"]([^'"]+)['"]\s*\)/g
+                puntaje: puntuarCoincidencia(
+                    pedido,
+                    item.nombre
                 )
-            ];
 
-            destinos.forEach(coincidencia => {
+            }))
 
-                const destino = coincidencia[1];
+            .filter(
+                resultado => resultado.puntaje > 0
+            )
 
-                if (destinosRegistrados.has(destino)) {
-                    return;
-                }
-
-                destinosRegistrados.add(destino);
-
-                const destinoReal =
-                    document.getElementById(destino);
-
-                nuevoCatalogo.modulos.push({
-
-                    nombre: destino,
-
-                    destino: destino,
-
-                    disponible: Boolean(destinoReal),
-
-                    elemento: destinoReal
-                        ? destinoReal.tagName.toLowerCase()
-                        : null
-
-                });
-
-            });
+            .sort(
+                (a, b) => b.puntaje - a.puntaje
+            );
+    }
 
 
-            /* ---------------------------------------------
-               DETECTAR TARJETAS Y ELEMENTOS CON IDENTIDAD
-               --------------------------------------------- */
+    /* =====================================================
+       ABRIR MÓDULO
+       ===================================================== */
 
-            if (
-                id &&
-                !elementosRegistrados.has(id)
-            ) {
+    function abrirModulo(modulo) {
 
-                elementosRegistrados.add(id);
+        if (
+            !modulo ||
+            !modulo.disponible
+        ) {
+            return false;
+        }
 
-                nuevoCatalogo.tarjetas.push({
+        if (
+            typeof window.mostrar !== "function"
+        ) {
+            return false;
+        }
 
-                    id: id,
+        window.mostrar(modulo.destino);
 
-                    nombre: texto || id,
+        return true;
+    }
 
-                    etiqueta: tag,
 
-                    tieneDestino: destinos.length > 0,
+    /* =====================================================
+       MOSTRAR OPCIONES
+       ===================================================== */
 
-                    destinos: destinos.map(
-                        coincidencia => coincidencia[1]
-                    )
+    function describirOpciones(titulo, opciones) {
 
-                });
+        const unicas = [];
 
+        const claves = new Set();
+
+        opciones.forEach(opcion => {
+
+            const clave = normalizar(opcion);
+
+            if (!clave || claves.has(clave)) {
+                return;
             }
 
+            claves.add(clave);
 
-            /* ---------------------------------------------
-               DETECTAR CONTROLES
-               --------------------------------------------- */
-
-            if (esControl) {
-
-                const opciones = [];
-
-                if (tag === "select") {
-
-                    elemento.querySelectorAll("option")
-                        .forEach(opcion => {
-
-                            opciones.push({
-                                valor: opcion.value,
-                                texto: opcion.textContent.trim()
-                            });
-
-                        });
-
-                }
-
-                nuevoCatalogo.controles.push({
-
-                    id: id || null,
-
-                    tipo: tag,
-
-                    nombre: texto,
-
-                    opciones: opciones,
-
-                    tieneAccion: Boolean(codigo)
-
-                });
-
-            }
-
-
-            /* ---------------------------------------------
-               DETECTAR FUNCIONES DECLARADAS EN onclick
-               --------------------------------------------- */
-
-            if (codigo) {
-
-                const funciones =
-                    obtenerFunciones(codigo);
-
-                funciones.forEach(nombre => {
-
-                    if (
-                        funcionesRegistradas.has(nombre)
-                    ) {
-                        return;
-                    }
-
-                    funcionesRegistradas.add(nombre);
-
-                    nuevoCatalogo.funciones.push({
-
-                        nombre: nombre,
-
-                        elemento: id || tag,
-
-                        codigo: codigo.slice(0, 300)
-
-                    });
-
-                });
-
-            }
+            unicas.push(opcion);
 
         });
 
-
-        catalogoIndex = nuevoCatalogo;
-
-        console.info(
-            "🐸 Mi Espacio IA: escaneo del index terminado",
-            {
-                modulos: nuevoCatalogo.modulos.length,
-                tarjetas: nuevoCatalogo.tarjetas.length,
-                controles: nuevoCatalogo.controles.length,
-                funciones: nuevoCatalogo.funciones.length
-            }
+        responder(
+            titulo +
+            "\n" +
+            unicas.slice(0, 12)
+                .map(
+                    (opcion, indice) =>
+                        (indice + 1) + ". " + opcion
+                )
+                .join("\n") +
+            "\n\nAgregá alguna palabra para precisar qué querés abrir."
         );
-
-        return obtenerCatalogo();
-
     }
 
 
     /* =====================================================
-       DEVOLVER CATÁLOGO DETECTADO
+       VALIDAR ELEMENTO ANTES DE EJECUTAR
        ===================================================== */
 
-    function obtenerCatalogo() {
+    function encontrarElementoVisible(resultado) {
 
-        return JSON.parse(
-            JSON.stringify(catalogoIndex)
-        );
+        const elemento =
+            resultado &&
+            resultado.item &&
+            resultado.item.elemento;
 
-    }
-
-
-    /* =====================================================
-       ACTUALIZAR ESCANEO CUANDO CAMBIA EL INDEX
-       ===================================================== */
-
-function programarEscaneo() {
-
-    if (temporizadorEscaneo) {
-        clearTimeout(temporizadorEscaneo);
-    }
-
-    temporizadorEscaneo = setTimeout(() => {
-
-        temporizadorEscaneo = null;
-
-        escanearIndex();
-
-    }, 800);
-
-}
-
-
-    /* =====================================================
-       OBSERVAR ELEMENTOS NUEVOS Y CAMBIOS
-       ===================================================== */
-
-
-function observarIndex() {
-
-    if (
-        observadorActivo ||
-        !document.body
-    ) {
-        return;
-    }
-
-    const selectorRelevante =
-        "[id], [onclick], button, a, input, select, textarea, [role='button']";
-
-    const atributosRelevantes = [
-        "id",
-        "onclick",
-        "aria-label",
-        "title",
-        "data-titulo",
-        "data-nombre",
-        "placeholder"
-    ];
-
-    const observador = new MutationObserver(cambios => {
-
-        let necesitaEscaneo = false;
-
-        cambios.forEach(cambio => {
-
-            /* ELEMENTOS AGREGADOS O ELIMINADOS */
-
-            if (cambio.type === "childList") {
-
-                necesitaEscaneo = true;
-                return;
-
-            }
-
-            /* ATRIBUTOS MODIFICADOS */
-
-            if (cambio.type === "attributes") {
-
-                if (
-                    cambio.target.matches(selectorRelevante)
-                ) {
-                    necesitaEscaneo = true;
-                }
-
-                return;
-
-            }
-
-            /* TEXTO MODIFICADO */
-
-            if (cambio.type === "characterData") {
-
-                const elemento =
-                    cambio.target.parentElement;
-
-                if (
-                    elemento &&
-                    elemento.closest(selectorRelevante)
-                ) {
-                    necesitaEscaneo = true;
-                }
-
-            }
-
-        });
-
-        if (necesitaEscaneo) {
-            programarEscaneo();
+        if (
+            !elemento ||
+            !elemento.isConnected
+        ) {
+            return null;
         }
 
-    });
-
-    observador.observe(
-        document.body,
-        {
-            childList: true,
-            subtree: true,
-            attributes: true,
-            attributeFilter: atributosRelevantes,
-            characterData: true
+        if (
+            elemento.closest("#panelMiEspacioIA")
+        ) {
+            return null;
         }
-    );
 
-    observadorActivo = true;
+        return elemento;
+    }
 
-}
 
     /* =====================================================
-       PROCESAR COMANDOS
+       EJECUTAR CONTROL REAL
+       ===================================================== */
+
+    function ejecutarElemento(resultado, textoOriginal) {
+
+        const elemento =
+            encontrarElementoVisible(resultado);
+
+        if (!elemento) return false;
+
+        if (
+            VERBOS_DESTRUCTIVOS.test(
+                normalizar(textoOriginal)
+            )
+        ) {
+
+            responder(
+                "Esa acción puede borrar o modificar información. Abrí el módulo y realizala desde sus controles para evitar una operación accidental."
+            );
+
+            return true;
+        }
+
+        if (!resultado.item.interactivo) {
+            return false;
+        }
+
+        if (
+            elemento.disabled ||
+            elemento.getAttribute("aria-disabled") === "true"
+        ) {
+            return false;
+        }
+
+        // Evitar enviar formularios accidentalmente.
+
+        if (
+            elemento.tagName === "BUTTON" &&
+            elemento.type === "submit"
+        ) {
+            return false;
+        }
+
+        if (
+            elemento.tagName === "INPUT" ||
+            elemento.tagName === "TEXTAREA" ||
+            elemento.tagName === "SELECT"
+        ) {
+            return false;
+        }
+
+        elemento.click();
+
+        return true;
+    }
+
+
+    /* =====================================================
+       PROCESAR PEDIDOS
        ===================================================== */
 
     async function procesar(texto) {
 
-        const pedido = normalizar(texto);
+        const original =
+            String(texto || "").trim();
 
-        if (!pedido) {
+        if (!original) {
 
             responder(
-                "Decime qué te gustaría hacer."
+                "Decime qué necesitás y lo busco en Mi Espacio."
             );
 
             return;
         }
 
-        const datos = await cargarComandos();
+        ultimaConsulta = original;
 
-        if (!datos) {
+        if (!catalogoIndex.fechaEscaneo) {
+            escanearIndex();
+        }
+
+        const pedido =
+            limpiarPedido(original);
+
+        if (!pedido) {
+
+            responder(
+                "Decime qué módulo o contenido querés encontrar."
+            );
+
             return;
         }
 
-        const grupos = [
-            ...(datos.acciones || []),
-            ...(datos.ambientes || [])
-        ];
+        // Carga opcional del JSON existente.
 
-        for (const modulo of grupos) {
+        await cargarComandos();
 
-            const opciones = [
-                modulo.nombre,
-                modulo.destino,
-                ...(modulo.comandos || [])
-            ];
+        // Actualizar el catálogo antes de buscar.
 
-            const encontrado = opciones.some(opcion => {
+        escanearIndex();
 
-                const comando = normalizar(opcion);
+        const modulos =
+            buscarModulos(pedido);
 
-              return (
-    pedido === comando ||
-    comando.includes(pedido) ||
-    (
-        comando.length >= 4 &&
-        pedido.includes(comando)
-    )
-);
+        const elementos =
+            buscarElementos(pedido);
 
-            });
+        const quiereAccion =
+            VERBOS_DE_ACCION.test(
+                normalizar(original)
+            );
 
-            if (encontrado) {
 
-                const destino = modulo.destino;
+        /* -----------------------------------------------
+           1. NOMBRE EXACTO DE MÓDULO
+           ----------------------------------------------- */
 
-                if (typeof mostrar === "function") {
+        const moduloExacto =
+            modulos.find(
+                item => item.puntaje === 100
+            );
 
-                    mostrar(destino);
+        if (
+            moduloExacto &&
+            modulos.filter(
+                item => item.puntaje === 100
+            ).length === 1
+        ) {
+
+            if (
+                abrirModulo(moduloExacto.modulo)
+            ) {
+
+                responder(
+                    "Abriendo " +
+                    moduloExacto.modulo.nombre +
+                    "."
+                );
+
+                return;
+            }
+        }
+
+
+        /* -----------------------------------------------
+           2. CONTROL INTERNO EXACTO
+           ----------------------------------------------- */
+
+        const elementoExacto =
+            elementos.find(
+                item => item.puntaje === 100
+            );
+
+        const exactosElementos =
+            elementos.filter(
+                item => item.puntaje === 100
+            );
+
+        if (
+            quiereAccion &&
+            exactosElementos.length === 1
+        ) {
+
+            const resultado =
+                elementoExacto;
+
+            if (
+                ejecutarElemento(
+                    resultado,
+                    original
+                )
+            ) {
+
+                responder(
+                    "Listo. Activé " +
+                    resultado.item.nombre +
+                    "."
+                );
+
+                return;
+            }
+
+            if (resultado.item.modulo) {
+
+                const padre =
+                    catalogoIndex.modulos.find(
+                        modulo =>
+                            modulo.destino ===
+                            resultado.item.modulo
+                    );
+
+                if (
+                    padre &&
+                    abrirModulo(padre)
+                ) {
 
                     responder(
-                        "Abriendo " + modulo.nombre + "…"
+                        "Abrí " +
+                        padre.nombre +
+                        ". El elemento está dentro de ese módulo; completá la acción desde allí."
                     );
 
                     return;
                 }
-
             }
-
         }
 
+
+        /* -----------------------------------------------
+           3. CONTENIDO INTERNO Y MÓDULO PADRE
+           ----------------------------------------------- */
+
+        const mejoresElementos =
+            elementos.filter(
+                item => item.puntaje >= 68
+            );
+
+        const padres = [
+            ...new Set(
+                mejoresElementos
+                    .map(item => item.item.modulo)
+                    .filter(Boolean)
+            )
+        ];
+
+        if (
+            mejoresElementos.length &&
+            padres.length === 1
+        ) {
+
+            const padre =
+                catalogoIndex.modulos.find(
+                    modulo =>
+                        modulo.destino === padres[0]
+                );
+
+            if (
+                padre &&
+                abrirModulo(padre)
+            ) {
+
+                responder(
+                    "Encontré ‘" +
+                    mejoresElementos[0].item.nombre +
+                    "’ dentro de " +
+                    padre.nombre +
+                    ". Abrí ese módulo."
+                );
+
+                return;
+            }
+        }
+
+
+        /* -----------------------------------------------
+           4. VARIAS COINCIDENCIAS
+           ----------------------------------------------- */
+
+        const opciones = [];
+
+        modulos
+            .filter(item => item.puntaje >= 55)
+            .forEach(item => {
+
+                opciones.push(
+                    item.modulo.nombre
+                );
+
+            });
+
+        mejoresElementos
+            .slice(0, 8)
+            .forEach(item => {
+
+                const nombre =
+                    item.item.nombre;
+
+                opciones.push(
+                    item.item.modulo
+                        ? nombre + " — " + item.item.modulo
+                        : nombre
+                );
+
+            });
+
+        if (opciones.length) {
+
+            describirOpciones(
+                "Encontré estas coincidencias:",
+                opciones
+            );
+
+            return;
+        }
+
+
+        /* -----------------------------------------------
+           5. SIN COINCIDENCIAS
+           ----------------------------------------------- */
+
         responder(
-            "Todavía no tengo esa opción disponible en Mi Espacio."
+            "Todavía no encuentro ‘" +
+            original +
+            "’ en los elementos visibles de Mi Espacio. Probá con el nombre del módulo o con otra palabra."
         );
 
     }
 
 
     /* =====================================================
-       INICIALIZAR RECONOCIMIENTO
+       INICIALIZAR
        ===================================================== */
 
     function iniciar() {
@@ -570,7 +1014,9 @@ function observarIndex() {
     }
 
 
-    if (document.readyState === "loading") {
+    if (
+        document.readyState === "loading"
+    ) {
 
         document.addEventListener(
             "DOMContentLoaded",
@@ -601,7 +1047,9 @@ function observarIndex() {
 
         obtenerCatalogo,
 
-        observarIndex
+        observarIndex,
+
+        limpiarPedido
 
     };
 
