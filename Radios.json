@@ -224,19 +224,7 @@
       "https://frontend.radiohdvivo.com/los40/live"
     ]
   },
-  {
-    "id": "elobservador_fm1079",
-    "nombre": "El Observador",
-    "frecuencia": "FM 107.9",
-    "tipo": "FM",
-    "provincia": "CABA",
-    "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/elobservador.jpg",
-    "urlStream": "https://s8.stweb.tv/observador/live/playlist.m3u8",
-    "streams": [
-      "https://s8.stweb.tv/observador/live/playlist.m3u8"
-    ]
-  },
-  {
+    {
     "id": "radioconvos_fm899",
     "nombre": "Radio Con Vos",
     "frecuencia": "FM 89.9",
