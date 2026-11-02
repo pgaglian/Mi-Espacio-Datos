@@ -256,11 +256,8 @@
   "tipo": "FM",
   "provincia": "CABA",
   "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latina.jpg",
-  "urlStream": "http://streaming.latina101.com.ar:9000/",
-  "streams": [
-    "http://streaming.latina101.com.ar:9000/",
-    "http://streaming.latina101.com.ar:8080/RadioLatina"
-   ]
+  "urlStream": "https://stream-gtlc.telecentro.net.ar/hls/latinatvhls/main.m3u8",
+  "streams": []
   
   },
  {
@@ -299,9 +296,7 @@
   "provincia": "CABA",
   "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vorterix.jpg",
   "urlStream": "https://ice2.edge-apps.net/radio1_high-20057.audio",
-  "streams": [
-    "https://ice2.edge-apps.net/radio1_high-20057.audio"
-  ]
+  "streams": []
 
   },
 
