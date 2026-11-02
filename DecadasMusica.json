@@ -74,10 +74,7 @@
     "emoji": "🚀",
     "nombre": "2020–2026",
     "descripcion": "Música y éxitos desde 2020 hasta 2026",
-    "url_stream": "https://listen.181fm.com/181-top40_128k.mp3",
-    "alternativas": [
-      "https://ice5.somafm.com/poptron-128-mp3",
-      "https://stream.zeno.fm/8wup8yd9dm0uv"
-    ]
+    "url_stream": "https://stream.zeno.fm/8wup8yd9dm0uv",
+    "alternativas": []
   }
 ]
