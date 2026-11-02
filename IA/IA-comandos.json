@@ -46,16 +46,18 @@
         "bloc de notas"
       ]
     },
+    
     {
-      "id": "chat",
-      "nombre": "Chat",
-      "icono": "💬",
-      "destino": "Chat",
+      "id": "redes",
+      "nombre": "Redes Sociales",
+      "icono": "🌐",
+      "destino": "Redes",
       "comandos": [
-        "chat",
-        "mensajes",
-        "conversaciones",
-        "mensajeria"
+        "redes",
+        "redes sociales",
+        "mis redes",
+        "red social",
+        "sociales"
       ]
     },
     {
@@ -206,19 +208,7 @@
         "reproducir videos"
       ]
     },
-    {
-      "id": "redes",
-      "nombre": "Redes Sociales",
-      "icono": "🌐",
-      "destino": "Redes",
-      "comandos": [
-        "redes",
-        "redes sociales",
-        "mis redes",
-        "red social",
-        "sociales"
-      ]
-    },
+    
     {
       "id": "juegos",
       "nombre": "Juegos",
