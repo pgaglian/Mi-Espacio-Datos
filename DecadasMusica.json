@@ -53,11 +53,8 @@
     "emoji": "🎧",
     "nombre": "Años 2000",
     "descripcion": "Pop, rock y éxitos del nuevo milenio",
-    "url_stream": "https://listen.181fm.com/181-2000s_128k.mp3",
-    "alternativas": [
-      "https://listen.181fm.com/181-top40_128k.mp3",
-      "https://ice5.somafm.com/poptron-128-mp3"
-    ]
+    "url_stream": "https://ice6.somafm.com/poptron-128-mp3",
+    "alternativas": []
   },
   {
     "id": "decada-2010",
