@@ -268,9 +268,7 @@
   "provincia": "CABA",
   "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latribu.jpg",
   "urlStream": "https://icecast.zeclogiccloud.com.de/fmlatribu",
-  "streams": [
-    "https://icecast.zeclogiccloud.com.de/fmlatribu"
-  ]
+  "streams": []
 
   },
   
