@@ -260,18 +260,7 @@
   "streams": []
   
   },
- {
-  "id": "latribu_fm887",
-  "nombre": "La Tribu",
-  "frecuencia": "FM 88.7",
-  "tipo": "FM",
-  "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latribu.jpg",
-  "urlStream": "https://icecast.zeclogiccloud.com.de/fmlatribu",
-  "streams": []
-
-  },
-  
+   
   {
   "id": "vorterix_fm921",
   "nombre": "Vorterix",
