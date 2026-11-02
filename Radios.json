@@ -273,21 +273,7 @@
   ]
 
   },
-
-  {
-  "id": "delta_fm903",
-  "nombre": "Delta",
-  "frecuencia": "FM 90.3",
-  "tipo": "FM",
-  "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/delta.jpg",
-  "urlStream": "https://live-ar1.cdnrad.com/hls/radio-1781/live.m3u8",
-  "streams": [
-    "https://live-ar1.cdnrad.com/hls/radio-1781/live.m3u8"
-  ]
-
-  },
-
+  
   {
   "id": "vorterix_fm921",
   "nombre": "Vorterix",
@@ -434,7 +420,7 @@
   "frecuencia": "FM 102.1",
   "tipo": "FM",
   "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lapatriada.jpg",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/lapatriada.png",
   "urlStream": "https://media.cdnvid.com/public/gzlxujannhh5.m3u8",
   "streams": [
     "https://media.cdnvid.com/public/gzlxujannhh5.m3u8"
@@ -448,7 +434,7 @@
   "frecuencia": "FM 103.7",
   "tipo": "FM",
   "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/one.jpg",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/one.png",
   "urlStream": "https://one.stweb.tv/one/live/chunks.m3u8",
   "streams": [
     "https://one.stweb.tv/one/live/chunks.m3u8"
