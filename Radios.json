@@ -258,10 +258,9 @@
   "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/latina.jpg",
   "urlStream": "https://stream-gtlc.telecentro.net.ar/hls/latinatvhls/main.m3u8",
   "streams": []
+    },
   
-  },
-   
-  {
+   {
   "id": "vorterix_fm921",
   "nombre": "Vorterix",
   "frecuencia": "FM 92.1",
