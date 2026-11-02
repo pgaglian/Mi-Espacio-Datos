@@ -294,7 +294,7 @@
   "frecuencia": "FM 92.1",
   "tipo": "FM",
   "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vorterix.jpg",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/vorterix.png",
   "urlStream": "https://ice2.edge-apps.net/radio1_high-20057.audio",
   "streams": []
 
@@ -405,7 +405,7 @@
   "frecuencia": "FM 98.7",
   "tipo": "FM",
   "provincia": "CABA",
-  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.jpg",
+  "logo": "https://raw.githubusercontent.com/pgaglian/Mi-Espacio-Datos/main/Radiosimg/nacionalfolklorica.png",
   "urlStream": "https://sa.mp3.icecast.magma.edge-access.net/sc_rad38",
   "streams": [
     "https://sa.mp3.icecast.magma.edge-access.net/sc_rad38"
