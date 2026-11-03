@@ -33,18 +33,23 @@
       ]
     },
     {
-      "id": "pizarra",
-      "nombre": "Pizarra",
-      "icono": "📝",
-      "destino": "Pizarra",
-      "comandos": [
-        "pizarra",
-        "notas",
-        "mis notas",
-        "anotaciones",
-        "escribir una nota",
-        "bloc de notas"
-      ]
+      "id": "mi_organizador",
+"nombre": "Mi Organizador",
+"icono": "📒",
+"destino": "MiOrganizador",
+"comandos": [
+  "mi organizador",
+  "organizador",
+  "organizar mi día",
+  "mis pendientes",
+  "tareas pendientes",
+  "mis tareas",
+  "notas",
+  "notas rápidas",
+  "recordatorios",
+  "agendar una tarea",
+  "qué tengo pendiente"
+     ]
     },
     
     {
@@ -54,7 +59,6 @@
       "destino": "Redes",
       "comandos": [
         "redes",
-        "abrir redes sociales",
         "redes sociales",
         "mis redes",
         "red social",
