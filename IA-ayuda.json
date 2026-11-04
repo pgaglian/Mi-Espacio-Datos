@@ -1,0 +1,137 @@
+{
+  "titulo": "¿Qué puedo pedir?",
+  "categorias": [
+    {
+      "nombre": "Ambientes",
+      "comandos": [
+        "Abrí Radios",
+        "Quiero escuchar una radio",
+        "Abrí Música",
+        "Buscá música para escuchar",
+        "Abrí Cine",
+        "Quiero ver películas y series",
+        "Abrí Mi Rincón",
+        "Abrí Recuerdos",
+        "Abrí Biblioteca",
+        "Abrí Entrenamiento",
+        "Abrí Juegos",
+        "Mostrame Mi Rincón",
+        "Quiero guardar una aplicación",
+        "Abrí mis enlaces guardados"
+      ]
+    },
+    {
+      "nombre": "Acciones",
+      "comandos": [
+        "Abrí el Calendario",
+        "Mostrame mis eventos",
+        "Mostrame el Clima",
+        "¿Cómo va a estar el tiempo mañana?",
+        "Abrí Mi Organizador",
+        "Mostrame mis notas",
+        "Quiero escribir una nota",
+        "Agregá una nota rápida",
+        "Mostrame mis pendientes",
+        "Quiero organizar mi día",
+        "Mostrame mis tareas de hoy",
+        "Mostrame mi semana",
+        "Mostrame mi mes",
+        "Agregá una tarea pendiente",
+        "Quiero programar un recordatorio",
+        "Mostrame mis recordatorios",
+        "Tengo tareas sin completar",
+        "Quiero reprogramar una tarea",
+        "Quiero eliminar un pendiente",
+        "Abrí Redes Sociales",
+        "Abrí Bancos",
+        "Mostrame mis bancos",
+        "Abrí Billeteras",
+        "Mostrame mis billeteras",
+        "Abrí el Correo"
+      ]
+    },
+    {
+      "nombre": "Plataformas de Cine",
+      "comandos": [
+        "Abrí Netflix",
+        "Abrí Disney+",
+        "Abrí Max",
+        "Abrí Prime Video",
+        "Abrí Paramount+",
+        "Abrí Apple TV+",
+        "Abrí Pluto TV",
+        "Abrí Mercado Play",
+        "Abrí CINE.AR Play",
+        "Abrí Movistar TV",
+        "Abrí Flow",
+        "Mostrame las plataformas de películas y series"
+      ]
+    },
+    {
+      "nombre": "Plataformas de Música",
+      "comandos": [
+        "Abrí Spotify",
+        "Abrí YouTube",
+        "Abrí YouTube Music",
+        "Abrí Apple Music",
+        "Mostrame las plataformas de música"
+      ]
+    },
+    {
+      "nombre": "Redes Sociales",
+      "comandos": [
+        "Abrí Instagram",
+        "Abrí Facebook",
+        "Abrí TikTok",
+        "Abrí YouTube",
+        "Abrí WhatsApp",
+        "Abrí X",
+        "Abrí Telegram",
+        "Abrí LinkedIn",
+        "Abrí Pinterest",
+        "Abrí Snapchat",
+        "Abrí Twitch",
+        "Abrí Discord",
+        "Abrí Threads",
+        "Abrí Reddit",
+        "Mostrame todas mis redes sociales"
+      ]
+    },
+    {
+      "nombre": "Décadas Musicales",
+      "comandos": [
+        "Quiero escuchar música de los años 60",
+        "Poné música de los años 70",
+        "Poné música de los años 80",
+        "Quiero escuchar música de los 90",
+        "Poné música de los 2000",
+        "Quiero escuchar éxitos de los 2010",
+        "Poné música de los años 2020",
+        "Mostrame todas las décadas musicales"
+      ]
+    },
+    {
+      "nombre": "Estilos Musicales",
+      "comandos": [
+        "Quiero escuchar rock internacional",
+        "Poné rock nacional",
+        "Quiero escuchar pop",
+        "Poné pop latino",
+        "Quiero escuchar cumbia",
+        "Poné cuarteto",
+        "Quiero escuchar salsa",
+        "Poné reggaetón",
+        "Quiero escuchar disco y funk",
+        "Poné música electrónica",
+        "Quiero escuchar jazz y blues",
+        "Poné tango",
+        "Quiero escuchar folklore",
+        "Poné música romántica",
+        "Quiero escuchar música clásica",
+        "Poné reggae",
+        "Quiero escuchar música instrumental y relajante",
+        "Mostrame todos los estilos musicales"
+      ]
+    }
+  ]
+}

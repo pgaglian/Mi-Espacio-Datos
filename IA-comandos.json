@@ -1,0 +1,234 @@
+{
+  "acciones": [
+    {
+      "id": "calendario",
+      "nombre": "Calendario",
+      "icono": "📅",
+      "destino": "Calendario",
+      "comandos": [
+        "calendario",
+        "abrir calendario",
+        "ver calendario",
+        "agenda",
+        "mis eventos",
+        "turnos",
+        "fechas"
+      ]
+    },
+    {
+      "id": "clima",
+      "nombre": "Clima",
+      "icono": "🌤",
+      "destino": "Clima",
+      "comandos": [
+        "clima",
+        "el tiempo",
+        "pronostico",
+        "temperatura",
+        "lluvia",
+        "va a llover",
+        "clima de mañana",
+        "clima de hoy"
+      ]
+    },
+    {
+      "id": "mi_organizador",
+      "nombre": "Mi Organizador",
+      "icono": "📒",
+      "destino": "MiOrganizador",
+      "comandos": [
+        "mi organizador",
+        "organizador",
+        "organizar mi día",
+        "mis pendientes",
+        "tareas pendientes",
+        "mis tareas",
+        "notas",
+        "notas rápidas",
+        "recordatorios",
+        "agendar una tarea",
+        "qué tengo pendiente"
+      ]
+    },
+    {
+      "id": "redes",
+      "nombre": "Redes Sociales",
+      "icono": "🌐",
+      "destino": "Redes",
+      "comandos": [
+        "redes",
+        "redes sociales",
+        "mis redes",
+        "red social",
+        "sociales"
+      ]
+    },
+    {
+      "id": "correo",
+      "nombre": "Correo",
+      "icono": "📧",
+      "destino": "Correo",
+      "comandos": [
+        "correo",
+        "email",
+        "e mail",
+        "mail",
+        "bandeja de entrada",
+        "mis correos"
+      ]
+    },
+    {
+      "id": "bancos",
+      "nombre": "Bancos",
+      "icono": "🏦",
+      "destino": "Bancos",
+      "comandos": [
+        "bancos",
+        "banco",
+        "mi banco",
+        "mis bancos",
+        "cuentas bancarias",
+        "promociones bancarias",
+        "promociones de bancos",
+        "dolar"
+      ]
+    },
+    {
+      "id": "billeteras",
+      "nombre": "Billeteras",
+      "icono": "💳",
+      "destino": "Billeteras",
+      "comandos": [
+        "billeteras",
+        "billetera",
+        "bille",
+        "billeteras virtuales",
+        "billetera virtual",
+        "pagos digitales",
+        "promociones de billeteras"
+      ]
+    }
+  ],
+  "ambientes": [
+    {
+      "id": "biblioteca",
+      "nombre": "Biblioteca",
+      "icono": "📚",
+      "destino": "Biblioteca",
+      "comandos": [
+        "biblioteca",
+        "libros",
+        "mis libros",
+        "lectura",
+        "leer",
+        "material de lectura"
+      ]
+    },
+    {
+      "id": "musica",
+      "nombre": "Música",
+      "icono": "🎵",
+      "destino": "Musica",
+      "comandos": [
+        "musica",
+        "escuchar musica",
+        "reproducir musica",
+        "canciones",
+        "plataformas de musica",
+        "decadas musicales",
+        "estilos musicales"
+      ]
+    },
+    {
+      "id": "radios",
+      "nombre": "Radios",
+      "icono": "📻",
+      "destino": "Radios",
+      "comandos": [
+        "radios",
+        "radio",
+        "escuchar radio",
+        "poner la radio",
+        "emisoras",
+        "estaciones de radio",
+        "radio am",
+        "radio fm"
+      ]
+    },
+    {
+      "id": "entrenamiento",
+      "nombre": "Entrenamiento",
+      "icono": "🏋️",
+      "destino": "Entrenamiento",
+      "comandos": [
+        "entrenamiento",
+        "fitness",
+        "ejercicio",
+        "ejercicios",
+        "entrenar",
+        "rutina",
+        "tabata",
+        "temporizador de entrenamiento"
+      ]
+    },
+    {
+      "id": "cine",
+      "nombre": "Cine",
+      "icono": "🎬",
+      "destino": "Cine",
+      "comandos": [
+        "cine",
+        "peliculas",
+        "series",
+        "ver peliculas",
+        "plataformas de streaming",
+        "streaming"
+      ]
+    },
+    {
+      "id": "recuerdos",
+      "nombre": "Recuerdos",
+      "icono": "📸",
+      "destino": "Recuerdos",
+      "comandos": [
+        "recuerdos",
+        "fotos",
+        "fotografias",
+        "mis fotos",
+        "album",
+        "imagenes"
+      ]
+    },
+    {
+      "id": "mi_rincon",
+      "nombre": "Mi Rincón",
+      "icono": "🪴",
+      "destino": "MiRincon",
+      "comandos": [
+        "mi rincon",
+        "mi rincón",
+        "abrir mi rincon",
+        "abrir mi rincón",
+        "mis enlaces",
+        "mis aplicaciones guardadas",
+        "mis cosas guardadas",
+        "elementos guardados",
+        "mis sitios guardados"
+      ]
+    },
+    {
+      "id": "juegos",
+      "nombre": "Juegos",
+      "icono": "🎮",
+      "destino": "Juegos",
+      "comandos": [
+        "juegos",
+        "juego",
+        "mis juegos",
+        "perfiles de juegos",
+        "videojuegos",
+        "jugar"
+      ]
+    }
+  ]
+}
