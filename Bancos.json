@@ -85,12 +85,14 @@
     },
     {
         "nombre": "Nuevo Banco de Santa Fe",
+        "logo": "Santa Fe.jpg",
         "sitioOficial": "https://www.bancosantafe.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=com.bancosantafe.mobile",
         "ios": "https://apps.apple.com/ar/app/app-banco-santa-fe/id1516538881"
     },
     {
         "nombre": "Comafi",
+         "logo": "Comafi.jpg",
         "sitioOficial": "https://www.comafi.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=ar.com.comafi.app.hbi.prod",
         "ios": "https://apps.apple.com/ar/app/comafi/id6450553669"
