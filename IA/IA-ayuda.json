@@ -1,4 +1,3 @@
-
 {
   "titulo": "¿Qué puedo pedir?",
   "categorias": [
@@ -11,11 +10,14 @@
         "Buscá música para escuchar",
         "Abrí Cine",
         "Quiero ver películas y series",
-        "Abrí Videos",
+        "Abrí Mi Rincón",
         "Abrí Recuerdos",
         "Abrí Biblioteca",
         "Abrí Entrenamiento",
-        "Abrí Juegos"
+        "Abrí Juegos",
+        "Mostrame Mi Rincón",
+        "Quiero guardar una aplicación",
+        "Abrí mis enlaces guardados"
       ]
     },
     {
