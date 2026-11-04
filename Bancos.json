@@ -22,7 +22,7 @@
     },
     {
         "nombre": "BBVA",
-        "logo": "BBVA.png",
+        "logo": "BBVA.jpg",
         "sitioOficial": "https://www.bbva.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=com.bbva.nxt_argentina",
         "ios": "https://apps.apple.com/ar/app/bbva-argentina/id748231035"
@@ -64,7 +64,7 @@
     },
     {
         "nombre": "Banco Ciudad",
-        "logo": "Ciudad.jpg",
+        "logo": "Ciudad.png",
         "sitioOficial": "https://www.bancociudad.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=ar.com.redlink.custom",
         "ios": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-ciudad/id1515534818"
@@ -85,7 +85,7 @@
     },
     {
         "nombre": "Nuevo Banco de Santa Fe",
-        "logo": "Santa Fe.jpg",
+        "logo": "SantaFe.jpg",
         "sitioOficial": "https://www.bancosantafe.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=com.bancosantafe.mobile",
         "ios": "https://apps.apple.com/ar/app/app-banco-santa-fe/id1516538881"
@@ -99,7 +99,7 @@
     },
     {
         "nombre": "Hipotecario",
-        "logo": "Hipotecario.jpg",
+        "logo": "Hipotecario.png",
         "sitioOficial": "https://www.hipotecario.com.ar/",
         "android": "https://play.google.com/store/apps/details?id=com.hipotecario.mobile",
         "ios": "https://apps.apple.com/ar/app/banca-m%C3%B3vil-banco-hipotecario/id469262970"
