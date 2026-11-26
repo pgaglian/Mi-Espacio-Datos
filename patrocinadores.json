@@ -5,7 +5,7 @@
     "instagram": "https://www.instagram.com/carrefour_hiperquilmes/",
     "whatsapp": "https://wa.me/5491111111111",
     "tipo": "empresa",
-    "activo": true
+    "activo": false
   },
   {
     "nombre": "La Esquina",
@@ -13,7 +13,7 @@
     "instagram": "https://www.instagram.com/laesquinaook/",
     "whatsapp": "https://wa.me/5491134693156",
     "tipo": "empresa",
-    "activo": true
+    "activo": false
   },
   {
     "nombre": "Studio 25",
